@@ -1,15 +1,5 @@
 # Code classifier
 
-## Add a Git source
-
-Add a repository at its current `HEAD`, labeled as human (`0`) or AI (`1`):
-
-```bash
-uv run classifier/add_git_source.py <git-url> <0-or-1>
-```
-
-The command pins the resolved commit in `classifier/data/sources.json`. Use `--id <source-id>` if the repository name conflicts with an existing source.
-
 ## Train
 
 Install the dependencies and prepare the dataset:
@@ -55,38 +45,12 @@ uv run python classifier/train.py \
   --resume-from-checkpoint detector/checkpoint-100
 ```
 
-## Outputs
-
-The default output directory is `detector/`. It contains the LoRA adapter and classification head, tokenizer files, checkpoints, training state, and these result files:
-
-- `train_results.json`
-- `test_results.json`
-- `run_config.json`
-
-Validation selects the best checkpoint by ROC-AUC. Final test output also reports accuracy, precision, recall, F1, ROC-AUC, and average precision.
-
-The saved artifact is a PEFT adapter referencing the Qwen base model, rather than a second full copy of Qwen.
-
 ## Inference
 
 Classify a file using the adapter in `detector/`:
 
 ```bash
 uv run python classifier/run.py path/to/source.py
-```
-
-Classify code from stdin or directly on the command line:
-
-```bash
-cat path/to/source.rs | uv run python classifier/run.py
-
-uv run python classifier/run.py --code 'def add(a, b): return a + b'
-```
-
-Directories are scanned recursively using the same code-file filtering and normalization as dataset preparation:
-
-```bash
-uv run python classifier/run.py path/to/repository
 ```
 
 For machine-readable output:
