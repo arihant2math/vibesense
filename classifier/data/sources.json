@@ -158,15 +158,6 @@
       "provenance_note": "Label supplied when this source was added; not independently verified."
     },
     {
-      "id": "tckr",
-      "kind": "git",
-      "label": 1,
-      "label_name": "ai",
-      "url": "https://github.com/krypdoh/TCKR",
-      "revision": "bc39d5966741871bfd6e6c2aa4f6ad1c0d71651c",
-      "provenance_note": "Label supplied when this source was added; not independently verified."
-    },
-    {
       "id": "nano-banana-desktop",
       "kind": "git",
       "label": 1,
