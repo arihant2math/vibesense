@@ -246,6 +246,15 @@
       "url": "https://github.com/levz0r/markdown-printer",
       "revision": "efdc612428ad31a5bd14251bf529e943207d4f5f",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "bun",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/oven-sh/bun",
+      "revision": "468dac3cfd66c6b1d3de397ac37ffcbf98c94021",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
