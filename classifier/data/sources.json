@@ -871,6 +871,51 @@
       "url": "https://github.com/vjeux/pokemon-showdown-rs",
       "revision": "605247d012383c896edf7c2a83c55f5aaa2bccef",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "bevy",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/bevyengine/bevy",
+      "revision": "c8e2415eaf165dd86ea2c154f5dd8b2bb52af94f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "rand",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-random/rand",
+      "revision": "8a07c93e4a58e3c5328cecdabdddecdfddacd504",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "rust-base64",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/marshallpierce/rust-base64",
+      "revision": "19edc29092e907c971ef77cd8071560f74974ea7",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "itertools",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-itertools/itertools",
+      "revision": "20c09bd4fed037fa3df6f2a6a1e717b01be89f11",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "indexmap",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/indexmap-rs/indexmap",
+      "revision": "8e843a9c1d62cbc4892b71488c1f43685f994e2c",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
