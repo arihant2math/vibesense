@@ -457,6 +457,60 @@
       "url": "https://github.com/arihant2math/primer-solid",
       "revision": "8313dc01c0321585e49dae1b0a490d4af3867db7",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "shortsblock",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/aadishv/shortsblock",
+      "revision": "cba26d1db02838628ce3e84335618f4d50b1b260",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "pi-agy",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/aadishv/pi-agy",
+      "revision": "32c1fa661b4d6cf8d37c7cc791d936da0ad426b4",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "deno",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/denoland/deno",
+      "revision": "de6e44794b7a95b6895a9aab907e01788820d18c",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "workers-oauth-provider",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/cloudflare/workers-oauth-provider",
+      "revision": "ee5b487d356872cf9872e0caaa857c48dc58b2bc",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "react",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/react/react",
+      "revision": "c96761c7b217989a6c377c9b12249a78b0be91f9",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "core",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/vuejs/core",
+      "revision": "1ffd48a2f5fd3eead3ea29dae668b7ed1c6f6130",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
