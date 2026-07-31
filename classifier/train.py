@@ -371,7 +371,7 @@ def main() -> None:
         load_best_model_at_end=True,
         metric_for_best_model="auroc",
         greater_is_better=True,
-        save_total_limit=2,
+        save_total_limit=4,
         bf16=precision == "bf16",
         fp16=precision == "fp16",
         gradient_checkpointing=True,
