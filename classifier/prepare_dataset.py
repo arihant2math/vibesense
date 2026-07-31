@@ -3,9 +3,12 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
+import os
+import re
 import subprocess
 import unicodedata
 from collections import Counter, defaultdict
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from typing import Any, Iterable
 
@@ -106,6 +109,12 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--max-chars", type=int, default=12_000)
     parser.add_argument("--min-chars", type=int, default=40)
     parser.add_argument("--seed", default="vibesense-dataset-v1")
+    parser.add_argument(
+        "--workers",
+        type=int,
+        default=min(4, os.cpu_count() or 1),
+        help="Files to normalize concurrently (default: up to 4)",
+    )
     parser.add_argument("--refresh", action="store_true", help="Fetch pinned revisions again")
     parser.add_argument(
         "--no-balance",
@@ -178,14 +187,23 @@ def language_for(path: Path) -> str | None:
 
 
 def iter_code_files(root: Path) -> Iterable[Path]:
-    for path in sorted(root.rglob("*")):
-        if not path.is_file() or path.is_symlink():
-            continue
-        relative = path.relative_to(root)
-        if any(part.casefold() in EXCLUDED_PARTS for part in relative.parts[:-1]):
-            continue
-        if language_for(path) is not None:
-            yield path
+    paths: list[Path] = []
+
+    def visit(directory: Path) -> None:
+        with os.scandir(directory) as entries:
+            for entry in entries:
+                if entry.is_symlink():
+                    continue
+                if entry.is_dir(follow_symlinks=False):
+                    if entry.name.casefold() not in EXCLUDED_PARTS:
+                        visit(Path(entry.path))
+                elif entry.is_file(follow_symlinks=False):
+                    path = Path(entry.path)
+                    if language_for(path) is not None:
+                        paths.append(path)
+
+    visit(root)
+    yield from sorted(paths)
 
 
 def normalize_code(raw: bytes) -> str | None:
@@ -206,10 +224,13 @@ def normalize_code(raw: bytes) -> str | None:
     return "\n".join(lines) + "\n" if lines else ""
 
 
-def chunk_code(text: str, max_chars: int) -> list[str]:
-    if len(text) <= max_chars:
-        return [text]
+# normalize_code converts CR/CRLF to LF. Keep a fallback for the less common
+# separators recognized by str.splitlines so chunk_code's public behavior does
+# not change for callers that pass text containing them.
+_UNCOMMON_LINE_BREAK = re.compile(r"[\r\v\f\x1c-\x1e\x85\u2028\u2029]")
 
+
+def _chunk_code_by_lines(text: str, max_chars: int) -> list[str]:
     chunks: list[str] = []
     current: list[str] = []
     current_size = 0
@@ -235,6 +256,46 @@ def chunk_code(text: str, max_chars: int) -> list[str]:
     return chunks
 
 
+def chunk_code(text: str, max_chars: int) -> list[str]:
+    if len(text) <= max_chars:
+        return [text]
+    if max_chars <= 0:
+        raise ValueError("max_chars must be positive")
+    if _UNCOMMON_LINE_BREAK.search(text) is not None:
+        return _chunk_code_by_lines(text, max_chars)
+
+    # Searching for one boundary per chunk runs in optimized C code. The old
+    # implementation visited every source line in Python, which is costly for
+    # repositories with tens of millions of short lines.
+    chunks: list[str] = []
+    start = 0
+    text_size = len(text)
+    while start < text_size:
+        limit = min(start + max_chars, text_size)
+        if limit == text_size:
+            chunks.append(text[start:])
+            break
+
+        newline = text.rfind("\n", start, limit)
+        if newline >= start:
+            end = newline + 1
+            chunks.append(text[start:end])
+            start = end
+            continue
+
+        # The current line is longer than max_chars. As before, split that
+        # line into fixed-width chunks without combining its tail with the
+        # following line.
+        line_end = text.find("\n", limit)
+        line_end = text_size if line_end < 0 else line_end + 1
+        while start < line_end:
+            end = min(start + max_chars, line_end)
+            chunks.append(text[start:end])
+            start = end
+
+    return chunks
+
+
 def stable_digest(*parts: str) -> str:
     value = "\0".join(parts).encode("utf-8")
     return hashlib.sha256(value).hexdigest()
@@ -246,30 +307,31 @@ def records_for_source(
     max_file_bytes: int,
     max_chars: int,
     min_chars: int,
+    workers: int = 1,
 ) -> list[dict[str, Any]]:
-    records: list[dict[str, Any]] = []
-
-    for path in iter_code_files(root):
+    def records_for_file(path: Path) -> list[dict[str, Any]]:
         if path.stat().st_size > max_file_bytes:
-            continue
+            return []
         text = normalize_code(path.read_bytes())
         if text is None or len(text.strip()) < min_chars:
-            continue
+            return []
 
+        language = language_for(path)
         relative_path = path.relative_to(root).as_posix()
+        file_records: list[dict[str, Any]] = []
         for chunk_index, chunk in enumerate(chunk_code(text, max_chars)):
             if len(chunk.strip()) < min_chars:
                 continue
             text_sha256 = hashlib.sha256(chunk.encode("utf-8")).hexdigest()
             record_id = stable_digest(source["id"], relative_path, str(chunk_index), text_sha256)
-            records.append(
+            file_records.append(
                 {
                     "id": record_id,
                     "text": chunk,
                     "text_sha256": text_sha256,
                     "label": source["label"],
                     "label_name": source["label_name"],
-                    "language": language_for(path),
+                    "language": language,
                     "source_id": source["id"],
                     "source_kind": source["kind"],
                     "path": relative_path,
@@ -278,7 +340,26 @@ def records_for_source(
                     "revision": source.get("revision"),
                 }
             )
+        return file_records
 
+    records: list[dict[str, Any]] = []
+    paths = iter_code_files(root)
+    if workers <= 1:
+        record_groups = map(records_for_file, paths)
+        for file_records in record_groups:
+            records.extend(file_records)
+        return records
+
+    # Limit submitted work so a large repository does not create one Future
+    # per file or retain many completed file results while preserving order.
+    with ThreadPoolExecutor(max_workers=workers) as executor:
+        record_groups = executor.map(
+            records_for_file,
+            paths,
+            buffersize=workers * 2,
+        )
+        for file_records in record_groups:
+            records.extend(file_records)
     return records
 
 
@@ -394,6 +475,7 @@ def main() -> None:
             args.max_file_bytes,
             args.max_chars,
             args.min_chars,
+            args.workers,
         )
         source_counts[source["id"]] = len(source_records)
         all_records.extend(source_records)
