@@ -23,6 +23,19 @@
       "provenance_note": "AI label supplied by the dataset author; not independently verified."
     },
     {
+      "id": "ascii-keyboard",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/levz0r/ASCIIKeyboard.git",
+      "revision": "954e6982263acd15bdb3b2d09d3aa982cd95cb40",
+      "license": "MIT",
+      "include_paths": [
+        "ASCIIKeyboard/Sources"
+      ],
+      "provenance_note": "AI label supplied by the dataset author; not independently verified."
+    },
+    {
       "id": "generated-ai-samples",
       "kind": "samples",
       "label": 1,
@@ -45,6 +58,22 @@
         "ports",
         "python",
         "support"
+      ],
+      "provenance_note": "Human label supplied by the dataset author; individual-file provenance is not independently verified."
+    },
+    {
+      "id": "zig",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/ziglang/zig.git",
+      "revision": "738d2be9d6b6ef3ff3559130c05159ef53336224",
+      "license": "MIT",
+      "include_paths": [
+        "lib/compiler",
+        "lib/std",
+        "src",
+        "tools"
       ],
       "provenance_note": "Human label supplied by the dataset author; individual-file provenance is not independently verified."
     },
