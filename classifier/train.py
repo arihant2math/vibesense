@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+from collections import defaultdict
 from pathlib import Path
 from typing import Any
 
@@ -25,6 +26,39 @@ from transformers import (
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA_DIR = Path(__file__).resolve().parent / "data" / "processed"
 
+DatasetRecord = tuple[str, int, str]
+
+
+def truncate_language_balanced(
+    records: list[DatasetRecord], max_samples: int
+) -> list[DatasetRecord]:
+    """Truncate to complete human/AI pairs from the same language."""
+    if max_samples < 2:
+        raise ValueError("A balanced sample limit must be at least 2")
+
+    by_language: dict[str, dict[int, list[tuple[int, DatasetRecord]]]] = defaultdict(
+        lambda: defaultdict(list)
+    )
+    for position, record in enumerate(records):
+        by_language[record[2]][record[1]].append((position, record))
+
+    # Rank pairs by when both members first appear in the prepared, shuffled
+    # dataset. This stays close to ordinary prefix truncation while ensuring
+    # every selected record has an opposite-label partner in its language.
+    pairs: list[tuple[int, int, tuple[int, DatasetRecord], tuple[int, DatasetRecord]]] = []
+    for by_label in by_language.values():
+        for human, ai in zip(by_label[0], by_label[1]):
+            pairs.append((max(human[0], ai[0]), min(human[0], ai[0]), human, ai))
+    pairs.sort(key=lambda pair: pair[:2])
+
+    selected = [
+        positioned_record
+        for pair in pairs[: max_samples // 2]
+        for positioned_record in pair[2:]
+    ]
+    selected.sort(key=lambda positioned_record: positioned_record[0])
+    return [record for _, record in selected]
+
 
 class CodeDataset(Dataset):
     """A small in-memory view over prepared JSONL records."""
@@ -41,7 +75,7 @@ class CodeDataset(Dataset):
                 f"Dataset split not found: {path}. Run classifier/prepare_dataset.py first."
             )
 
-        self.examples: list[tuple[str, int]] = []
+        records: list[DatasetRecord] = []
         with path.open(encoding="utf-8") as input_file:
             for line_number, line in enumerate(input_file, start=1):
                 if not line.strip():
@@ -49,14 +83,21 @@ class CodeDataset(Dataset):
                 record = json.loads(line)
                 text = record.get("text")
                 label = record.get("label")
-                if not isinstance(text, str) or label not in (0, 1):
+                language = record.get("language")
+                if (
+                    not isinstance(text, str)
+                    or label not in (0, 1)
+                    or not isinstance(language, str)
+                    or not language
+                ):
                     raise ValueError(f"Invalid record in {path}:{line_number}")
-                self.examples.append((text, int(label)))
+                records.append((text, int(label), language))
 
-        if max_samples is not None:
-            self.examples = self.examples[:max_samples]
-        if not self.examples:
+        if max_samples is not None and max_samples < len(records):
+            records = truncate_language_balanced(records, max_samples)
+        if not records:
             raise ValueError(f"Dataset split is empty: {path}")
+        self.examples = [(text, label) for text, label, _ in records]
 
         self.tokenizer = tokenizer
         self.max_length = max_length
@@ -194,8 +235,16 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--precision", choices=("auto", "bf16", "fp16", "fp32"), default="auto")
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--cpu", action="store_true", help="Force CPU training")
-    parser.add_argument("--max-train-samples", type=int)
-    parser.add_argument("--max-eval-samples", type=int)
+    parser.add_argument(
+        "--max-train-samples",
+        type=int,
+        help="Limit training records using complete per-language human/AI pairs",
+    )
+    parser.add_argument(
+        "--max-eval-samples",
+        type=int,
+        help="Limit validation/test records using complete per-language human/AI pairs",
+    )
     parser.add_argument(
         "--resume-from-checkpoint",
         nargs="?",
