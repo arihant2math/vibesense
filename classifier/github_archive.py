@@ -38,7 +38,9 @@ def github_repository(git_url: str) -> tuple[str, str] | None:
     return owner, repository
 
 
-def archive_member_is_included(member: tarfile.TarInfo, include_paths: list[str]) -> bool:
+def archive_member_is_included(
+    member: tarfile.TarInfo, include_paths: list[str]
+) -> bool:
     if not include_paths:
         return True
 
@@ -103,15 +105,23 @@ def download_github_archive(
                     if PurePosixPath(member.name).parts
                 }
                 if len(roots) != 1:
-                    raise RuntimeError("GitHub archive does not have one top-level directory")
+                    raise RuntimeError(
+                        "GitHub archive does not have one top-level directory"
+                    )
                 selected_members = [
                     member
                     for member in members
-                    if archive_member_is_included(member, source.get("include_paths", []))
+                    if archive_member_is_included(
+                        member, source.get("include_paths", [])
+                    )
                 ]
-                archive.extractall(extracted_path, members=selected_members, filter="data")
+                archive.extractall(
+                    extracted_path, members=selected_members, filter="data"
+                )
         except (tarfile.TarError, OSError) as error:
-            raise RuntimeError(f"Could not extract archive for {source['id']!r}: {error}") from error
+            raise RuntimeError(
+                f"Could not extract archive for {source['id']!r}: {error}"
+            ) from error
 
         extracted_repository = extracted_path / roots.pop()
         if not extracted_repository.is_dir():
@@ -120,7 +130,9 @@ def download_github_archive(
             source["revision"] + "\n", encoding="utf-8"
         )
 
-        if destination.is_symlink() or (destination.exists() and not destination.is_dir()):
+        if destination.is_symlink() or (
+            destination.exists() and not destination.is_dir()
+        ):
             destination.unlink()
         elif destination.exists():
             shutil.rmtree(destination)

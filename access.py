@@ -10,11 +10,13 @@ class FileType(Enum):
     FILE = "file"
     DIRECTORY = "dir"
 
+
 @dataclass
 class DirEntry:
     name: str
     entry_type: FileType
     size: Optional[int]
+
 
 class Accessor(ABC):
     @abstractmethod
@@ -23,7 +25,9 @@ class Accessor(ABC):
         pass
 
     @abstractmethod
-    def read_file(self, relative_path: str | PathLike[str], offset=None, limit=None) -> str:
+    def read_file(
+        self, relative_path: str | PathLike[str], offset=None, limit=None
+    ) -> str:
         """Read file from start to end (either/both could be `None`)"""
         pass
 
@@ -63,7 +67,7 @@ class DirectoryAccessor(Accessor):
             try:
                 resolved = path.resolve(strict=True)
                 resolved.relative_to(self.directory)
-            except (FileNotFoundError, RuntimeError, ValueError):
+            except FileNotFoundError, RuntimeError, ValueError:
                 continue
 
             if resolved.is_dir():

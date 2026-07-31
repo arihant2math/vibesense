@@ -31,7 +31,9 @@ def parse_args() -> argparse.Namespace:
         nargs="*",
         help="Code files or directories. Reads stdin when omitted or when path is '-'.",
     )
-    parser.add_argument("--code", "--text", dest="code", help="Classify code supplied directly")
+    parser.add_argument(
+        "--code", "--text", dest="code", help="Classify code supplied directly"
+    )
     parser.add_argument("--model-dir", type=Path, default=DEFAULT_MODEL_DIR)
     parser.add_argument(
         "--device",
@@ -56,7 +58,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--batch-size", type=int, default=1)
     parser.add_argument("--threshold", type=float, default=0.5)
     parser.add_argument("--aggregation", choices=("mean", "max"), default="mean")
-    parser.add_argument("--json", action="store_true", help="Emit machine-readable JSON")
+    parser.add_argument(
+        "--json", action="store_true", help="Emit machine-readable JSON"
+    )
     parser.add_argument(
         "--include-chunks",
         action="store_true",
@@ -97,7 +101,7 @@ def mps_supports_bf16() -> bool:
         return False
     try:
         torch.ones(1, device="mps", dtype=torch.bfloat16)
-    except (RuntimeError, TypeError):
+    except RuntimeError, TypeError:
         return False
     return True
 
@@ -131,7 +135,7 @@ def training_window_settings(model_dir: Path) -> tuple[int, int]:
             max_length = int(config.get("max_length", max_length))
             configured_stride = config.get("stride")
             stride = int(configured_stride) if configured_stride is not None else None
-        except (OSError, ValueError, TypeError, json.JSONDecodeError):
+        except OSError, ValueError, TypeError, json.JSONDecodeError:
             max_length = 1024
             stride = None
 
@@ -211,7 +215,9 @@ def collect_inputs(args: argparse.Namespace) -> list[tuple[str, str]]:
 
     if not args.paths:
         if sys.stdin.isatty():
-            raise ValueError("Provide a file, directory, --code, or pipe code over stdin")
+            raise ValueError(
+                "Provide a file, directory, --code, or pipe code over stdin"
+            )
         raw = sys.stdin.buffer.read()
         normalized = normalize_code(raw)
         if normalized is None or not normalized.strip():
@@ -256,7 +262,9 @@ def print_results(results: list[dict[str, Any]], as_json: bool) -> None:
         print(f"Human probability: {result['human_probability']:.2%}")
         print(f"Chunks: {result['chunks']} ({result['aggregation']})")
         if "chunk_ai_probabilities" in result:
-            formatted = ", ".join(f"{score:.2%}" for score in result["chunk_ai_probabilities"])
+            formatted = ", ".join(
+                f"{score:.2%}" for score in result["chunk_ai_probabilities"]
+            )
             print(f"Chunk AI probabilities: {formatted}")
 
 

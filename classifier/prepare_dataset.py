@@ -115,7 +115,9 @@ def parse_args() -> argparse.Namespace:
         default=min(4, os.cpu_count() or 1),
         help="Files to normalize concurrently (default: up to 4)",
     )
-    parser.add_argument("--refresh", action="store_true", help="Fetch pinned revisions again")
+    parser.add_argument(
+        "--refresh", action="store_true", help="Fetch pinned revisions again"
+    )
     parser.add_argument(
         "--no-balance",
         action="store_true",
@@ -128,7 +130,9 @@ def run_git(*args: str, cwd: Path | None = None) -> None:
     subprocess.run(["git", *args], cwd=cwd, check=True)
 
 
-def checkout_git_repository(source: dict[str, Any], cache_dir: Path, refresh: bool) -> Path:
+def checkout_git_repository(
+    source: dict[str, Any], cache_dir: Path, refresh: bool
+) -> Path:
     destination = cache_dir / source["id"]
     git_dir = destination / ".git"
 
@@ -241,7 +245,10 @@ def _chunk_code_by_lines(text: str, max_chars: int) -> list[str]:
                 chunks.append("".join(current))
                 current = []
                 current_size = 0
-            chunks.extend(line[start : start + max_chars] for start in range(0, len(line), max_chars))
+            chunks.extend(
+                line[start : start + max_chars]
+                for start in range(0, len(line), max_chars)
+            )
             continue
 
         if current and current_size + len(line) > max_chars:
@@ -323,7 +330,9 @@ def records_for_source(
             if len(chunk.strip()) < min_chars:
                 continue
             text_sha256 = hashlib.sha256(chunk.encode("utf-8")).hexdigest()
-            record_id = stable_digest(source["id"], relative_path, str(chunk_index), text_sha256)
+            record_id = stable_digest(
+                source["id"], relative_path, str(chunk_index), text_sha256
+            )
             file_records.append(
                 {
                     "id": record_id,
@@ -382,7 +391,9 @@ def deduplicate(records: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], in
             conflict_count += 1
 
     result = [record for record in unique.values() if record is not None]
-    result.sort(key=lambda record: (record["source_id"], record["path"], record["chunk_index"]))
+    result.sort(
+        key=lambda record: (record["source_id"], record["path"], record["chunk_index"])
+    )
     return result, duplicate_count, conflict_count
 
 
@@ -432,7 +443,9 @@ def balance_records(records: list[dict[str, Any]], seed: str) -> list[dict[str, 
 def write_jsonl(path: Path, records: Iterable[dict[str, Any]]) -> None:
     with path.open("w", encoding="utf-8") as output:
         for record in records:
-            output.write(json.dumps(record, ensure_ascii=False, separators=(",", ":")) + "\n")
+            output.write(
+                json.dumps(record, ensure_ascii=False, separators=(",", ":")) + "\n"
+            )
 
 
 def validate_manifest(manifest: dict[str, Any]) -> None:
@@ -448,7 +461,9 @@ def validate_manifest(manifest: dict[str, Any]) -> None:
         if source.get("label_name") != expected_name:
             raise ValueError(f"Source {source_id} label_name must be {expected_name!r}")
         if source.get("kind") not in {"git", "github", "samples"}:
-            raise ValueError(f"Unsupported source kind for {source_id}: {source.get('kind')!r}")
+            raise ValueError(
+                f"Unsupported source kind for {source_id}: {source.get('kind')!r}"
+            )
 
 
 def main() -> None:
@@ -495,8 +510,12 @@ def main() -> None:
         if not args.no_balance:
             split_records = balance_records(split_records, f"{args.seed}-{name}")
         write_jsonl(args.output_dir / f"{name}.jsonl", split_records)
-        split_counts[name] = dict(Counter(record["label_name"] for record in split_records))
-        print(f"{name}: {len(split_records):,} chunks {split_counts[name]} (before balance: {dict(before_balance)})")
+        split_counts[name] = dict(
+            Counter(record["label_name"] for record in split_records)
+        )
+        print(
+            f"{name}: {len(split_records):,} chunks {split_counts[name]} (before balance: {dict(before_balance)})"
+        )
 
     try:
         summary_manifest = manifest_path.relative_to(Path.cwd()).as_posix()

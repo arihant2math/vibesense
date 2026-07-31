@@ -9,7 +9,13 @@ from peft import AutoPeftModelForSequenceClassification
 from transformers import AutoTokenizer, DataCollatorWithPadding
 
 from classifier.prepare_dataset import normalize_code
-from classifier.run import DEFAULT_MODEL_DIR, resolve_device, resolve_precision, training_window_settings, classify_text
+from classifier.run import (
+    DEFAULT_MODEL_DIR,
+    resolve_device,
+    resolve_precision,
+    training_window_settings,
+    classify_text,
+)
 
 
 class InferenceService:
@@ -49,7 +55,9 @@ class InferenceService:
         self.tokenizer = AutoTokenizer.from_pretrained(self.model_dir)
         if self.tokenizer.pad_token_id is None:
             if self.tokenizer.eos_token_id is None:
-                raise RuntimeError("Tokenizer has neither a padding token nor an EOS token")
+                raise RuntimeError(
+                    "Tokenizer has neither a padding token nor an EOS token"
+                )
             self.tokenizer.pad_token = self.tokenizer.eos_token
         self.tokenizer.padding_side = "right"
 

@@ -118,7 +118,9 @@ def resolve_head(git_url: str) -> str:
     return validated_revision(revision, f"HEAD for {git_url!r}")
 
 
-def temporary_bare_repository(git_url: str) -> tuple[tempfile.TemporaryDirectory[str], Path]:
+def temporary_bare_repository(
+    git_url: str,
+) -> tuple[tempfile.TemporaryDirectory[str], Path]:
     if not git_url or git_url.startswith("-"):
         raise ValueError("Git URL cannot be empty or start with '-'")
 
@@ -259,7 +261,9 @@ def main() -> None:
 
         # Check cheap manifest conflicts before contacting the remote.
         if any(source.get("id") == source_id for source in manifest["sources"]):
-            raise ValueError(f"Source ID already exists: {source_id!r}; pass a unique --id")
+            raise ValueError(
+                f"Source ID already exists: {source_id!r}; pass a unique --id"
+            )
         if any(source.get("url") == args.git_url for source in manifest["sources"]):
             raise ValueError(f"Git URL is already in the manifest: {args.git_url!r}")
 

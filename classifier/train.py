@@ -50,7 +50,9 @@ def truncate_language_balanced(
     # Rank pairs by when both members first appear in the prepared, shuffled
     # dataset. This stays close to ordinary prefix truncation while ensuring
     # every selected record has an opposite-label partner in its language.
-    pairs: list[tuple[int, int, tuple[int, DatasetRecord], tuple[int, DatasetRecord]]] = []
+    pairs: list[
+        tuple[int, int, tuple[int, DatasetRecord], tuple[int, DatasetRecord]]
+    ] = []
     for by_label in by_language.values():
         for human, ai in zip(by_label[0], by_label[1]):
             pairs.append((max(human[0], ai[0]), min(human[0], ai[0]), human, ai))
@@ -106,7 +108,9 @@ class CodeDataset(Dataset):
             if not requested_language:
                 raise ValueError("language must not be empty")
             records = [
-                record for record in records if record[2].casefold() == requested_language
+                record
+                for record in records
+                if record[2].casefold() == requested_language
             ]
             if not records:
                 available = ", ".join(available_languages) or "none"
@@ -205,7 +209,9 @@ def average_precision(labels: np.ndarray, scores: np.ndarray) -> float:
     return float(np.sum(recall_increase * precision))
 
 
-def classification_metrics(labels: np.ndarray, ai_scores: np.ndarray) -> dict[str, float]:
+def classification_metrics(
+    labels: np.ndarray, ai_scores: np.ndarray
+) -> dict[str, float]:
     predicted = (ai_scores >= 0.5).astype(np.int64)
 
     true_positive = int(np.sum((predicted == 1) & (labels == 1)))
@@ -294,7 +300,7 @@ def mps_supports_bf16() -> bool:
         return False
     try:
         torch.ones(1, device="mps", dtype=torch.bfloat16)
-    except (RuntimeError, TypeError):
+    except RuntimeError, TypeError:
         return False
     return True
 
@@ -342,7 +348,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--lora-r", type=int, default=16)
     parser.add_argument("--lora-alpha", type=int, default=32)
     parser.add_argument("--lora-dropout", type=float, default=0.05)
-    parser.add_argument("--precision", choices=("auto", "bf16", "fp16", "fp32"), default="auto")
+    parser.add_argument(
+        "--precision", choices=("auto", "bf16", "fp16", "fp32"), default="auto"
+    )
     parser.add_argument("--seed", type=int, default=42)
     parser.add_argument("--cpu", action="store_true", help="Force CPU training")
     parser.add_argument(
@@ -383,7 +391,9 @@ def main() -> None:
         supported = torch.cuda.is_available() and torch.cuda.is_bf16_supported()
         supported = supported or mps_supports_bf16()
         if not supported:
-            raise RuntimeError("bf16 was requested but is not supported by the active accelerator")
+            raise RuntimeError(
+                "bf16 was requested but is not supported by the active accelerator"
+            )
 
     tokenizer = AutoTokenizer.from_pretrained(cli_args.model)
     if tokenizer.pad_token_id is None:

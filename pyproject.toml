@@ -8,6 +8,7 @@ dependencies = [
     "litellm>=1.94.1",
     "numpy>=2.5.1",
     "peft>=0.20.0",
+    "pydantic>=2.13.4",
     "torch>=2.13.0",
     "transformers>=5.14.1",
 ]

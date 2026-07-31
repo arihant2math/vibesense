@@ -36,7 +36,9 @@ def count_chunks(dataset: Path) -> dict[str, dict[int, int]]:
                 language = record["language"]
                 label = record["label"]
             except (json.JSONDecodeError, KeyError, TypeError) as error:
-                raise ValueError(f"Invalid record at {dataset}:{line_number}: {error}") from error
+                raise ValueError(
+                    f"Invalid record at {dataset}:{line_number}: {error}"
+                ) from error
 
             if not isinstance(language, str) or not language:
                 raise ValueError(
