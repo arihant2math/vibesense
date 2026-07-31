@@ -246,6 +246,33 @@
       "url": "https://github.com/oven-sh/bun",
       "revision": "468dac3cfd66c6b1d3de397ac37ffcbf98c94021",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "slopos",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/SlopLabs/slopos",
+      "revision": "83b2090aa60088d465fab0af94cfb4454451298f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "intersect",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/tucktuckg00se/INTERSECT",
+      "revision": "6f7694be8d8480c7479093ab821ea4a049d83b3a",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "flightlesssomething",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/erkexzcx/flightlesssomething",
+      "revision": "ab582e57e7baf0dcbba80f9f13b758ec0da2dd18",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
