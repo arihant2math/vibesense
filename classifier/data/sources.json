@@ -417,6 +417,15 @@
       "url": "https://github.com/arihant2math/prontus",
       "revision": "d9d40a1f2becae02f383ea175509902a6d184df1",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "language-converter",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/arihant2math/language-converter",
+      "revision": "cfab63c736eb0bab115ba5e0bd876d2cc414ac76",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
