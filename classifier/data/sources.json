@@ -754,6 +754,51 @@
       "url": "https://github.com/gangtao/claude-code-rewrite",
       "revision": "45f7ac9071a54805c35cba9f8cf8b3a3d50f25af",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mio",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/tokio-rs/mio",
+      "revision": "21ddf94d3191dc2385d53ca8f2ac5a7b5ca5af96",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "tokio",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/tokio-rs/tokio",
+      "revision": "08ed41f339e345286f26bdbc6c67bf9f2975ed07",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "eyre",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/eyre-rs/eyre",
+      "revision": "1ea7c204e6b568e2c64b6c13b7795d10114de7e9",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mlua",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/mlua-rs/mlua",
+      "revision": "7b5b78fa3d187ea6346e7c532af255bf88c690fe",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "rustpython",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/RustPython/RustPython/",
+      "revision": "bee5794b6e2b777ee343c7277954b73d06b5cb7d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
