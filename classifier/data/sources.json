@@ -610,6 +610,150 @@
       "url": "https://github.com/palantir/blueprint",
       "revision": "5c05ce6bb12a9810b9ff35310a1554a65af6b65d",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "regex",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-lang/regex",
+      "revision": "fce37e49329157f411e45a3350c42e6927996a40",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "bstr",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/BurntSushi/bstr",
+      "revision": "fffcb0ff62d8bebadefebbcbf20ae4460fa7a461",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "ripgrep",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/BurntSushi/ripgrep",
+      "revision": "9eddb71b8e86a04d7048b920b9b50a2e97068d03",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "aho-corasick",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/BurntSushi/aho-corasick",
+      "revision": "4499d7fdb41c6279ea1367bccf3daca9cb06c36c",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "memchr",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/BurntSushi/memchr",
+      "revision": "e42d0516cfd894eb8ae2681caa9f99168b017b2b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "cxx",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/dtolnay/cxx",
+      "revision": "251cf910ebb5cc6eb628a1e48cacbea6cfdf05c3",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "anyhow",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/dtolnay/anyhow",
+      "revision": "b4f670dbe35b2a960f137da8b3ba89d6eb3c71cc",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "thiserror",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/dtolnay/thiserror",
+      "revision": "a37b5ab11f7c133d1bcb24bc67dfe6c037b69a34",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "proc-macro-workshop",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/dtolnay/proc-macro-workshop",
+      "revision": "79ce613d4e735088e3575688bd068d304b5bdebc",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "syn",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/dtolnay/syn",
+      "revision": "ffbb00fbd0038cb61e4ea4fc7f1249c2f0ebf4f7",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "cargo-expand",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/dtolnay/cargo-expand",
+      "revision": "ce27e64b7322943a9460a90f9f2112b5d7faf334",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "claudes-c-compiler",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/anthropics/claudes-c-compiler",
+      "revision": "6f1b99acb2f4ec2414592136c2009fe7713deec3",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "fastrender",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/wilsonzlin/fastrender",
+      "revision": "19bf1036105d4eeb8bf3330678b7cb11c1490bdc",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "pi-agent-rust",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/pi_agent_rust",
+      "revision": "590d61899ae64e172f15d919632a9134ddec6fb6",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "claw-code",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/instructkr/claw-code",
+      "revision": "4ea31c1bc91c4e9bcbd67d51c550c01e127e6d0d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "claude-code-rewrite",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/gangtao/claude-code-rewrite",
+      "revision": "45f7ac9071a54805c35cba9f8cf8b3a3d50f25af",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
