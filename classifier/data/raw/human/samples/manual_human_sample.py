@@ -1,5 +1,4 @@
-print("Hello world")
-aimport adsk.core, adsk.fusion, traceback
+import adsk.core, adsk.fusion, traceback
 import shutil, zipfile, urllib.request, os
 from html.parser import HTMLParser
 
