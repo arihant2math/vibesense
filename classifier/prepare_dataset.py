@@ -380,6 +380,7 @@ def main() -> None:
     source_counts: dict[str, int] = {}
 
     for source in manifest["sources"]:
+        print(f"{source['id']}: start")
         if source["kind"] in {"git", "github"}:
             root = checkout_repository(source, args.cache_dir.resolve(), args.refresh)
         else:
@@ -387,7 +388,6 @@ def main() -> None:
             if not root.is_dir():
                 raise FileNotFoundError(f"Sample directory does not exist: {root}")
 
-        print(f"{source['id']}: start")
         source_records = records_for_source(
             source,
             root,
