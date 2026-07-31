@@ -7,3 +7,4 @@ __pycache__/
 detector*/
 classifier/data/.cache/
 classifier/data/processed/
+classifier/data/mlx/train.jsonl

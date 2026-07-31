@@ -12,6 +12,11 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
 
+try:
+    from .github import GitHubError, github_repository, github_request
+except ImportError:  # Support `python classifier/add_git_source.py`.
+    from github import GitHubError, github_repository, github_request
+
 DEFAULT_MANIFEST = Path(__file__).resolve().parent / "data" / "sources.json"
 CUTOFF_DATE = "2021-07-01T00:00:00Z"
 # Git's --before comparison includes the named second, so query one second earlier.
@@ -154,7 +159,38 @@ def resolve_ref(git_url: str, ref: str) -> str:
         temporary_directory.cleanup()
 
 
+def resolve_cutoff_via_api(git_url: str) -> str | None:
+    """Resolve the cutoff revision with one API call instead of a full history fetch.
+
+    The API lists commits in reverse chronological order across every ancestor of the
+    default branch, so a merge-heavy repository can yield a revision that is not on the
+    first-parent chain. Returns None when the repository is not on GitHub or the request
+    fails, and the caller falls back to the Git walk.
+    """
+    repository = github_repository(git_url)
+    if repository is None:
+        return None
+
+    owner, name = repository
+    path = f"/repos/{owner}/{name}/commits?until={CUTOFF_GIT_BEFORE}&per_page=1"
+    try:
+        commits = github_request(path)
+    except GitHubError:
+        return None
+
+    if not isinstance(commits, list) or not commits:
+        return None
+    revision = commits[0].get("sha") if isinstance(commits[0], dict) else None
+    if not isinstance(revision, str) or not re.fullmatch(r"[0-9a-f]{40,64}", revision):
+        return None
+    return revision
+
+
 def resolve_cutoff(git_url: str) -> str:
+    revision = resolve_cutoff_via_api(git_url)
+    if revision is not None:
+        return revision
+
     temporary_directory, repository = temporary_bare_repository(git_url)
     try:
         # A full commit history is needed to locate the cutoff, but blob contents

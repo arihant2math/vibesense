@@ -9,6 +9,12 @@ uv sync
 uv run python classifier/prepare_dataset.py
 ```
 
+Sources hosted on GitHub are fetched as pinned `tar.gz` archives, read straight out of the
+archive without unpacking, and cached by commit under `data/.cache/repos/archives`. Use
+`--jobs` to change how many sources are fetched concurrently (default 8), and
+`--no-archives` to force the original Git clone path. Setting `GITHUB_TOKEN` raises the API
+rate limit from 60 to 5,000 requests per hour.
+
 Smoke test:
 
 ```bash

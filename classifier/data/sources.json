@@ -399,6 +399,1212 @@
       "url": "https://github.com/Zero-AI-Hub/C-hess",
       "revision": "ca932c62443ebaa840bdae35ca81f87e27870eb8",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "poke",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/CSP911/poke",
+      "revision": "f431a68b20bc74912fd8aaf47299d5e1243a1147",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 146 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "brain-v",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/BuilderBenv1/brain-v",
+      "revision": "03a4b121647509321eaf26a415dbfa94acd21ad3",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 187 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "sensorkit",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/homesensors/sensorkit",
+      "revision": "c69015040ff001c53b86c35d92fcac5aab6e371e",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 7 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "m8headlessdarkos",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/devopscmac/M8HeadlessDarkOS",
+      "revision": "6e41802a066940c1e7939a7d59481bce6f47b1f8",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 23 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "oshash",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/opensubtitles/oshash",
+      "revision": "6a9cca3682b6abefcdd70fa01520957ed6dfc6a6",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 20 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "langs",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/daithi-walker/langs",
+      "revision": "e6aa1c3d51c7e89de0437ddf717c35541af45792",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 10 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "program-solutions",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/deepumadhusudan-sudo/program_solutions",
+      "revision": "d5e66f60f8e1add2c9d02341d0e1cc85ff762477",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 10 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "nheengeta",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/HermesSilva/Nheengeta",
+      "revision": "11abdc2056e6a8deb559093df8bfe75aab2c5a3b",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 26 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "puppet-master",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/roykang75/puppet-master",
+      "revision": "8b5532a36e8df69934e1d8ccf57e9755b447820b",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 279 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "gtrdr",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/ebbanflo/GTRDR",
+      "revision": "1a9c6f10598501c0ae30b20e7edf412ea60d1fb2",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 5 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "fretart",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/thieudachill/fretart",
+      "revision": "bf70114440dc5d934f3ef33d4b8269f9e7817f7f",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 15 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "company-maker",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/mrkimkim/company-maker",
+      "revision": "d4e84daea2d29ca37d633905b02d2306df284816",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 33 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "codeeditor",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/VZsolt23/CodeEditor",
+      "revision": "ff599a16320f2435e172755a2a558dcebfac32e9",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 29 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "olympus-analyzer",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/aurumstylesbrand-source/olympus-analyzer",
+      "revision": "5d2631017baa514d3fa3b1ceeafd7357e7ce9392",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 180 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "ledgermanifesto",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/A61E33BB10/LedgerManifesto",
+      "revision": "c3d1268ec43ea5418c7c82907ec223eb9dfe75eb",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 67 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "applyhq",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Tonys-Coding/ApplyHQ",
+      "revision": "fed444232f1107853837935b534d4e7b3d89d329",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 22 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "nix-chess-suite",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/obazin/nix-chess-suite",
+      "revision": "b788dfdaa8e550cac85ef9b10de5183b7ed85f80",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 50 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "dev",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/teun64/dev",
+      "revision": "bce5d100aadcd00761d816caefa157a9d594b799",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 44 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "c-hcl2",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/libhcl/c-hcl2",
+      "revision": "8cc39055721bca504d375e38433738ba115828fc",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 33 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "c-hcl",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/libhcl/c-hcl",
+      "revision": "4ba849121297aa700fc468e9ddafcf7d8948a140",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 5 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "pirate-game-draft",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/unexpear/pirate-game-draft",
+      "revision": "a0e6dcdfbf4bf0aeb5ad85abd192d006e2552170",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 44 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "struple",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Foundation42/struple",
+      "revision": "1b009ab7317f468b25ddc0deaea52f528793dcfc",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 53 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "languagecodequalitygates",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/JHenriquesss/LanguageCodeQualityGates",
+      "revision": "c4ea0bed0729c432975e79f55f2600b067644327",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 14 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "layerz",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/dobidu/layerz",
+      "revision": "5b2ab4429a3a0b7d16169c0ba300dd5ac045e539",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 43 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "formal-atlas",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/kedimomo/formal-atlas",
+      "revision": "f9d78cda6d35d7113a4e99503de065b2754c3a3d",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 69 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "lan866x-tools",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/zabooh/lan866x-tools",
+      "revision": "91da162d64824dd31c73ad54416a9a3b1ffae751",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 158 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "mem-manager",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/xcc1010/mem-manager",
+      "revision": "3b7867f39dedfa6923882cc3b59991b30fd36494",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 33 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "code-640011",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/varun6717/code_640011",
+      "revision": "5c7ac3303be704dae4c9190e76ed564d683799a9",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 89 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "myvoice",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/firtklc/MyVoice",
+      "revision": "a5264b69c1fce46b7ab35747f2f5cf1be124bf91",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 19 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "r-equals-c-psi-squared",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Kesendo/R-equals-C-Psi-squared",
+      "revision": "5f435da896032db1200c83d5d702f40ccaf86f5c",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "paperland",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/comsa33/PaperLand",
+      "revision": "6c0c03c49298b7242ce1127b2e07aaa735e76158",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 33 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "soramech",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/gabrilend/soramech",
+      "revision": "3d1afa31a5411162f6027b983061b81213018c6c",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 216 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "bomberman-vscode",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/thayronarrais/bomberman-vscode",
+      "revision": "d8b0764c15e5b61ad02f5a88417fdd34d9b576dd",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 57 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "autocad-mcp",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/chronista-club/autocad-mcp",
+      "revision": "ffe46b136cfadbc61c94baacc43e6782631c5b64",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 7 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "copilot-memory",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/nagato0614/copilot_memory",
+      "revision": "1cf11d1a28c80145fea4f1a5b64518e21a64be5b",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 12 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "crabgresql",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/ovr/crabgresql",
+      "revision": "222e4289972ac896bd53b03a6bd82e66012745ef",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "dreamteam-ai",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Outsourcetel/dreamteam-ai",
+      "revision": "db37495e35c19d982c522f72b585008c0cc3263c",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "learnevo",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/i2s-dev/LearnEVO",
+      "revision": "f7143904b70719a5eadd01c94ce48ecec14cba94",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "bpp",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/bangdevlabs/bpp",
+      "revision": "e56c511bc6be9870311a240cc628ef729b20d02b",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "ferric",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/dcharlot-physicalai-bmi/ferric",
+      "revision": "5a8359236cb83c21f32ae89ac240c89dad49c459",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 100% of 231 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "langmap",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/jounlai/langmap",
+      "revision": "1da58bbd1bfda848f92ea4fce2876174eff17451",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 99% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "claudemax",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/DevinWatson/ClaudeMax",
+      "revision": "603585a630b67f991b0b5fd810e398cd70949b55",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 99% of 118 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "theory",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/PatrickChoumi/theory",
+      "revision": "887314c60095b78eb81614554920782c2a2d1851",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 99% of 116 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "bytewise",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/zulfiqaralimir/bytewise",
+      "revision": "db159e2a170c7db72fc895e861e88f90e14f92b7",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 99% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "creatorhub",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Rohitbhakare/creatorhub",
+      "revision": "60fef7d0d6aebb80a0e2d60de1d00599e839d157",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 99% of 201 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "absentia",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/skbays03/absentia",
+      "revision": "ffcf6dc1a8928b7273e53271cd7b292d560e30c7",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 99% of 180 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "claude-scanner",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/garazdawi/claude-scanner",
+      "revision": "22215b9f7b6ca81f8555abdbeb47f7a27606e48f",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 99% of 174 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "pyexam",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/TechBadji/pyexam",
+      "revision": "e7b03850d01a712d00ad2034d7b8a76ada764d04",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 99% of 79 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "okayspacegameengine",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/kingimann/OkaySpaceGameEngine",
+      "revision": "f6e8b078d255e159c68e226ba3a3b15ef1665803",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 99% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "de-served",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/cfpperche/de_served",
+      "revision": "62b30ed39fef4f7369efee945e267fac8d5dbcc5",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 99% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "qtmux",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/RealNobser/QTmux",
+      "revision": "57c646be1adcd4573b25f378cbe842d13b10d485",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 253 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "experience-bot",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/christina-romero/experience-bot",
+      "revision": "ab21bd2d207c771da6e3ac65b92902bce11e1e3d",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 62 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "agent-cli",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/dujeonglee/agent-cli",
+      "revision": "a6ad48d9b1f6b292e6bd15247864c44bd377fc81",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "bbq",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/dan-eicher/BBQ",
+      "revision": "42bdebee99e799102932e4edb46815a789d0b70b",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 60 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "tibetan-cat-el",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/carsten-paul-code/tibetan-cat.el",
+      "revision": "4cde39ff472576c9b1d1b0c0dd997dc39aadb2fd",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "promo-operations",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/katekling-stack/Promo-Operations",
+      "revision": "9c4dde8cf04dc11bf485b5128572ece6e5360d0f",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 113 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "basi-cli",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Albertoie710231/basi-cli",
+      "revision": "70b7e41222999658cbc79bc36ce7f112ee3e303f",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 161 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "project-template",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Zanzagar/project-template",
+      "revision": "37233b612238c7ee2555f25b1e1dc848b60cc8d0",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 215 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "ingglish",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/ptarjan/ingglish",
+      "revision": "f73cac08fdf3302c102efb8c492d027886da5d59",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "leadline",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/blurman-ai/leadline",
+      "revision": "45d0f9ec9dbce7a82f6f8f0696394f57b46d5585",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "sturm-cpp",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/SoerenWilkening/Sturm_CPP",
+      "revision": "eb464f89b5d3efe871656999984e923adcaad95b",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "noupling",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/pererikbergman/noupling",
+      "revision": "a633b6aa87661ec1c7966fe224daf5590efafa17",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 232 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "pwnpath",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/chsoares/pwnpath",
+      "revision": "19874011793af47e6c1f0aecb798f48c74dc6763",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 45 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "precis",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Crazytieguy/precis",
+      "revision": "8b971c069771bf871bad614481b70246e8ef70b9",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "msys2-cross",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/elmarco/msys2-cross",
+      "revision": "c649148c7e51bc6b4e7a09731d20feab1e2b7056",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 98% of 124 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "dotjava",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/nktkt/dotjava",
+      "revision": "b042b06dfd38fb1729cca30a41798fbbebdf3b9d",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 38 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "ds-navi",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/figure-team/DS-NAVI",
+      "revision": "e05b96800f864a9c6da01509c8db07eea9b3c262",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "driverge-mcp",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/MehmetTopuz/driverge-mcp",
+      "revision": "f52d6fce77cbfa77008e450dc446297cbe644b41",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 106 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "rustic-playground",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/jagmeetchawla/rustic-playground",
+      "revision": "f4f6c7c29b7cf4e0d38efe9cbfae7cf41871eb10",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 242 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "triepack",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/deftio/triepack",
+      "revision": "b9664f1c8c5e8f9d348fd6c6922d500469303ee4",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 34 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "domigo-v2",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/VEHO-DOMI/domigo-v2",
+      "revision": "747972497a0ba2fd3d2f828fd2beb7818919bd39",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "get-a-job",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/getajob-careers/get-a-job",
+      "revision": "235ca05fe14f78c7c98b22d149c2fa2a14a8039f",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "meditationapp",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/janekbt/MeditationApp",
+      "revision": "c249df5f654ca373b87110e883e39b2add5eb866",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "goro",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/KarpelesLab/goro",
+      "revision": "6291adc7a44a7e731e72e14d048cd0b53e871aa2",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "freight",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/freight-app/Freight",
+      "revision": "19f4c43bc5ed384e4580754e287907e72a72c07f",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "mica",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/weironz/mica",
+      "revision": "b04436d84e1b65f2a51e8606fceb2029e2d0c603",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "claude-tools",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/wren-creator/claude-tools",
+      "revision": "422daa8032deab353e3a743e277f04bbb3182e06",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 29 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "kiln",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/nafud/kiln",
+      "revision": "ff6dbaccfd18637800724068800f08f9f6e9db7a",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 97% of 144 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "azul",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/fschutt/azul",
+      "revision": "637dd0effb493ecccd08e35a6912c7aef79dde04",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 96% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "job-pro",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/HA7CH/job-pro",
+      "revision": "e70a97ce1cfbdd1aa3dd9a2f3b1b120138a0b15e",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 96% of 210 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "lychee",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/delfianto/lychee",
+      "revision": "005570a8e8d4137df663e7a3c868de23cd884753",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 96% of 183 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "structify",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/shen390s/structify",
+      "revision": "72ff06a3987ba4e5caf8e12109039f4b95a6fac7",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 96% of 26 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "progmune-runtime",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/shenlian19831109/progmune-runtime",
+      "revision": "dbfa1472a73754b09e9cd9a7b7025fccaad4b20b",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 96% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "aprvisual",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/erspicu/AprVisual",
+      "revision": "ced0e1d53357b85ab1dbbc047c0bfd0fcc70130e",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 96% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "endurancesciencelabs",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/austenhughes1/endurancesciencelabs",
+      "revision": "3fb96d93f71b426003b8d33b34fdafbc5c0d8602",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 96% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "ai-security-benchmark",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/miroku0000/AI-Security-Benchmark",
+      "revision": "c21cd8b601c85f8a5a32dd77dceb1533a2227104",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 96% of 210 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "bld",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/pprettysimpple/bld",
+      "revision": "0d2d7f430a5b6a34b39dc2d77d41a41ea0ea739e",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 96% of 92 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "tessera",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/barum/tessera",
+      "revision": "ebc59bc9de8ee35a1c2bc984fc11c66a4df8095b",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 96% of 92 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "westworld",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/gen0cide/westworld",
+      "revision": "d38170b5a5b7fb768081fa0a75aef594b5e3a8df",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 95% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "crazy4points-v2",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/jillyz250/crazy4points_V2",
+      "revision": "0dcf34fc044b3030f0ac5b59d7b3f8c17b398f12",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 95% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "wpfhexeditoride",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/abbaye/WpfHexEditorIDE",
+      "revision": "d6527fab4c03df76092d2d0cf05aa59aa47f07d9",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 95% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "grader",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/khthana/grader",
+      "revision": "bca3040485e8b4438be406777d2fb8c542d9d2f4",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 95% of 134 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "taperot-audio-plugin",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/trudslev/taperot-audio-plugin",
+      "revision": "64dfc9b29fa38096fb6ed012532adadb09f4abb5",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 95% of 57 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "typemd",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/typemd/typemd",
+      "revision": "6c7eaeb24e2b27a048d84ede1db9c21faedebee8",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 95% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "ps1godot",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/BuffJesus/PS1Godot",
+      "revision": "5b846cbafec00791fd27a608ee39be7084e18580",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 95% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "code-pad",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/treytomes/code-pad",
+      "revision": "bd05bdf6d340fb9e5e24d1600486373cb16e1b3a",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 95% of 205 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "endgame",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/endgamec2framework/endgame",
+      "revision": "72dd90b8b0ac2c76d08ea68ef5dc72865dda5627",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "c-code-review-llm",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Axist-Infinit/C-Code-Review-LLM",
+      "revision": "713e11c49d54be4f0231aabb6d3664ed77f4dd1f",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 35 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "emacs-config",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/FenrirZheng/emacs-config",
+      "revision": "cbfca054c5817ed97778bb5231f9535dd546a354",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 139 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "constellate-engine",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Harthor/constellate-engine",
+      "revision": "1d7e96ad76d58d581ab3125a1096ed06963a5b35",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 17 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "principle-product-design",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/adityagupta525/principle-product-design",
+      "revision": "1275710b3440a38d484e34bc614f85b190c90852",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 17 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "math-parser-comparison",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/komapc/math-parser-comparison",
+      "revision": "25131065878db0b7af18dcadae084cf818f9d53e",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 85 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "t-digest",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/NadiaYvette/t-digest",
+      "revision": "9db656c4e60869e174ae07026fa6d8c0c6cd2dad",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 17 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "sweet-search",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/mrsladoje/sweet-search",
+      "revision": "3121508dfe6a22c7a48c65cf9f468ebcce1bc1ff",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "doctrine-database",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/HistoricalChristianFaith/Doctrine-Database",
+      "revision": "0d2b239734e35f5e52853bc52d5574c6183d589d",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "doxygen-guard",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/tvanfossen/doxygen-guard",
+      "revision": "f0c1c6714e3d46882358d037c8c2bab3a2aa095f",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 147 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "mcproslyn",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/MBrekhof/mcpRoslyn",
+      "revision": "bbd1b62019b3271b6dcbb7d03698a6c5037e03e3",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 81 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "fusion-deck",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/raydocs/fusion-deck",
+      "revision": "4bcdcda4c24ce2fa9f0a457c4125dfec0acb79a6",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 48 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "flight-board-piesp",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/disclaimer8/flight-board-piesp",
+      "revision": "34ec410af364604f05244cd5571b6a096e176854",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 16 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "code-graph-mcp",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/sdsrss/code-graph-mcp",
+      "revision": "278b300df9c10f16f49dec5555fca368c2c393e5",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "glyph-pdf",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/eliets2/glyph-pdf",
+      "revision": "8444569817478bcda2351e8107d6df5ccf6691ff",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "leonard",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/jasondillingham/leonard",
+      "revision": "d5917d8ed2076f8120b9d5ee3bc28e0675fdf783",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 233 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "md2doc",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/noodlefrenzy/md2doc",
+      "revision": "8e7d53349389fdd5b3e8a32b2e378db1fcf40e44",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 94% of 124 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "tgcurl",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/dblokhin/tgcurl",
+      "revision": "7c148bb10ea06afce89fb6ec15470c4f02367e6c",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 93% of 46 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "dxkit",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/vyuh-labs/dxkit",
+      "revision": "ed9c591d2ab98b3117afd5658c11f629e819681f",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 93% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "chamele-go",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/iszlai/chamele-go",
+      "revision": "8927be29631b787fa4a9b86ac2068d6fb6200870",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 93% of 45 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "encrypted-linux",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/encrypted-execution/encrypted-linux",
+      "revision": "91fa0be3109f62851dbec1b6682bd7af86ce80b7",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 93% of 30 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "coderepomap",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/sputnicyoji/coderepomap",
+      "revision": "684156b25472cae32615c0e6731fa2e5f531c288",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 93% of 43 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "catchchallenger",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/alphaonex86/CatchChallenger",
+      "revision": "f0aa7caeb48c0e13da84138716eca9170f68abef",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 93% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "sharpy",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/antonsynd/sharpy",
+      "revision": "ddec44a0a70704c80e0ca3d7be722e283d9640ac",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 93% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "memory-wiki",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/raymindai/memory-wiki",
+      "revision": "94db3730595fe62b63be74b73aba873ba259e7ef",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 93% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "mantishack",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/deonmenezes/mantishack",
+      "revision": "c3a2e68e57909a2fa88b2d630d2b1fc132f7aac7",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 93% of 197 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "freight-registry",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/freight-app/Freight-registry",
+      "revision": "316d898f616e5408c505f9a2c1fb24a1c692c332",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 92% of 143 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "learn-apps",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/machaniconico/learn-apps",
+      "revision": "c5e33b73066becbf7c86db2c871bf05988be39bd",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 92% of 13 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "backtrack",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Johnsalzarulo/backtrack",
+      "revision": "624d4cd6896584c9c91e4108d131dfa9c9c165ac",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 92% of 103 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "cleat",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/cleat-team/cleat",
+      "revision": "a2b220c9126172fa5c882e49e999e0dbba3b586d",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 92% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "anima",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/seanwinslow28/anima",
+      "revision": "c7a7e791fa356226d5dd6402eaa2fa387b5f6e63",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 92% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "claude-mythos-zeroday",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/stacksry/claude-mythos-zeroday",
+      "revision": "fa4f24da21f4df48238bff6ebf3e6bca428dcaee",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 92% of 12 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "aether-media",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/bhengubv/aether-media",
+      "revision": "df0e11fa4c99bde69e0c20d027f392f1ad6fad80",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 92% of 59 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "math-comp-polyglot",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/kuod/math-comp-polyglot",
+      "revision": "00b35c2359ed3edee22ac244c7fd0771ec8f6682",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 91% of 33 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "osmwalk",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Weichwolf/osmwalk",
+      "revision": "227ea76d3a851117ec8506ba1401e08df6146ea6",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 91% of 120 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "astra-agenticos",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/swarupd227/Astra-AgenticOS",
+      "revision": "5402302aefb95ac1cfa94c5e6c9c57f786fe690d",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 91% of 53 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "zuda",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/yusa-imit/zuda",
+      "revision": "62983b0cded53ef5ee992f68bd1fbd490522a9fe",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 90% of 300 commits inspected; label inferred from that evidence, not independently verified."
+    },
+    {
+      "id": "evercoolthailand",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/RickTew/evercoolthailand",
+      "revision": "7dba403703cbf58c2d4002b2bc7cec252ca10671",
+      "provenance_note": "Claude Code commit trailer (noreply@anthropic.com) on 90% of 183 commits inspected; label inferred from that evidence, not independently verified."
     }
   ]
 }

@@ -1,0 +1,2629 @@
+{
+  "marker": "noreply@anthropic.com",
+  "min_trailer_fraction": 0.9,
+  "min_commits": 5,
+  "quotas_at_cap": {
+    "c": 5205,
+    "cpp": 4862,
+    "csharp": 19,
+    "go": 1904,
+    "java": 3423,
+    "javascript": 1816,
+    "kotlin": 12,
+    "python": 4028,
+    "rust": 1025,
+    "shell": 950,
+    "makefile": 2077,
+    "dockerfile": 87,
+    "perl": 170,
+    "objective-c": 213,
+    "assembly": 3602,
+    "objective-cpp": 303,
+    "r": 1,
+    "elixir": 1,
+    "zig": 1991
+  },
+  "candidates": [
+    {
+      "full_name": "CSP911/poke",
+      "url": "https://github.com/CSP911/poke",
+      "stars": 2,
+      "commits": 146,
+      "commits_inspected": 146,
+      "trailer_fraction": 1.0,
+      "primary_language": "javascript",
+      "languages": {
+        "javascript": 454243,
+        "c": 194111,
+        "assembly": 13843,
+        "makefile": 6271
+      },
+      "disk_usage_kb": 1313,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-18T10:26:45Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "BuilderBenv1/brain-v",
+      "url": "https://github.com/BuilderBenv1/brain-v",
+      "stars": 2,
+      "commits": 187,
+      "commits_inspected": 187,
+      "trailer_fraction": 1.0,
+      "primary_language": "python",
+      "languages": {
+        "python": 1208225,
+        "typescript": 78153,
+        "javascript": 2948,
+        "shell": 709
+      },
+      "disk_usage_kb": 58819,
+      "license": null,
+      "pushed_at": "2026-04-18T14:24:21Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "homesensors/sensorkit",
+      "url": "https://github.com/homesensors/sensorkit",
+      "stars": 1,
+      "commits": 7,
+      "commits_inspected": 7,
+      "trailer_fraction": 1.0,
+      "primary_language": null,
+      "languages": {},
+      "disk_usage_kb": 1108,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-05-15T11:06:56Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "devopscmac/M8HeadlessDarkOS",
+      "url": "https://github.com/devopscmac/M8HeadlessDarkOS",
+      "stars": 1,
+      "commits": 23,
+      "commits_inspected": 23,
+      "trailer_fraction": 1.0,
+      "primary_language": "shell",
+      "languages": {
+        "shell": 79848,
+        "makefile": 3109
+      },
+      "disk_usage_kb": 109,
+      "license": null,
+      "pushed_at": "2026-04-05T22:50:11Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "opensubtitles/oshash",
+      "url": "https://github.com/opensubtitles/oshash",
+      "stars": 1,
+      "commits": 20,
+      "commits_inspected": 20,
+      "trailer_fraction": 1.0,
+      "primary_language": "shell",
+      "languages": {
+        "shell": 26743,
+        "javascript": 20921,
+        "python": 3814,
+        "assembly": 3265
+      },
+      "disk_usage_kb": 12586,
+      "license": "MIT",
+      "pushed_at": "2026-05-30T22:14:55Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "daithi-walker/langs",
+      "url": "https://github.com/daithi-walker/langs",
+      "stars": 0,
+      "commits": 10,
+      "commits_inspected": 10,
+      "trailer_fraction": 1.0,
+      "primary_language": "c",
+      "languages": {
+        "c": 264103,
+        "cpp": 103254,
+        "python": 24938,
+        "java": 15271,
+        "rust": 14220,
+        "go": 11879,
+        "typescript": 11848
+      },
+      "disk_usage_kb": 2473,
+      "license": null,
+      "pushed_at": "2026-06-29T16:32:58Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "deepumadhusudan-sudo/program_solutions",
+      "url": "https://github.com/deepumadhusudan-sudo/program_solutions",
+      "stars": 0,
+      "commits": 10,
+      "commits_inspected": 10,
+      "trailer_fraction": 1.0,
+      "primary_language": "python",
+      "languages": {
+        "python": 23426
+      },
+      "disk_usage_kb": 54,
+      "license": null,
+      "pushed_at": "2026-07-11T16:07:38Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "HermesSilva/Nheengeta",
+      "url": "https://github.com/HermesSilva/Nheengeta",
+      "stars": 0,
+      "commits": 26,
+      "commits_inspected": 26,
+      "trailer_fraction": 1.0,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 114652,
+        "javascript": 10021,
+        "powershell": 1260
+      },
+      "disk_usage_kb": 137,
+      "license": "MIT",
+      "pushed_at": "2026-07-08T04:07:37Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "roykang75/puppet-master",
+      "url": "https://github.com/roykang75/puppet-master",
+      "stars": 0,
+      "commits": 279,
+      "commits_inspected": 279,
+      "trailer_fraction": 1.0,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 866216,
+        "javascript": 10440
+      },
+      "disk_usage_kb": 5462,
+      "license": null,
+      "pushed_at": "2026-07-20T16:13:09Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "ebbanflo/GTRDR",
+      "url": "https://github.com/ebbanflo/GTRDR",
+      "stars": 0,
+      "commits": 5,
+      "commits_inspected": 5,
+      "trailer_fraction": 1.0,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 30174,
+        "shell": 4136
+      },
+      "disk_usage_kb": 18838,
+      "license": null,
+      "pushed_at": "2026-07-24T10:39:46Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "thieudachill/fretart",
+      "url": "https://github.com/thieudachill/fretart",
+      "stars": 0,
+      "commits": 15,
+      "commits_inspected": 15,
+      "trailer_fraction": 1.0,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 234443,
+        "javascript": 8097
+      },
+      "disk_usage_kb": 2081,
+      "license": "MIT",
+      "pushed_at": "2026-07-08T15:16:08Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "mrkimkim/company-maker",
+      "url": "https://github.com/mrkimkim/company-maker",
+      "stars": 0,
+      "commits": 33,
+      "commits_inspected": 33,
+      "trailer_fraction": 1.0,
+      "primary_language": null,
+      "languages": {},
+      "disk_usage_kb": 651,
+      "license": null,
+      "pushed_at": "2026-07-12T23:57:14Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "VZsolt23/CodeEditor",
+      "url": "https://github.com/VZsolt23/CodeEditor",
+      "stars": 0,
+      "commits": 29,
+      "commits_inspected": 29,
+      "trailer_fraction": 1.0,
+      "primary_language": "csharp",
+      "languages": {
+        "csharp": 383916
+      },
+      "disk_usage_kb": 1614,
+      "license": null,
+      "pushed_at": "2026-07-08T09:29:57Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "aurumstylesbrand-source/olympus-analyzer",
+      "url": "https://github.com/aurumstylesbrand-source/olympus-analyzer",
+      "stars": 0,
+      "commits": 180,
+      "commits_inspected": 180,
+      "trailer_fraction": 1.0,
+      "primary_language": "HTML",
+      "languages": {
+        "javascript": 80708,
+        "dockerfile": 319
+      },
+      "disk_usage_kb": 2528,
+      "license": null,
+      "pushed_at": "2026-07-30T04:37:48Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "A61E33BB10/LedgerManifesto",
+      "url": "https://github.com/A61E33BB10/LedgerManifesto",
+      "stars": 0,
+      "commits": 67,
+      "commits_inspected": 67,
+      "trailer_fraction": 1.0,
+      "primary_language": "TeX",
+      "languages": {
+        "makefile": 1440
+      },
+      "disk_usage_kb": 37840,
+      "license": null,
+      "pushed_at": "2026-07-30T01:26:21Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Tonys-Coding/ApplyHQ",
+      "url": "https://github.com/Tonys-Coding/ApplyHQ",
+      "stars": 0,
+      "commits": 22,
+      "commits_inspected": 22,
+      "trailer_fraction": 1.0,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 470851
+      },
+      "disk_usage_kb": 817,
+      "license": null,
+      "pushed_at": "2026-07-27T15:02:02Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "obazin/nix-chess-suite",
+      "url": "https://github.com/obazin/nix-chess-suite",
+      "stars": 0,
+      "commits": 50,
+      "commits_inspected": 50,
+      "trailer_fraction": 1.0,
+      "primary_language": "Nix",
+      "languages": {
+        "shell": 7914,
+        "python": 5616
+      },
+      "disk_usage_kb": 258,
+      "license": "MIT",
+      "pushed_at": "2026-07-28T06:04:03Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "teun64/dev",
+      "url": "https://github.com/teun64/dev",
+      "stars": 0,
+      "commits": 44,
+      "commits_inspected": 44,
+      "trailer_fraction": 1.0,
+      "primary_language": "Apex",
+      "languages": {
+        "javascript": 119653,
+        "shell": 59
+      },
+      "disk_usage_kb": 12330,
+      "license": null,
+      "pushed_at": "2026-07-03T08:27:50Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "libhcl/c-hcl2",
+      "url": "https://github.com/libhcl/c-hcl2",
+      "stars": 0,
+      "commits": 33,
+      "commits_inspected": 33,
+      "trailer_fraction": 1.0,
+      "primary_language": "c",
+      "languages": {
+        "c": 441303,
+        "makefile": 1777,
+        "shell": 277
+      },
+      "disk_usage_kb": 625,
+      "license": "BSD-3-Clause",
+      "pushed_at": "2026-06-20T06:32:29Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "libhcl/c-hcl",
+      "url": "https://github.com/libhcl/c-hcl",
+      "stars": 0,
+      "commits": 5,
+      "commits_inspected": 5,
+      "trailer_fraction": 1.0,
+      "primary_language": "c",
+      "languages": {
+        "c": 25647,
+        "makefile": 1673,
+        "shell": 543
+      },
+      "disk_usage_kb": 22,
+      "license": "BSD-3-Clause",
+      "pushed_at": "2026-06-20T06:32:20Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "unexpear/pirate-game-draft",
+      "url": "https://github.com/unexpear/pirate-game-draft",
+      "stars": 0,
+      "commits": 44,
+      "commits_inspected": 44,
+      "trailer_fraction": 1.0,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 131703,
+        "c": 106852,
+        "javascript": 46356
+      },
+      "disk_usage_kb": 536,
+      "license": "Unlicense",
+      "pushed_at": "2026-07-03T13:34:18Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Foundation42/struple",
+      "url": "https://github.com/Foundation42/struple",
+      "stars": 0,
+      "commits": 53,
+      "commits_inspected": 53,
+      "trailer_fraction": 1.0,
+      "primary_language": "zig",
+      "languages": {
+        "zig": 204739,
+        "c": 174308,
+        "java": 163118,
+        "rust": 159455,
+        "csharp": 158040,
+        "swift": 143028,
+        "cpp": 137070,
+        "kotlin": 126724
+      },
+      "disk_usage_kb": 2376,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-12T19:34:43Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "JHenriquesss/LanguageCodeQualityGates",
+      "url": "https://github.com/JHenriquesss/LanguageCodeQualityGates",
+      "stars": 0,
+      "commits": 14,
+      "commits_inspected": 14,
+      "trailer_fraction": 1.0,
+      "primary_language": "Vim Snippet",
+      "languages": {
+        "javascript": 3386,
+        "elixir": 1427,
+        "ruby": 723
+      },
+      "disk_usage_kb": 551,
+      "license": "MIT",
+      "pushed_at": "2026-06-21T14:47:54Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "dobidu/layerz",
+      "url": "https://github.com/dobidu/layerz",
+      "stars": 0,
+      "commits": 43,
+      "commits_inspected": 43,
+      "trailer_fraction": 1.0,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 119822,
+        "c": 1756
+      },
+      "disk_usage_kb": 510,
+      "license": null,
+      "pushed_at": "2026-05-30T21:25:18Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "kedimomo/formal-atlas",
+      "url": "https://github.com/kedimomo/formal-atlas",
+      "stars": 0,
+      "commits": 69,
+      "commits_inspected": 69,
+      "trailer_fraction": 1.0,
+      "primary_language": "javascript",
+      "languages": {
+        "javascript": 364290
+      },
+      "disk_usage_kb": 613,
+      "license": "GPL-3.0",
+      "pushed_at": "2026-06-16T07:53:43Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "zabooh/lan866x-tools",
+      "url": "https://github.com/zabooh/lan866x-tools",
+      "stars": 0,
+      "commits": 158,
+      "commits_inspected": 158,
+      "trailer_fraction": 1.0,
+      "primary_language": "c",
+      "languages": {
+        "c": 10822947,
+        "python": 154909,
+        "cpp": 34415
+      },
+      "disk_usage_kb": 47055,
+      "license": null,
+      "pushed_at": "2026-07-05T18:47:04Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "xcc1010/mem-manager",
+      "url": "https://github.com/xcc1010/mem-manager",
+      "stars": 0,
+      "commits": 33,
+      "commits_inspected": 33,
+      "trailer_fraction": 1.0,
+      "primary_language": "c",
+      "languages": {
+        "c": 45822,
+        "python": 44931,
+        "shell": 3968
+      },
+      "disk_usage_kb": 16878,
+      "license": null,
+      "pushed_at": "2026-07-30T07:10:12Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "varun6717/code_640011",
+      "url": "https://github.com/varun6717/code_640011",
+      "stars": 0,
+      "commits": 89,
+      "commits_inspected": 89,
+      "trailer_fraction": 1.0,
+      "primary_language": "python",
+      "languages": {
+        "python": 761914,
+        "javascript": 41045,
+        "c": 37597,
+        "makefile": 988,
+        "java": 436
+      },
+      "disk_usage_kb": 854,
+      "license": null,
+      "pushed_at": "2026-07-30T02:22:18Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "firtklc/MyVoice",
+      "url": "https://github.com/firtklc/MyVoice",
+      "stars": 0,
+      "commits": 19,
+      "commits_inspected": 19,
+      "trailer_fraction": 1.0,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 104115,
+        "c": 67529,
+        "swift": 38895,
+        "shell": 703
+      },
+      "disk_usage_kb": 2129,
+      "license": null,
+      "pushed_at": "2026-05-20T12:36:08Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Kesendo/R-equals-C-Psi-squared",
+      "url": "https://github.com/Kesendo/R-equals-C-Psi-squared",
+      "stars": 0,
+      "commits": 3997,
+      "commits_inspected": 300,
+      "trailer_fraction": 1.0,
+      "primary_language": "csharp",
+      "languages": {
+        "csharp": 11306996,
+        "python": 11217354,
+        "javascript": 11995,
+        "shell": 3956
+      },
+      "disk_usage_kb": 203839,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-07-31T06:47:42Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "comsa33/PaperLand",
+      "url": "https://github.com/comsa33/PaperLand",
+      "stars": 0,
+      "commits": 33,
+      "commits_inspected": 33,
+      "trailer_fraction": 1.0,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 108173,
+        "python": 100714,
+        "makefile": 2127,
+        "javascript": 1444
+      },
+      "disk_usage_kb": 1087,
+      "license": null,
+      "pushed_at": "2026-05-10T14:03:05Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "gabrilend/soramech",
+      "url": "https://github.com/gabrilend/soramech",
+      "stars": 0,
+      "commits": 216,
+      "commits_inspected": 216,
+      "trailer_fraction": 1.0,
+      "primary_language": "c",
+      "languages": {
+        "c": 737590,
+        "javascript": 216090,
+        "shell": 91185,
+        "makefile": 13862
+      },
+      "disk_usage_kb": 39295,
+      "license": null,
+      "pushed_at": "2026-07-23T01:50:22Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "thayronarrais/bomberman-vscode",
+      "url": "https://github.com/thayronarrais/bomberman-vscode",
+      "stars": 0,
+      "commits": 57,
+      "commits_inspected": 57,
+      "trailer_fraction": 1.0,
+      "primary_language": "javascript",
+      "languages": {
+        "javascript": 105924,
+        "typescript": 6425
+      },
+      "disk_usage_kb": 47551,
+      "license": null,
+      "pushed_at": "2026-04-12T10:04:05Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "chronista-club/autocad-mcp",
+      "url": "https://github.com/chronista-club/autocad-mcp",
+      "stars": 0,
+      "commits": 7,
+      "commits_inspected": 7,
+      "trailer_fraction": 1.0,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 49714,
+        "rust": 18068
+      },
+      "disk_usage_kb": 47,
+      "license": "MIT",
+      "pushed_at": "2026-04-13T09:14:35Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "nagato0614/copilot_memory",
+      "url": "https://github.com/nagato0614/copilot_memory",
+      "stars": 0,
+      "commits": 12,
+      "commits_inspected": 12,
+      "trailer_fraction": 1.0,
+      "primary_language": "python",
+      "languages": {
+        "python": 97810,
+        "shell": 5063,
+        "dockerfile": 829
+      },
+      "disk_usage_kb": 101,
+      "license": null,
+      "pushed_at": "2026-03-26T12:47:01Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "ovr/crabgresql",
+      "url": "https://github.com/ovr/crabgresql",
+      "stars": 2,
+      "commits": 66688,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9967,
+      "primary_language": "c",
+      "languages": {
+        "c": 51510049,
+        "rust": 35169405,
+        "perl": 3045192,
+        "python": 736208,
+        "makefile": 408007
+      },
+      "disk_usage_kb": 391386,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-07-17T11:31:59Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Outsourcetel/dreamteam-ai",
+      "url": "https://github.com/Outsourcetel/dreamteam-ai",
+      "stars": 0,
+      "commits": 922,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9967,
+      "primary_language": "PLpgSQL",
+      "languages": {
+        "typescript": 5832666,
+        "javascript": 135016,
+        "shell": 19994,
+        "dockerfile": 376
+      },
+      "disk_usage_kb": 7991,
+      "license": null,
+      "pushed_at": "2026-07-29T19:13:18Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "i2s-dev/LearnEVO",
+      "url": "https://github.com/i2s-dev/LearnEVO",
+      "stars": 0,
+      "commits": 816,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9967,
+      "primary_language": "python",
+      "languages": {
+        "python": 1896495,
+        "powershell": 24883,
+        "javascript": 23294,
+        "dockerfile": 1003
+      },
+      "disk_usage_kb": 91787,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-07-08T16:59:55Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "bangdevlabs/bpp",
+      "url": "https://github.com/bangdevlabs/bpp",
+      "stars": 0,
+      "commits": 907,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9967,
+      "primary_language": "c",
+      "languages": {
+        "c": 6934558,
+        "python": 124294,
+        "shell": 82678
+      },
+      "disk_usage_kb": 58241,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-13T14:30:09Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "dcharlot-physicalai-bmi/ferric",
+      "url": "https://github.com/dcharlot-physicalai-bmi/ferric",
+      "stars": 1,
+      "commits": 231,
+      "commits_inspected": 231,
+      "trailer_fraction": 0.9957,
+      "primary_language": "rust",
+      "languages": {
+        "rust": 13588758,
+        "javascript": 26966,
+        "python": 11410,
+        "typescript": 10632,
+        "shell": 5286
+      },
+      "disk_usage_kb": 4617,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-28T08:22:56Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "jounlai/langmap",
+      "url": "https://github.com/jounlai/langmap",
+      "stars": 8,
+      "commits": 1982,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9933,
+      "primary_language": "javascript",
+      "languages": {
+        "javascript": 13332096,
+        "python": 23133,
+        "shell": 3220
+      },
+      "disk_usage_kb": 83056,
+      "license": null,
+      "pushed_at": "2026-07-30T00:19:24Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "DevinWatson/ClaudeMax",
+      "url": "https://github.com/DevinWatson/ClaudeMax",
+      "stars": 0,
+      "commits": 118,
+      "commits_inspected": 118,
+      "trailer_fraction": 0.9915,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 47678,
+        "javascript": 604
+      },
+      "disk_usage_kb": 3718,
+      "license": "MIT",
+      "pushed_at": "2026-06-03T20:57:28Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "PatrickChoumi/theory",
+      "url": "https://github.com/PatrickChoumi/theory",
+      "stars": 0,
+      "commits": 116,
+      "commits_inspected": 116,
+      "trailer_fraction": 0.9914,
+      "primary_language": "javascript",
+      "languages": {
+        "javascript": 5912204,
+        "python": 894
+      },
+      "disk_usage_kb": 2751,
+      "license": null,
+      "pushed_at": "2026-07-25T09:36:55Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "zulfiqaralimir/bytewise",
+      "url": "https://github.com/zulfiqaralimir/bytewise",
+      "stars": 0,
+      "commits": 345,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.99,
+      "primary_language": "MDX",
+      "languages": {
+        "typescript": 535599,
+        "javascript": 2758
+      },
+      "disk_usage_kb": 19354,
+      "license": null,
+      "pushed_at": "2026-07-24T04:13:50Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Rohitbhakare/creatorhub",
+      "url": "https://github.com/Rohitbhakare/creatorhub",
+      "stars": 0,
+      "commits": 201,
+      "commits_inspected": 201,
+      "trailer_fraction": 0.99,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 3061178,
+        "javascript": 20063,
+        "shell": 4735,
+        "dockerfile": 2560
+      },
+      "disk_usage_kb": 77073,
+      "license": null,
+      "pushed_at": "2026-05-06T02:46:15Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "skbays03/absentia",
+      "url": "https://github.com/skbays03/absentia",
+      "stars": 7,
+      "commits": 180,
+      "commits_inspected": 180,
+      "trailer_fraction": 0.9889,
+      "primary_language": "python",
+      "languages": {
+        "python": 931890,
+        "shell": 27753
+      },
+      "disk_usage_kb": 1133,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-05-09T18:44:38Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "garazdawi/claude-scanner",
+      "url": "https://github.com/garazdawi/claude-scanner",
+      "stars": 1,
+      "commits": 174,
+      "commits_inspected": 174,
+      "trailer_fraction": 0.9885,
+      "primary_language": "elixir",
+      "languages": {
+        "elixir": 416403,
+        "shell": 70512,
+        "dockerfile": 2036
+      },
+      "disk_usage_kb": 754,
+      "license": null,
+      "pushed_at": "2026-06-25T11:01:13Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "TechBadji/pyexam",
+      "url": "https://github.com/TechBadji/pyexam",
+      "stars": 0,
+      "commits": 79,
+      "commits_inspected": 79,
+      "trailer_fraction": 0.9873,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 425332,
+        "python": 282656,
+        "shell": 6855,
+        "dockerfile": 1197,
+        "javascript": 81
+      },
+      "disk_usage_kb": 533,
+      "license": null,
+      "pushed_at": "2026-05-27T11:43:17Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "kingimann/OkaySpaceGameEngine",
+      "url": "https://github.com/kingimann/OkaySpaceGameEngine",
+      "stars": 0,
+      "commits": 1214,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9867,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 6369591,
+        "c": 247246,
+        "shell": 12607
+      },
+      "disk_usage_kb": 1294144,
+      "license": "MIT",
+      "pushed_at": "2026-07-13T04:13:08Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "cfpperche/de_served",
+      "url": "https://github.com/cfpperche/de_served",
+      "stars": 0,
+      "commits": 716,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9867,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 265107,
+        "shell": 59042,
+        "python": 47760,
+        "powershell": 5245,
+        "c": 1944
+      },
+      "disk_usage_kb": 29673,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-06-25T12:33:38Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "RealNobser/QTmux",
+      "url": "https://github.com/RealNobser/QTmux",
+      "stars": 0,
+      "commits": 253,
+      "commits_inspected": 253,
+      "trailer_fraction": 0.9842,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 692042,
+        "powershell": 33095,
+        "shell": 21790
+      },
+      "disk_usage_kb": 4038,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-30T22:52:58Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "christina-romero/experience-bot",
+      "url": "https://github.com/christina-romero/experience-bot",
+      "stars": 0,
+      "commits": 62,
+      "commits_inspected": 62,
+      "trailer_fraction": 0.9839,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 2048792,
+        "javascript": 1122
+      },
+      "disk_usage_kb": 387,
+      "license": null,
+      "pushed_at": "2026-07-17T19:08:35Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "dujeonglee/agent-cli",
+      "url": "https://github.com/dujeonglee/agent-cli",
+      "stars": 2,
+      "commits": 965,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9833,
+      "primary_language": "python",
+      "languages": {
+        "python": 3570933,
+        "javascript": 179226,
+        "rust": 954,
+        "java": 883,
+        "typescript": 876,
+        "go": 838
+      },
+      "disk_usage_kb": 12698,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-27T00:20:26Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "dan-eicher/BBQ",
+      "url": "https://github.com/dan-eicher/BBQ",
+      "stars": 0,
+      "commits": 60,
+      "commits_inspected": 60,
+      "trailer_fraction": 0.9833,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 2533078,
+        "c": 154131,
+        "python": 68913,
+        "shell": 1686
+      },
+      "disk_usage_kb": 1862,
+      "license": "Unlicense",
+      "pushed_at": "2026-07-24T16:47:55Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "carsten-paul-code/tibetan-cat.el",
+      "url": "https://github.com/carsten-paul-code/tibetan-cat.el",
+      "stars": 0,
+      "commits": 412,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9833,
+      "primary_language": "Emacs Lisp",
+      "languages": {
+        "javascript": 28523,
+        "python": 22930,
+        "shell": 20201,
+        "makefile": 5273
+      },
+      "disk_usage_kb": 13593,
+      "license": "GPL-3.0",
+      "pushed_at": "2026-06-18T08:31:58Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "katekling-stack/Promo-Operations",
+      "url": "https://github.com/katekling-stack/Promo-Operations",
+      "stars": 0,
+      "commits": 113,
+      "commits_inspected": 113,
+      "trailer_fraction": 0.9823,
+      "primary_language": "python",
+      "languages": {
+        "python": 399348
+      },
+      "disk_usage_kb": 848,
+      "license": null,
+      "pushed_at": "2026-07-31T00:05:58Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Albertoie710231/basi-cli",
+      "url": "https://github.com/Albertoie710231/basi-cli",
+      "stars": 0,
+      "commits": 161,
+      "commits_inspected": 161,
+      "trailer_fraction": 0.9814,
+      "primary_language": "c",
+      "languages": {
+        "c": 953430,
+        "cpp": 35687,
+        "shell": 30718,
+        "python": 10094,
+        "makefile": 1379
+      },
+      "disk_usage_kb": 1792,
+      "license": "MIT",
+      "pushed_at": "2026-07-24T04:08:04Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Zanzagar/project-template",
+      "url": "https://github.com/Zanzagar/project-template",
+      "stars": 0,
+      "commits": 215,
+      "commits_inspected": 215,
+      "trailer_fraction": 0.9814,
+      "primary_language": "shell",
+      "languages": {
+        "shell": 284447,
+        "python": 195281,
+        "javascript": 157889,
+        "makefile": 287
+      },
+      "disk_usage_kb": 4805,
+      "license": "MIT",
+      "pushed_at": "2026-03-27T02:11:28Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "ptarjan/ingglish",
+      "url": "https://github.com/ptarjan/ingglish",
+      "stars": 8,
+      "commits": 2322,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.98,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 2359699,
+        "javascript": 51300,
+        "python": 7529
+      },
+      "disk_usage_kb": 12295,
+      "license": "MIT",
+      "pushed_at": "2026-07-14T04:35:39Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "blurman-ai/leadline",
+      "url": "https://github.com/blurman-ai/leadline",
+      "stars": 0,
+      "commits": 420,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.98,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 1691864,
+        "python": 147891,
+        "javascript": 41724,
+        "shell": 18892
+      },
+      "disk_usage_kb": 4726,
+      "license": "MIT",
+      "pushed_at": "2026-07-21T13:58:50Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "SoerenWilkening/Sturm_CPP",
+      "url": "https://github.com/SoerenWilkening/Sturm_CPP",
+      "stars": 0,
+      "commits": 647,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.98,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 6363613,
+        "python": 92620,
+        "shell": 23749,
+        "c": 21302,
+        "dockerfile": 4915,
+        "ruby": 2551
+      },
+      "disk_usage_kb": 7246,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-05-20T11:50:26Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "pererikbergman/noupling",
+      "url": "https://github.com/pererikbergman/noupling",
+      "stars": 0,
+      "commits": 232,
+      "commits_inspected": 232,
+      "trailer_fraction": 0.9784,
+      "primary_language": "rust",
+      "languages": {
+        "rust": 722586,
+        "typescript": 234413,
+        "shell": 5001,
+        "javascript": 1679,
+        "dockerfile": 209
+      },
+      "disk_usage_kb": 2341,
+      "license": "MIT",
+      "pushed_at": "2026-06-06T03:47:49Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "chsoares/pwnpath",
+      "url": "https://github.com/chsoares/pwnpath",
+      "stars": 0,
+      "commits": 45,
+      "commits_inspected": 45,
+      "trailer_fraction": 0.9778,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 34742,
+        "javascript": 559
+      },
+      "disk_usage_kb": 995,
+      "license": null,
+      "pushed_at": "2026-03-22T22:59:23Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Crazytieguy/precis",
+      "url": "https://github.com/Crazytieguy/precis",
+      "stars": 1,
+      "commits": 517,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9767,
+      "primary_language": "rust",
+      "languages": {
+        "rust": 302199,
+        "shell": 11377
+      },
+      "disk_usage_kb": 8264,
+      "license": null,
+      "pushed_at": "2026-04-09T13:13:35Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "elmarco/msys2-cross",
+      "url": "https://github.com/elmarco/msys2-cross",
+      "stars": 0,
+      "commits": 124,
+      "commits_inspected": 124,
+      "trailer_fraction": 0.9758,
+      "primary_language": "shell",
+      "languages": {
+        "shell": 145451,
+        "dockerfile": 6926,
+        "makefile": 372
+      },
+      "disk_usage_kb": 309,
+      "license": null,
+      "pushed_at": "2026-06-18T14:20:46Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "nktkt/dotjava",
+      "url": "https://github.com/nktkt/dotjava",
+      "stars": 0,
+      "commits": 38,
+      "commits_inspected": 38,
+      "trailer_fraction": 0.9737,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 7392614,
+        "javascript": 559
+      },
+      "disk_usage_kb": 2426,
+      "license": null,
+      "pushed_at": "2026-03-23T13:27:56Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "figure-team/DS-NAVI",
+      "url": "https://github.com/figure-team/DS-NAVI",
+      "stars": 0,
+      "commits": 891,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9733,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 5923874,
+        "javascript": 760057,
+        "python": 164888,
+        "java": 52909,
+        "shell": 21061,
+        "powershell": 11011,
+        "kotlin": 3631
+      },
+      "disk_usage_kb": 93781,
+      "license": "MIT",
+      "pushed_at": "2026-07-31T05:43:11Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "MehmetTopuz/driverge-mcp",
+      "url": "https://github.com/MehmetTopuz/driverge-mcp",
+      "stars": 2,
+      "commits": 106,
+      "commits_inspected": 106,
+      "trailer_fraction": 0.9717,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 676471,
+        "javascript": 5285
+      },
+      "disk_usage_kb": 616,
+      "license": "MIT",
+      "pushed_at": "2026-07-11T18:20:15Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "jagmeetchawla/rustic-playground",
+      "url": "https://github.com/jagmeetchawla/rustic-playground",
+      "stars": 6,
+      "commits": 242,
+      "commits_inspected": 242,
+      "trailer_fraction": 0.9711,
+      "primary_language": "Svelte",
+      "languages": {
+        "rust": 395012,
+        "typescript": 56624,
+        "shell": 13648,
+        "python": 8960
+      },
+      "disk_usage_kb": 61998,
+      "license": "MIT",
+      "pushed_at": "2026-07-22T01:46:44Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "deftio/triepack",
+      "url": "https://github.com/deftio/triepack",
+      "stars": 1,
+      "commits": 34,
+      "commits_inspected": 34,
+      "trailer_fraction": 0.9706,
+      "primary_language": "c",
+      "languages": {
+        "c": 495747,
+        "java": 66614,
+        "rust": 66323,
+        "javascript": 60182,
+        "python": 50322,
+        "kotlin": 49363,
+        "go": 46216,
+        "swift": 43152
+      },
+      "disk_usage_kb": 628,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-03-09T04:07:19Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "VEHO-DOMI/domigo-v2",
+      "url": "https://github.com/VEHO-DOMI/domigo-v2",
+      "stars": 0,
+      "commits": 320,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.97,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 2730823,
+        "python": 228984,
+        "javascript": 162014
+      },
+      "disk_usage_kb": 281136,
+      "license": null,
+      "pushed_at": "2026-07-29T21:06:23Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "getajob-careers/get-a-job",
+      "url": "https://github.com/getajob-careers/get-a-job",
+      "stars": 0,
+      "commits": 1076,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.97,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 6992798,
+        "javascript": 4275631,
+        "python": 31880,
+        "shell": 4047
+      },
+      "disk_usage_kb": 75786,
+      "license": null,
+      "pushed_at": "2026-07-28T16:17:18Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "janekbt/MeditationApp",
+      "url": "https://github.com/janekbt/MeditationApp",
+      "stars": 0,
+      "commits": 958,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.97,
+      "primary_language": "rust",
+      "languages": {
+        "rust": 2761866,
+        "kotlin": 76615,
+        "shell": 40572,
+        "python": 1032
+      },
+      "disk_usage_kb": 12503,
+      "license": "GPL-3.0",
+      "pushed_at": "2026-07-28T16:19:44Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "KarpelesLab/goro",
+      "url": "https://github.com/KarpelesLab/goro",
+      "stars": 696,
+      "commits": 1924,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9667,
+      "primary_language": "PHP",
+      "languages": {
+        "go": 5235308,
+        "shell": 3041,
+        "makefile": 956,
+        "c": 73
+      },
+      "disk_usage_kb": 22730,
+      "license": "BSD-3-Clause",
+      "pushed_at": "2026-05-26T05:53:37Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "freight-app/Freight",
+      "url": "https://github.com/freight-app/Freight",
+      "stars": 4,
+      "commits": 685,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9667,
+      "primary_language": "rust",
+      "languages": {
+        "rust": 2588005
+      },
+      "disk_usage_kb": 79565,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-07-17T15:21:37Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "weironz/mica",
+      "url": "https://github.com/weironz/mica",
+      "stars": 0,
+      "commits": 953,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9667,
+      "primary_language": "Dart",
+      "languages": {
+        "rust": 1699110,
+        "shell": 36708,
+        "cpp": 29090,
+        "javascript": 21511
+      },
+      "disk_usage_kb": 29138,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-07-31T03:26:53Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "wren-creator/claude-tools",
+      "url": "https://github.com/wren-creator/claude-tools",
+      "stars": 0,
+      "commits": 29,
+      "commits_inspected": 29,
+      "trailer_fraction": 0.9655,
+      "primary_language": "python",
+      "languages": {
+        "python": 74920
+      },
+      "disk_usage_kb": 123,
+      "license": "GPL-3.0",
+      "pushed_at": "2026-07-29T14:50:21Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "nafud/kiln",
+      "url": "https://github.com/nafud/kiln",
+      "stars": 6,
+      "commits": 144,
+      "commits_inspected": 144,
+      "trailer_fraction": 0.9653,
+      "primary_language": "python",
+      "languages": {
+        "python": 19064
+      },
+      "disk_usage_kb": 1081,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-07-31T06:21:46Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "fschutt/azul",
+      "url": "https://github.com/fschutt/azul",
+      "stars": 6111,
+      "commits": 7613,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9633,
+      "primary_language": "rust",
+      "languages": {
+        "rust": 32759931,
+        "shell": 656545,
+        "javascript": 580867,
+        "python": 290460,
+        "c": 126665,
+        "cpp": 55314
+      },
+      "disk_usage_kb": 92659,
+      "license": "MIT",
+      "pushed_at": "2026-07-30T22:09:57Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "HA7CH/job-pro",
+      "url": "https://github.com/HA7CH/job-pro",
+      "stars": 20,
+      "commits": 210,
+      "commits_inspected": 210,
+      "trailer_fraction": 0.9619,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 1118585,
+        "javascript": 42179,
+        "python": 40343
+      },
+      "disk_usage_kb": 2874,
+      "license": "MIT",
+      "pushed_at": "2026-07-13T16:40:28Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "delfianto/lychee",
+      "url": "https://github.com/delfianto/lychee",
+      "stars": 0,
+      "commits": 183,
+      "commits_inspected": 183,
+      "trailer_fraction": 0.9617,
+      "primary_language": "python",
+      "languages": {
+        "python": 649469,
+        "typescript": 208480,
+        "javascript": 9666,
+        "shell": 5331
+      },
+      "disk_usage_kb": 1801,
+      "license": "MIT",
+      "pushed_at": "2026-07-28T18:37:04Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "shen390s/structify",
+      "url": "https://github.com/shen390s/structify",
+      "stars": 0,
+      "commits": 26,
+      "commits_inspected": 26,
+      "trailer_fraction": 0.9615,
+      "primary_language": "Haskell",
+      "languages": {},
+      "disk_usage_kb": 185,
+      "license": null,
+      "pushed_at": "2026-04-24T13:44:46Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "shenlian19831109/progmune-runtime",
+      "url": "https://github.com/shenlian19831109/progmune-runtime",
+      "stars": 3,
+      "commits": 543,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.96,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 3637948,
+        "shell": 122081,
+        "javascript": 73478,
+        "python": 51213,
+        "c": 1771,
+        "dockerfile": 209
+      },
+      "disk_usage_kb": 43701,
+      "license": null,
+      "pushed_at": "2026-07-28T12:44:13Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "erspicu/AprVisual",
+      "url": "https://github.com/erspicu/AprVisual",
+      "stars": 2,
+      "commits": 1087,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.96,
+      "primary_language": "csharp",
+      "languages": {
+        "csharp": 3972544,
+        "python": 390431,
+        "rust": 201673,
+        "javascript": 48395,
+        "powershell": 41204,
+        "cpp": 38597
+      },
+      "disk_usage_kb": 15249,
+      "license": null,
+      "pushed_at": "2026-07-24T16:58:32Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "austenhughes1/endurancesciencelabs",
+      "url": "https://github.com/austenhughes1/endurancesciencelabs",
+      "stars": 0,
+      "commits": 424,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.96,
+      "primary_language": "HTML",
+      "languages": {
+        "javascript": 815833
+      },
+      "disk_usage_kb": 63754,
+      "license": null,
+      "pushed_at": "2026-07-22T20:01:29Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "miroku0000/AI-Security-Benchmark",
+      "url": "https://github.com/miroku0000/AI-Security-Benchmark",
+      "stars": 0,
+      "commits": 210,
+      "commits_inspected": 210,
+      "trailer_fraction": 0.9571,
+      "primary_language": "HTML",
+      "languages": {
+        "python": 173206697,
+        "javascript": 102928416,
+        "java": 81350283,
+        "swift": 29732359,
+        "csharp": 23855723,
+        "go": 20423648,
+        "cpp": 20379696
+      },
+      "disk_usage_kb": 337660,
+      "license": null,
+      "pushed_at": "2026-05-01T18:54:03Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "pprettysimpple/bld",
+      "url": "https://github.com/pprettysimpple/bld",
+      "stars": 1,
+      "commits": 92,
+      "commits_inspected": 92,
+      "trailer_fraction": 0.9565,
+      "primary_language": "c",
+      "languages": {
+        "c": 235635,
+        "shell": 6561,
+        "cpp": 128
+      },
+      "disk_usage_kb": 648,
+      "license": "MIT",
+      "pushed_at": "2026-04-06T07:18:38Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "barum/tessera",
+      "url": "https://github.com/barum/tessera",
+      "stars": 0,
+      "commits": 92,
+      "commits_inspected": 92,
+      "trailer_fraction": 0.9565,
+      "primary_language": "python",
+      "languages": {
+        "python": 414384,
+        "c": 329950,
+        "javascript": 184813,
+        "java": 164095,
+        "go": 131167,
+        "rust": 124526,
+        "cpp": 114580
+      },
+      "disk_usage_kb": 26661,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-06-20T19:09:32Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "gen0cide/westworld",
+      "url": "https://github.com/gen0cide/westworld",
+      "stars": 4,
+      "commits": 443,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9533,
+      "primary_language": "go",
+      "languages": {
+        "go": 4292767,
+        "javascript": 102598,
+        "shell": 30589,
+        "python": 15488
+      },
+      "disk_usage_kb": 6396,
+      "license": "AGPL-3.0",
+      "pushed_at": "2026-06-12T02:41:38Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "jillyz250/crazy4points_V2",
+      "url": "https://github.com/jillyz250/crazy4points_V2",
+      "stars": 0,
+      "commits": 1374,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9533,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 4482836,
+        "javascript": 468469,
+        "python": 91189,
+        "shell": 3289
+      },
+      "disk_usage_kb": 18444,
+      "license": null,
+      "pushed_at": "2026-07-30T20:10:22Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "abbaye/WpfHexEditorIDE",
+      "url": "https://github.com/abbaye/WpfHexEditorIDE",
+      "stars": 926,
+      "commits": 3834,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.95,
+      "primary_language": "csharp",
+      "languages": {
+        "csharp": 20782907,
+        "powershell": 208140,
+        "python": 89013,
+        "javascript": 27010
+      },
+      "disk_usage_kb": 68037,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-06-29T14:41:16Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "khthana/grader",
+      "url": "https://github.com/khthana/grader",
+      "stars": 0,
+      "commits": 134,
+      "commits_inspected": 134,
+      "trailer_fraction": 0.9478,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 785843,
+        "dockerfile": 1650,
+        "javascript": 559
+      },
+      "disk_usage_kb": 1198,
+      "license": null,
+      "pushed_at": "2026-06-29T12:34:30Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "trudslev/taperot-audio-plugin",
+      "url": "https://github.com/trudslev/taperot-audio-plugin",
+      "stars": 0,
+      "commits": 57,
+      "commits_inspected": 57,
+      "trailer_fraction": 0.9474,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 297598,
+        "c": 1118
+      },
+      "disk_usage_kb": 7084,
+      "license": null,
+      "pushed_at": "2026-07-10T12:22:38Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "typemd/typemd",
+      "url": "https://github.com/typemd/typemd",
+      "stars": 9,
+      "commits": 309,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9467,
+      "primary_language": "go",
+      "languages": {
+        "go": 1606613,
+        "shell": 10120,
+        "javascript": 5822,
+        "typescript": 2280
+      },
+      "disk_usage_kb": 4386,
+      "license": "MIT",
+      "pushed_at": "2026-04-19T14:28:58Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "BuffJesus/PS1Godot",
+      "url": "https://github.com/BuffJesus/PS1Godot",
+      "stars": 1,
+      "commits": 609,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9467,
+      "primary_language": "csharp",
+      "languages": {
+        "csharp": 1637349,
+        "cpp": 1071414,
+        "c": 835104,
+        "python": 475195,
+        "assembly": 184967
+      },
+      "disk_usage_kb": 15376,
+      "license": null,
+      "pushed_at": "2026-05-29T20:23:55Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "treytomes/code-pad",
+      "url": "https://github.com/treytomes/code-pad",
+      "stars": 0,
+      "commits": 205,
+      "commits_inspected": 205,
+      "trailer_fraction": 0.9463,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 524446,
+        "shell": 12468,
+        "javascript": 7993,
+        "powershell": 5093,
+        "python": 2357
+      },
+      "disk_usage_kb": 1338,
+      "license": "MIT",
+      "pushed_at": "2026-05-18T16:26:28Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "endgamec2framework/endgame",
+      "url": "https://github.com/endgamec2framework/endgame",
+      "stars": 22,
+      "commits": 418,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9433,
+      "primary_language": "c",
+      "languages": {
+        "c": 19793734,
+        "go": 1319514,
+        "rust": 407966,
+        "shell": 30274,
+        "assembly": 17364,
+        "python": 12100
+      },
+      "disk_usage_kb": 106831,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-07-30T14:32:03Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Axist-Infinit/C-Code-Review-LLM",
+      "url": "https://github.com/Axist-Infinit/C-Code-Review-LLM",
+      "stars": 0,
+      "commits": 35,
+      "commits_inspected": 35,
+      "trailer_fraction": 0.9429,
+      "primary_language": "c",
+      "languages": {
+        "c": 1328975,
+        "cpp": 783292,
+        "python": 632669,
+        "shell": 87175
+      },
+      "disk_usage_kb": 14152,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-07-24T18:30:52Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "FenrirZheng/emacs-config",
+      "url": "https://github.com/FenrirZheng/emacs-config",
+      "stars": 0,
+      "commits": 139,
+      "commits_inspected": 139,
+      "trailer_fraction": 0.9424,
+      "primary_language": "Emacs Lisp",
+      "languages": {
+        "makefile": 25394,
+        "rust": 22855,
+        "cpp": 19128,
+        "javascript": 16917,
+        "shell": 15073,
+        "c": 395
+      },
+      "disk_usage_kb": 1310,
+      "license": null,
+      "pushed_at": "2026-07-10T07:08:37Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Harthor/constellate-engine",
+      "url": "https://github.com/Harthor/constellate-engine",
+      "stars": 1,
+      "commits": 17,
+      "commits_inspected": 17,
+      "trailer_fraction": 0.9412,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 158857,
+        "javascript": 433
+      },
+      "disk_usage_kb": 213,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-07-21T18:46:20Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "adityagupta525/principle-product-design",
+      "url": "https://github.com/adityagupta525/principle-product-design",
+      "stars": 0,
+      "commits": 17,
+      "commits_inspected": 17,
+      "trailer_fraction": 0.9412,
+      "primary_language": null,
+      "languages": {},
+      "disk_usage_kb": 731,
+      "license": null,
+      "pushed_at": "2026-07-20T17:44:43Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "komapc/math-parser-comparison",
+      "url": "https://github.com/komapc/math-parser-comparison",
+      "stars": 0,
+      "commits": 85,
+      "commits_inspected": 85,
+      "trailer_fraction": 0.9412,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 252664,
+        "python": 55297
+      },
+      "disk_usage_kb": 419,
+      "license": null,
+      "pushed_at": "2026-07-05T11:55:18Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "NadiaYvette/t-digest",
+      "url": "https://github.com/NadiaYvette/t-digest",
+      "stars": 0,
+      "commits": 17,
+      "commits_inspected": 17,
+      "trailer_fraction": 0.9412,
+      "primary_language": "Haskell",
+      "languages": {
+        "rust": 33573,
+        "java": 30249,
+        "zig": 28766
+      },
+      "disk_usage_kb": 920,
+      "license": null,
+      "pushed_at": "2026-03-12T11:26:04Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "mrsladoje/sweet-search",
+      "url": "https://github.com/mrsladoje/sweet-search",
+      "stars": 22,
+      "commits": 1002,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.94,
+      "primary_language": "javascript",
+      "languages": {
+        "javascript": 14862716,
+        "rust": 940024,
+        "python": 316247,
+        "shell": 124178,
+        "objective-c": 27669
+      },
+      "disk_usage_kb": 456589,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-30T21:20:10Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "HistoricalChristianFaith/Doctrine-Database",
+      "url": "https://github.com/HistoricalChristianFaith/Doctrine-Database",
+      "stars": 0,
+      "commits": 1236,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.94,
+      "primary_language": "HTML",
+      "languages": {
+        "python": 13451
+      },
+      "disk_usage_kb": 18799,
+      "license": null,
+      "pushed_at": "2026-07-30T15:15:57Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "tvanfossen/doxygen-guard",
+      "url": "https://github.com/tvanfossen/doxygen-guard",
+      "stars": 0,
+      "commits": 147,
+      "commits_inspected": 147,
+      "trailer_fraction": 0.9388,
+      "primary_language": "python",
+      "languages": {
+        "python": 308596
+      },
+      "disk_usage_kb": 2358,
+      "license": "MIT",
+      "pushed_at": "2026-07-30T20:56:30Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "MBrekhof/mcpRoslyn",
+      "url": "https://github.com/MBrekhof/mcpRoslyn",
+      "stars": 1,
+      "commits": 81,
+      "commits_inspected": 81,
+      "trailer_fraction": 0.9383,
+      "primary_language": "csharp",
+      "languages": {
+        "csharp": 229215
+      },
+      "disk_usage_kb": 310,
+      "license": "MIT",
+      "pushed_at": "2026-06-14T22:03:10Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "raydocs/fusion-deck",
+      "url": "https://github.com/raydocs/fusion-deck",
+      "stars": 1,
+      "commits": 48,
+      "commits_inspected": 48,
+      "trailer_fraction": 0.9375,
+      "primary_language": "shell",
+      "languages": {
+        "shell": 266308,
+        "python": 46297,
+        "javascript": 19292
+      },
+      "disk_usage_kb": 4662,
+      "license": "MIT",
+      "pushed_at": "2026-07-25T23:05:55Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "disclaimer8/flight-board-piesp",
+      "url": "https://github.com/disclaimer8/flight-board-piesp",
+      "stars": 1,
+      "commits": 16,
+      "commits_inspected": 16,
+      "trailer_fraction": 0.9375,
+      "primary_language": "python",
+      "languages": {
+        "python": 44309,
+        "cpp": 22478,
+        "shell": 2319,
+        "c": 2203
+      },
+      "disk_usage_kb": 133,
+      "license": null,
+      "pushed_at": "2026-07-27T03:09:55Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "sdsrss/code-graph-mcp",
+      "url": "https://github.com/sdsrss/code-graph-mcp",
+      "stars": 60,
+      "commits": 999,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9367,
+      "primary_language": "rust",
+      "languages": {
+        "rust": 3703938,
+        "javascript": 1162182,
+        "python": 81200,
+        "shell": 10402
+      },
+      "disk_usage_kb": 10186,
+      "license": "MIT",
+      "pushed_at": "2026-07-30T20:17:15Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "eliets2/glyph-pdf",
+      "url": "https://github.com/eliets2/glyph-pdf",
+      "stars": 15,
+      "commits": 394,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9367,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 2376070,
+        "powershell": 30991,
+        "python": 23593,
+        "shell": 7248,
+        "c": 6107
+      },
+      "disk_usage_kb": 19265,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-06-22T20:28:08Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "jasondillingham/leonard",
+      "url": "https://github.com/jasondillingham/leonard",
+      "stars": 0,
+      "commits": 233,
+      "commits_inspected": 233,
+      "trailer_fraction": 0.9356,
+      "primary_language": "go",
+      "languages": {
+        "go": 1440587,
+        "rust": 59315,
+        "python": 25855,
+        "makefile": 3001
+      },
+      "disk_usage_kb": 3576,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-27T23:43:34Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "noodlefrenzy/md2doc",
+      "url": "https://github.com/noodlefrenzy/md2doc",
+      "stars": 0,
+      "commits": 124,
+      "commits_inspected": 124,
+      "trailer_fraction": 0.9355,
+      "primary_language": "csharp",
+      "languages": {
+        "csharp": 670439,
+        "shell": 1443
+      },
+      "disk_usage_kb": 5599,
+      "license": "MIT",
+      "pushed_at": "2026-03-16T07:18:40Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "dblokhin/tgcurl",
+      "url": "https://github.com/dblokhin/tgcurl",
+      "stars": 1,
+      "commits": 46,
+      "commits_inspected": 46,
+      "trailer_fraction": 0.9348,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 247840,
+        "makefile": 8339,
+        "dockerfile": 2878
+      },
+      "disk_usage_kb": 314,
+      "license": "MIT",
+      "pushed_at": "2026-07-13T10:15:48Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "vyuh-labs/dxkit",
+      "url": "https://github.com/vyuh-labs/dxkit",
+      "stars": 8,
+      "commits": 1163,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9333,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 7781289,
+        "javascript": 183857,
+        "shell": 143066
+      },
+      "disk_usage_kb": 8653,
+      "license": "MIT",
+      "pushed_at": "2026-07-31T02:57:37Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "iszlai/chamele-go",
+      "url": "https://github.com/iszlai/chamele-go",
+      "stars": 1,
+      "commits": 45,
+      "commits_inspected": 45,
+      "trailer_fraction": 0.9333,
+      "primary_language": "go",
+      "languages": {
+        "go": 326056,
+        "shell": 581,
+        "makefile": 280
+      },
+      "disk_usage_kb": 289,
+      "license": "MIT",
+      "pushed_at": "2026-06-03T05:44:45Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "encrypted-execution/encrypted-linux",
+      "url": "https://github.com/encrypted-execution/encrypted-linux",
+      "stars": 0,
+      "commits": 30,
+      "commits_inspected": 30,
+      "trailer_fraction": 0.9333,
+      "primary_language": "shell",
+      "languages": {
+        "shell": 130041,
+        "python": 81717,
+        "cpp": 7559,
+        "makefile": 5684,
+        "c": 249
+      },
+      "disk_usage_kb": 327,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-05-12T16:44:42Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "sputnicyoji/coderepomap",
+      "url": "https://github.com/sputnicyoji/coderepomap",
+      "stars": 3,
+      "commits": 43,
+      "commits_inspected": 43,
+      "trailer_fraction": 0.9302,
+      "primary_language": "python",
+      "languages": {
+        "python": 424560,
+        "shell": 1921,
+        "powershell": 1201
+      },
+      "disk_usage_kb": 280,
+      "license": "MIT",
+      "pushed_at": "2026-06-10T04:44:31Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "alphaonex86/CatchChallenger",
+      "url": "https://github.com/alphaonex86/CatchChallenger",
+      "stars": 57,
+      "commits": 3426,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.93,
+      "primary_language": "c",
+      "languages": {
+        "c": 15514802,
+        "cpp": 12735688,
+        "python": 4065813,
+        "shell": 327055,
+        "makefile": 204469
+      },
+      "disk_usage_kb": 226728,
+      "license": null,
+      "pushed_at": "2026-07-30T22:08:21Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "antonsynd/sharpy",
+      "url": "https://github.com/antonsynd/sharpy",
+      "stars": 2,
+      "commits": 6314,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.93,
+      "primary_language": "csharp",
+      "languages": {
+        "csharp": 17268572,
+        "python": 1498266,
+        "shell": 26748,
+        "typescript": 7401,
+        "javascript": 580
+      },
+      "disk_usage_kb": 37650,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-07-30T12:32:31Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "raymindai/memory-wiki",
+      "url": "https://github.com/raymindai/memory-wiki",
+      "stars": 0,
+      "commits": 2537,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.93,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 9184189,
+        "swift": 7894642,
+        "javascript": 1563365,
+        "kotlin": 424008,
+        "python": 146179
+      },
+      "disk_usage_kb": 257050,
+      "license": null,
+      "pushed_at": "2026-06-27T10:15:09Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "deonmenezes/mantishack",
+      "url": "https://github.com/deonmenezes/mantishack",
+      "stars": 470,
+      "commits": 197,
+      "commits_inspected": 197,
+      "trailer_fraction": 0.9289,
+      "primary_language": "rust",
+      "languages": {
+        "rust": 38664548,
+        "python": 1066430,
+        "javascript": 89381,
+        "typescript": 86475,
+        "shell": 58327,
+        "powershell": 49109
+      },
+      "disk_usage_kb": 169697,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-18T16:11:56Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "freight-app/Freight-registry",
+      "url": "https://github.com/freight-app/Freight-registry",
+      "stars": 1,
+      "commits": 143,
+      "commits_inspected": 143,
+      "trailer_fraction": 0.9231,
+      "primary_language": "rust",
+      "languages": {
+        "rust": 425175,
+        "python": 27315,
+        "javascript": 15825,
+        "dockerfile": 1612
+      },
+      "disk_usage_kb": 239755,
+      "license": "NOASSERTION",
+      "pushed_at": "2026-06-17T22:44:44Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "machaniconico/learn-apps",
+      "url": "https://github.com/machaniconico/learn-apps",
+      "stars": 0,
+      "commits": 13,
+      "commits_inspected": 13,
+      "trailer_fraction": 0.9231,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 17832939,
+        "javascript": 7744,
+        "shell": 2595
+      },
+      "disk_usage_kb": 6350,
+      "license": null,
+      "pushed_at": "2026-07-29T05:01:05Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Johnsalzarulo/backtrack",
+      "url": "https://github.com/Johnsalzarulo/backtrack",
+      "stars": 0,
+      "commits": 103,
+      "commits_inspected": 103,
+      "trailer_fraction": 0.9223,
+      "primary_language": "swift",
+      "languages": {
+        "swift": 485412
+      },
+      "disk_usage_kb": 414,
+      "license": null,
+      "pushed_at": "2026-06-10T03:52:30Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "cleat-team/cleat",
+      "url": "https://github.com/cleat-team/cleat",
+      "stars": 0,
+      "commits": 402,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.92,
+      "primary_language": "go",
+      "languages": {
+        "go": 8439770,
+        "python": 670950,
+        "java": 467320,
+        "typescript": 382238,
+        "rust": 275298,
+        "shell": 60330
+      },
+      "disk_usage_kb": 168506,
+      "license": "Apache-2.0",
+      "pushed_at": "2026-07-06T13:31:43Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "seanwinslow28/anima",
+      "url": "https://github.com/seanwinslow28/anima",
+      "stars": 2,
+      "commits": 330,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9167,
+      "primary_language": "python",
+      "languages": {
+        "python": 2180888,
+        "javascript": 1730569,
+        "typescript": 451543,
+        "shell": 14788
+      },
+      "disk_usage_kb": 386364,
+      "license": null,
+      "pushed_at": "2026-07-22T23:44:10Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "stacksry/claude-mythos-zeroday",
+      "url": "https://github.com/stacksry/claude-mythos-zeroday",
+      "stars": 0,
+      "commits": 12,
+      "commits_inspected": 12,
+      "trailer_fraction": 0.9167,
+      "primary_language": "python",
+      "languages": {
+        "python": 202466,
+        "java": 8254,
+        "c": 4053,
+        "shell": 1300
+      },
+      "disk_usage_kb": 109,
+      "license": null,
+      "pushed_at": "2026-04-10T16:58:01Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "bhengubv/aether-media",
+      "url": "https://github.com/bhengubv/aether-media",
+      "stars": 1,
+      "commits": 59,
+      "commits_inspected": 59,
+      "trailer_fraction": 0.9153,
+      "primary_language": "csharp",
+      "languages": {
+        "csharp": 1714609,
+        "kotlin": 148478,
+        "typescript": 131122,
+        "python": 127539,
+        "c": 76085,
+        "swift": 68268,
+        "go": 61549,
+        "rust": 50142
+      },
+      "disk_usage_kb": 1903,
+      "license": "MIT",
+      "pushed_at": "2026-07-05T05:52:08Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "kuod/math-comp-polyglot",
+      "url": "https://github.com/kuod/math-comp-polyglot",
+      "stars": 1,
+      "commits": 33,
+      "commits_inspected": 33,
+      "trailer_fraction": 0.9091,
+      "primary_language": "HTML",
+      "languages": {
+        "python": 100275,
+        "c": 32220,
+        "swift": 13593,
+        "shell": 11560,
+        "cpp": 10674
+      },
+      "disk_usage_kb": 680,
+      "license": null,
+      "pushed_at": "2026-06-04T05:59:17Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "Weichwolf/osmwalk",
+      "url": "https://github.com/Weichwolf/osmwalk",
+      "stars": 0,
+      "commits": 120,
+      "commits_inspected": 120,
+      "trailer_fraction": 0.9083,
+      "primary_language": "cpp",
+      "languages": {
+        "cpp": 804542,
+        "shell": 662
+      },
+      "disk_usage_kb": 127074,
+      "license": null,
+      "pushed_at": "2026-04-11T15:11:45Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "swarupd227/Astra-AgenticOS",
+      "url": "https://github.com/swarupd227/Astra-AgenticOS",
+      "stars": 0,
+      "commits": 53,
+      "commits_inspected": 53,
+      "trailer_fraction": 0.9057,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 158764,
+        "csharp": 104459,
+        "javascript": 103751,
+        "powershell": 30980,
+        "dockerfile": 2606
+      },
+      "disk_usage_kb": 1618,
+      "license": null,
+      "pushed_at": "2026-07-29T04:39:49Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "yusa-imit/zuda",
+      "url": "https://github.com/yusa-imit/zuda",
+      "stars": 1,
+      "commits": 1853,
+      "commits_inspected": 300,
+      "trailer_fraction": 0.9033,
+      "primary_language": "zig",
+      "languages": {
+        "zig": 15251871,
+        "c": 6221,
+        "shell": 1893
+      },
+      "disk_usage_kb": 18254,
+      "license": null,
+      "pushed_at": "2026-07-21T11:34:24Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    },
+    {
+      "full_name": "RickTew/evercoolthailand",
+      "url": "https://github.com/RickTew/evercoolthailand",
+      "stars": 0,
+      "commits": 183,
+      "commits_inspected": 183,
+      "trailer_fraction": 0.9016,
+      "primary_language": "typescript",
+      "languages": {
+        "typescript": 1730562,
+        "javascript": 7248,
+        "shell": 2227
+      },
+      "disk_usage_kb": 459946,
+      "license": null,
+      "pushed_at": "2026-07-29T10:33:22Z",
+      "suspected_label": 1,
+      "label_name": "ai"
+    }
+  ]
+}

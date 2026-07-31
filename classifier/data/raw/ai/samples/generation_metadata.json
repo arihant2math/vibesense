@@ -1,0 +1,1611 @@
+{
+  "model": "openai-codex/gpt-5.6-luna",
+  "thinking": "low",
+  "seed": "vibesense-samples-v1",
+  "prompt_template": "generate code in {language} that {task}{modifier}. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+  "counts": {
+    "generated": 200
+  },
+  "samples": [
+    {
+      "path": "assembly/0001_two_memory_regions_byte_by.s",
+      "language": "assembly",
+      "task": "compares two memory regions byte by byte",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that compares two memory regions byte by byte, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0002_a_factorial_iteratively.s",
+      "language": "assembly",
+      "task": "computes a factorial iteratively",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that computes a factorial iteratively, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0003_an_array_of_64_bit.s",
+      "language": "assembly",
+      "task": "sums an array of 64-bit integers",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that sums an array of 64-bit integers, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0004_set_bits_across_a_buffer.s",
+      "language": "assembly",
+      "task": "counts set bits across a buffer",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that counts set bits across a buffer, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0005_a_decimal_ascii_string_into.s",
+      "language": "assembly",
+      "task": "parses a decimal ASCII string into an integer",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that parses a decimal ASCII string into an integer, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0006_a_memory_region_forward_with.s",
+      "language": "assembly",
+      "task": "copies a memory region forward with overlap handling",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that copies a memory region forward with overlap handling, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0007_a_decimal_ascii_string_into.s",
+      "language": "assembly",
+      "task": "parses a decimal ASCII string into an integer",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that parses a decimal ASCII string into an integer, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0008_the_maximum_value_in_an.s",
+      "language": "assembly",
+      "task": "finds the maximum value in an integer array",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that finds the maximum value in an integer array, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0009_a_string_to_standard_output.s",
+      "language": "assembly",
+      "task": "writes a string to standard output via a syscall",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that writes a string to standard output via a syscall, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0010_two_memory_regions_byte_by.s",
+      "language": "assembly",
+      "task": "compares two memory regions byte by byte",
+      "modifier": "",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that compares two memory regions byte by byte. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0011_set_bits_across_a_buffer.s",
+      "language": "assembly",
+      "task": "counts set bits across a buffer",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that counts set bits across a buffer, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "assembly/0012_a_factorial_iteratively.s",
+      "language": "assembly",
+      "task": "computes a factorial iteratively",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in x86-64 assembly (GNU as syntax) that computes a factorial iteratively, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0001_a_date_parser_and_formatter.c",
+      "language": "c",
+      "task": "implements a date parser and formatter for ISO 8601 timestamps",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in C that implements a date parser and formatter for ISO 8601 timestamps, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0002_a_write_ahead_log_with.c",
+      "language": "c",
+      "task": "implements a write-ahead log with append and replay",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in C that implements a write-ahead log with append and replay, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0003_a_line_oriented_log_file.c",
+      "language": "c",
+      "task": "implements a line-oriented log file tailer",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in C that implements a line-oriented log file tailer, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0004_atomic_file_writes_via_a.c",
+      "language": "c",
+      "task": "implements atomic file writes via a temporary file and rename",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in C that implements atomic file writes via a temporary file and rename, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0005_a_simple_tcp_echo_server.c",
+      "language": "c",
+      "task": "implements a simple TCP echo server",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in C that implements a simple TCP echo server, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0006_a_task_scheduler_that_runs.c",
+      "language": "c",
+      "task": "implements a task scheduler that runs callbacks at fixed intervals",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in C that implements a task scheduler that runs callbacks at fixed intervals, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0007_a_producer_consumer_pipeline_with.c",
+      "language": "c",
+      "task": "implements a producer-consumer pipeline with bounded handoff",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C that implements a producer-consumer pipeline with bounded handoff, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0008_a_traffic_light_controller_as.c",
+      "language": "c",
+      "task": "implements a traffic light controller as an explicit state machine",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in C that implements a traffic light controller as an explicit state machine, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0009_an_in_memory_key_value.c",
+      "language": "c",
+      "task": "implements an in-memory key-value store with TTL expiry",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in C that implements an in-memory key-value store with TTL expiry, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0010_a_bank_account_ledger_with.c",
+      "language": "c",
+      "task": "implements a bank account ledger with deposits, withdrawals, and balance history",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C that implements a bank account ledger with deposits, withdrawals, and balance history, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0011_an_in_memory_key_value.c",
+      "language": "c",
+      "task": "implements an in-memory key-value store with TTL expiry",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in C that implements an in-memory key-value store with TTL expiry, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0012_a_plugin_registry_that_resolves.c",
+      "language": "c",
+      "task": "implements a plugin registry that resolves handlers by name",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C that implements a plugin registry that resolves handlers by name, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0013_a_simple_xor_based_stream.c",
+      "language": "c",
+      "task": "implements a simple XOR-based stream cipher with a rotating key",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in C that implements a simple XOR-based stream cipher with a rotating key, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0014_longest_common_subsequence_with_backtracking.c",
+      "language": "c",
+      "task": "implements longest common subsequence with backtracking",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in C that implements longest common subsequence with backtracking, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0015_a_line_oriented_log_file.c",
+      "language": "c",
+      "task": "implements a line-oriented log file tailer",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in C that implements a line-oriented log file tailer, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0016_a_file_deduplicator_that_groups.c",
+      "language": "c",
+      "task": "implements a file deduplicator that groups files by content hash",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C that implements a file deduplicator that groups files by content hash, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0017_a_line_oriented_log_file.c",
+      "language": "c",
+      "task": "implements a line-oriented log file tailer",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in C that implements a line-oriented log file tailer, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0018_a_csv_file_and_reports.c",
+      "language": "c",
+      "task": "parses a CSV file and reports per-column summary statistics",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in C that parses a CSV file and reports per-column summary statistics, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0019_crc32_checksums_over_a_byte.c",
+      "language": "c",
+      "task": "computes CRC32 checksums over a byte buffer",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in C that computes CRC32 checksums over a byte buffer, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0020_merge_sort_and_quicksort_with.c",
+      "language": "c",
+      "task": "implements merge sort and quicksort with a shared comparison interface",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C that implements merge sort and quicksort with a shared comparison interface, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0021_merge_sort_and_quicksort_with.c",
+      "language": "c",
+      "task": "implements merge sort and quicksort with a shared comparison interface",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in C that implements merge sort and quicksort with a shared comparison interface, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0022_a_fixed_point_decimal_type.c",
+      "language": "c",
+      "task": "implements a fixed-point decimal type with add and multiply",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in C that implements a fixed-point decimal type with add and multiply, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0023_a_template_renderer_that_substitutes.c",
+      "language": "c",
+      "task": "implements a template renderer that substitutes {{name}} placeholders",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in C that implements a template renderer that substitutes {{name}} placeholders, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0024_a_circuit_breaker_that_opens.c",
+      "language": "c",
+      "task": "implements a circuit breaker that opens after repeated failures",
+      "modifier": "",
+      "prompt": "generate code in C that implements a circuit breaker that opens after repeated failures. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0025_a_plugin_registry_that_resolves.c",
+      "language": "c",
+      "task": "implements a plugin registry that resolves handlers by name",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in C that implements a plugin registry that resolves handlers by name, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0026_a_traffic_light_controller_as.c",
+      "language": "c",
+      "task": "implements a traffic light controller as an explicit state machine",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in C that implements a traffic light controller as an explicit state machine, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0027_and_evaluates_infix_arithmetic_expressions.c",
+      "language": "c",
+      "task": "tokenizes and evaluates infix arithmetic expressions",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in C that tokenizes and evaluates infix arithmetic expressions, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0028_a_trie_for_prefix_lookups.c",
+      "language": "c",
+      "task": "implements a trie for prefix lookups",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C that implements a trie for prefix lookups, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0029_binary_search_over_a_rotated.c",
+      "language": "c",
+      "task": "implements binary search over a rotated sorted array",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in C that implements binary search over a rotated sorted array, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0030_huffman_coding_for_byte_streams.c",
+      "language": "c",
+      "task": "implements Huffman coding for byte streams",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in C that implements Huffman coding for byte streams, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0031_a_hash_table_with_open.c",
+      "language": "c",
+      "task": "implements a hash table with open addressing and linear probing",
+      "modifier": "",
+      "prompt": "generate code in C that implements a hash table with open addressing and linear probing. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0032_a_regular_expression_matcher_supporting.c",
+      "language": "c",
+      "task": "implements a regular expression matcher supporting '.' and '*'",
+      "modifier": "",
+      "prompt": "generate code in C that implements a regular expression matcher supporting '.' and '*'. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0033_a_maze_generator_using_randomized.c",
+      "language": "c",
+      "task": "implements a maze generator using randomized depth-first search",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in C that implements a maze generator using randomized depth-first search, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0034_a_3d_vector_type_with.c",
+      "language": "c",
+      "task": "implements a 3D vector type with dot and cross products",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C that implements a 3D vector type with dot and cross products, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0035_an_observer_pattern_for_property.c",
+      "language": "c",
+      "task": "implements an observer pattern for property change notifications",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in C that implements an observer pattern for property change notifications, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0036_a_fixed_point_decimal_type.c",
+      "language": "c",
+      "task": "implements a fixed-point decimal type with add and multiply",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in C that implements a fixed-point decimal type with add and multiply, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0037_a_stack_based_virtual_machine.c",
+      "language": "c",
+      "task": "implements a stack-based virtual machine for a tiny instruction set",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in C that implements a stack-based virtual machine for a tiny instruction set, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0038_a_3d_vector_type_with.c",
+      "language": "c",
+      "task": "implements a 3D vector type with dot and cross products",
+      "modifier": "",
+      "prompt": "generate code in C that implements a 3D vector type with dot and cross products. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0039_a_thread_safe_bounded_blocking.c",
+      "language": "c",
+      "task": "implements a thread-safe bounded blocking queue",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in C that implements a thread-safe bounded blocking queue, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0040_an_lru_cache_with_a.c",
+      "language": "c",
+      "task": "implements an LRU cache with a configurable size limit",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in C that implements an LRU cache with a configurable size limit, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0041_a_sliding_window_rate_limiter.c",
+      "language": "c",
+      "task": "implements a sliding-window rate limiter",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in C that implements a sliding-window rate limiter, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0042_a_text_based_inventory_system.c",
+      "language": "c",
+      "task": "implements a text-based inventory system with add, remove, and query",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in C that implements a text-based inventory system with add, remove, and query, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0043_a_producer_consumer_pipeline_with.c",
+      "language": "c",
+      "task": "implements a producer-consumer pipeline with bounded handoff",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in C that implements a producer-consumer pipeline with bounded handoff, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0044_a_directory_walker_that_reports.c",
+      "language": "c",
+      "task": "implements a directory walker that reports file sizes by extension",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in C that implements a directory walker that reports file sizes by extension, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0045_a_histogram_with_configurable_bucket.c",
+      "language": "c",
+      "task": "implements a histogram with configurable bucket boundaries",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in C that implements a histogram with configurable bucket boundaries, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0046_a_duration_parser_that_accepts.c",
+      "language": "c",
+      "task": "implements a duration parser that accepts strings like '1h30m'",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C that implements a duration parser that accepts strings like '1h30m', using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0047_a_trie_for_prefix_lookups.c",
+      "language": "c",
+      "task": "implements a trie for prefix lookups",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in C that implements a trie for prefix lookups, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0048_a_semantic_version_type_with.c",
+      "language": "c",
+      "task": "implements a semantic version type with comparison operators",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in C that implements a semantic version type with comparison operators, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0049_a_3d_vector_type_with.c",
+      "language": "c",
+      "task": "implements a 3D vector type with dot and cross products",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in C that implements a 3D vector type with dot and cross products, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "c/0050_an_observer_pattern_for_property.c",
+      "language": "c",
+      "task": "implements an observer pattern for property change notifications",
+      "modifier": "",
+      "prompt": "generate code in C that implements an observer pattern for property change notifications. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0001_a_duration_parser_that_accepts.cpp",
+      "language": "cpp",
+      "task": "implements a duration parser that accepts strings like '1h30m'",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in C++ that implements a duration parser that accepts strings like '1h30m', with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0002_a_write_ahead_log_with.cpp",
+      "language": "cpp",
+      "task": "implements a write-ahead log with append and replay",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C++ that implements a write-ahead log with append and replay, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0003_a_file_deduplicator_that_groups.cpp",
+      "language": "cpp",
+      "task": "implements a file deduplicator that groups files by content hash",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in C++ that implements a file deduplicator that groups files by content hash, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0004_command_line_arguments_into_a.cpp",
+      "language": "cpp",
+      "task": "parses command-line arguments into a typed configuration struct",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in C++ that parses command-line arguments into a typed configuration struct, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0005_a_finite_state_machine_for.cpp",
+      "language": "cpp",
+      "task": "implements a finite state machine for a vending machine",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in C++ that implements a finite state machine for a vending machine, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0006_longest_common_subsequence_with_backtracking.cpp",
+      "language": "cpp",
+      "task": "implements longest common subsequence with backtracking",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in C++ that implements longest common subsequence with backtracking, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0007_a_memory_allocator_over_a.cpp",
+      "language": "cpp",
+      "task": "implements a memory allocator over a fixed byte arena",
+      "modifier": "",
+      "prompt": "generate code in C++ that implements a memory allocator over a fixed byte arena. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0008_a_spell_checker_using_edit.cpp",
+      "language": "cpp",
+      "task": "implements a spell checker using edit distance over a word list",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C++ that implements a spell checker using edit distance over a word list, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0009_crc32_checksums_over_a_byte.cpp",
+      "language": "cpp",
+      "task": "computes CRC32 checksums over a byte buffer",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in C++ that computes CRC32 checksums over a byte buffer, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0010_a_min_heap_priority_queue.cpp",
+      "language": "cpp",
+      "task": "implements a min-heap priority queue",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in C++ that implements a min-heap priority queue, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0011_a_duration_parser_that_accepts.cpp",
+      "language": "cpp",
+      "task": "implements a duration parser that accepts strings like '1h30m'",
+      "modifier": "",
+      "prompt": "generate code in C++ that implements a duration parser that accepts strings like '1h30m'. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0012_atomic_file_writes_via_a.cpp",
+      "language": "cpp",
+      "task": "implements atomic file writes via a temporary file and rename",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in C++ that implements atomic file writes via a temporary file and rename, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0013_a_directory_walker_that_reports.cpp",
+      "language": "cpp",
+      "task": "implements a directory walker that reports file sizes by extension",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in C++ that implements a directory walker that reports file sizes by extension, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0014_a_maze_generator_using_randomized.cpp",
+      "language": "cpp",
+      "task": "implements a maze generator using randomized depth-first search",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in C++ that implements a maze generator using randomized depth-first search, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0015_crc32_checksums_over_a_byte.cpp",
+      "language": "cpp",
+      "task": "computes CRC32 checksums over a byte buffer",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C++ that computes CRC32 checksums over a byte buffer, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0016_a_pseudo_random_number_generator.cpp",
+      "language": "cpp",
+      "task": "implements a pseudo-random number generator with a seedable state",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in C++ that implements a pseudo-random number generator with a seedable state, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0017_a_reservoir_sampler_over_a.cpp",
+      "language": "cpp",
+      "task": "implements a reservoir sampler over a stream of unknown length",
+      "modifier": "",
+      "prompt": "generate code in C++ that implements a reservoir sampler over a stream of unknown length. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0018_binary_search_over_a_rotated.cpp",
+      "language": "cpp",
+      "task": "implements binary search over a rotated sorted array",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in C++ that implements binary search over a rotated sorted array, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0019_base64_encoding_and_decoding_without.cpp",
+      "language": "cpp",
+      "task": "implements base64 encoding and decoding without library helpers",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in C++ that implements base64 encoding and decoding without library helpers, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0020_a_simple_xor_based_stream.cpp",
+      "language": "cpp",
+      "task": "implements a simple XOR-based stream cipher with a rotating key",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in C++ that implements a simple XOR-based stream cipher with a rotating key, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0021_a_circuit_breaker_that_opens.cpp",
+      "language": "cpp",
+      "task": "implements a circuit breaker that opens after repeated failures",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in C++ that implements a circuit breaker that opens after repeated failures, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0022_a_write_ahead_log_with.cpp",
+      "language": "cpp",
+      "task": "implements a write-ahead log with append and replay",
+      "modifier": "",
+      "prompt": "generate code in C++ that implements a write-ahead log with append and replay. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0023_an_exponential_backoff_retry_helper.cpp",
+      "language": "cpp",
+      "task": "implements an exponential backoff retry helper with jitter",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in C++ that implements an exponential backoff retry helper with jitter, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0024_a_duration_parser_that_accepts.cpp",
+      "language": "cpp",
+      "task": "implements a duration parser that accepts strings like '1h30m'",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in C++ that implements a duration parser that accepts strings like '1h30m', using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "cpp/0025_a_bank_account_ledger_with.cpp",
+      "language": "cpp",
+      "task": "implements a bank account ledger with deposits, withdrawals, and balance history",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in C++ that implements a bank account ledger with deposits, withdrawals, and balance history, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "csharp/0001_a_spell_checker_using_edit.cs",
+      "language": "csharp",
+      "task": "implements a spell checker using edit distance over a word list",
+      "modifier": "",
+      "prompt": "generate code in C# that implements a spell checker using edit distance over a word list. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "csharp/0002_a_skip_list_with_randomized.cs",
+      "language": "csharp",
+      "task": "implements a skip list with randomized levels",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in C# that implements a skip list with randomized levels, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "csharp/0003_a_text_based_inventory_system.cs",
+      "language": "csharp",
+      "task": "implements a text-based inventory system with add, remove, and query",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in C# that implements a text-based inventory system with add, remove, and query, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "dockerfile/0001_a_java_application_with_a/Dockerfile",
+      "language": "dockerfile",
+      "task": "packages a Java application with a JRE-only runtime stage",
+      "modifier": ", with comments explaining each stage",
+      "prompt": "generate code in Docker (a Dockerfile) that packages a Java application with a JRE-only runtime stage, with comments explaining each stage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "dockerfile/0002_an_image_with_a_health/Dockerfile",
+      "language": "dockerfile",
+      "task": "builds an image with a health check and configurable entrypoint arguments",
+      "modifier": ", keeping the final image as small as possible",
+      "prompt": "generate code in Docker (a Dockerfile) that builds an image with a health check and configurable entrypoint arguments, keeping the final image as small as possible. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "dockerfile/0003_an_image_with_a_health/Dockerfile",
+      "language": "dockerfile",
+      "task": "builds an image with a health check and configurable entrypoint arguments",
+      "modifier": ", with comments explaining each stage",
+      "prompt": "generate code in Docker (a Dockerfile) that builds an image with a health check and configurable entrypoint arguments, with comments explaining each stage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "dockerfile/0004_a_static_binary_into_a/Dockerfile",
+      "language": "dockerfile",
+      "task": "packages a static binary into a scratch image with CA certificates",
+      "modifier": ", running as a non-root user",
+      "prompt": "generate code in Docker (a Dockerfile) that packages a static binary into a scratch image with CA certificates, running as a non-root user. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0001_a_url_parser_that_splits.go",
+      "language": "go",
+      "task": "implements a URL parser that splits scheme, host, path, and query",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in Go that implements a URL parser that splits scheme, host, path, and query, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0002_a_text_based_inventory_system.go",
+      "language": "go",
+      "task": "implements a text-based inventory system with add, remove, and query",
+      "modifier": "",
+      "prompt": "generate code in Go that implements a text-based inventory system with add, remove, and query. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0003_a_paginated_result_cursor_over.go",
+      "language": "go",
+      "task": "implements a paginated result cursor over an in-memory collection",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Go that implements a paginated result cursor over an in-memory collection, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0004_a_fixed_capacity_circular_buffer.go",
+      "language": "go",
+      "task": "implements a fixed-capacity circular buffer",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in Go that implements a fixed-capacity circular buffer, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0005_a_dependency_injection_container_with.go",
+      "language": "go",
+      "task": "implements a dependency injection container with singleton scopes",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in Go that implements a dependency injection container with singleton scopes, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0006_an_observer_pattern_for_property.go",
+      "language": "go",
+      "task": "implements an observer pattern for property change notifications",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in Go that implements an observer pattern for property change notifications, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0007_a_directory_walker_that_reports.go",
+      "language": "go",
+      "task": "implements a directory walker that reports file sizes by extension",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in Go that implements a directory walker that reports file sizes by extension, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0008_a_tic_tac_toe_game.go",
+      "language": "go",
+      "task": "implements a tic-tac-toe game with a minimax opponent",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in Go that implements a tic-tac-toe game with a minimax opponent, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0009_a_fixed_size_thread_pool.go",
+      "language": "go",
+      "task": "implements a fixed-size thread pool that executes queued jobs",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Go that implements a fixed-size thread pool that executes queued jobs, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0010_a_sha_256_style_block.go",
+      "language": "go",
+      "task": "implements a SHA-256 style block hashing loop over fixed-size input",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in Go that implements a SHA-256 style block hashing loop over fixed-size input, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0011_a_template_renderer_that_substitutes.go",
+      "language": "go",
+      "task": "implements a template renderer that substitutes {{name}} placeholders",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in Go that implements a template renderer that substitutes {{name}} placeholders, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0012_a_memory_allocator_over_a.go",
+      "language": "go",
+      "task": "implements a memory allocator over a fixed byte arena",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Go that implements a memory allocator over a fixed byte arena, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0013_a_fixed_point_decimal_type.go",
+      "language": "go",
+      "task": "implements a fixed-point decimal type with add and multiply",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in Go that implements a fixed-point decimal type with add and multiply, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "go/0014_a_simple_tcp_echo_server.go",
+      "language": "go",
+      "task": "implements a simple TCP echo server",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in Go that implements a simple TCP echo server, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0001_a_plugin_registry_that_resolves.java",
+      "language": "java",
+      "task": "implements a plugin registry that resolves handlers by name",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in Java that implements a plugin registry that resolves handlers by name, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0002_a_3d_vector_type_with.java",
+      "language": "java",
+      "task": "implements a 3D vector type with dot and cross products",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in Java that implements a 3D vector type with dot and cross products, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0003_a_fixed_point_decimal_type.java",
+      "language": "java",
+      "task": "implements a fixed-point decimal type with add and multiply",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in Java that implements a fixed-point decimal type with add and multiply, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0004_a_paginated_result_cursor_over.java",
+      "language": "java",
+      "task": "implements a paginated result cursor over an in-memory collection",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in Java that implements a paginated result cursor over an in-memory collection, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0005_a_udp_heartbeat_sender_and.java",
+      "language": "java",
+      "task": "implements a UDP heartbeat sender and receiver pair",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in Java that implements a UDP heartbeat sender and receiver pair, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0006_a_tic_tac_toe_game.java",
+      "language": "java",
+      "task": "implements a tic-tac-toe game with a minimax opponent",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in Java that implements a tic-tac-toe game with a minimax opponent, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0007_atomic_file_writes_via_a.java",
+      "language": "java",
+      "task": "implements atomic file writes via a temporary file and rename",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in Java that implements atomic file writes via a temporary file and rename, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0008_a_line_oriented_log_file.java",
+      "language": "java",
+      "task": "implements a line-oriented log file tailer",
+      "modifier": "",
+      "prompt": "generate code in Java that implements a line-oriented log file tailer. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0009_a_ring_buffer_based_logger.java",
+      "language": "java",
+      "task": "implements a ring-buffer based logger with severity levels",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Java that implements a ring-buffer based logger with severity levels, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0010_a_conway_s_game_of.java",
+      "language": "java",
+      "task": "implements a Conway's Game of Life simulation on a toroidal grid",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in Java that implements a Conway's Game of Life simulation on a toroidal grid, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0011_a_simple_event_emitter_with.java",
+      "language": "java",
+      "task": "implements a simple event emitter with subscribe and unsubscribe",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in Java that implements a simple event emitter with subscribe and unsubscribe, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0012_a_thread_safe_bounded_blocking.java",
+      "language": "java",
+      "task": "implements a thread-safe bounded blocking queue",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in Java that implements a thread-safe bounded blocking queue, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0013_a_directory_walker_that_reports.java",
+      "language": "java",
+      "task": "implements a directory walker that reports file sizes by extension",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in Java that implements a directory walker that reports file sizes by extension, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0014_a_sliding_window_rate_limiter.java",
+      "language": "java",
+      "task": "implements a sliding-window rate limiter",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in Java that implements a sliding-window rate limiter, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0015_a_url_parser_that_splits.java",
+      "language": "java",
+      "task": "implements a URL parser that splits scheme, host, path, and query",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in Java that implements a URL parser that splits scheme, host, path, and query, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0016_a_reservoir_sampler_over_a.java",
+      "language": "java",
+      "task": "implements a reservoir sampler over a stream of unknown length",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in Java that implements a reservoir sampler over a stream of unknown length, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0017_command_line_arguments_into_a.java",
+      "language": "java",
+      "task": "parses command-line arguments into a typed configuration struct",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in Java that parses command-line arguments into a typed configuration struct, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0018_topological_sort_with_cycle_detection.java",
+      "language": "java",
+      "task": "implements topological sort with cycle detection",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in Java that implements topological sort with cycle detection, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0019_a_duration_parser_that_accepts.java",
+      "language": "java",
+      "task": "implements a duration parser that accepts strings like '1h30m'",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in Java that implements a duration parser that accepts strings like '1h30m', with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0020_a_histogram_with_configurable_bucket.java",
+      "language": "java",
+      "task": "implements a histogram with configurable bucket boundaries",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in Java that implements a histogram with configurable bucket boundaries, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0021_dijkstra_s_shortest_path_over.java",
+      "language": "java",
+      "task": "implements Dijkstra's shortest path over an adjacency list",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in Java that implements Dijkstra's shortest path over an adjacency list, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0022_a_date_parser_and_formatter.java",
+      "language": "java",
+      "task": "implements a date parser and formatter for ISO 8601 timestamps",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in Java that implements a date parser and formatter for ISO 8601 timestamps, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0023_a_skip_list_with_randomized.java",
+      "language": "java",
+      "task": "implements a skip list with randomized levels",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Java that implements a skip list with randomized levels, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "java/0024_a_moving_average_and_standard.java",
+      "language": "java",
+      "task": "implements a moving average and standard deviation accumulator",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in Java that implements a moving average and standard deviation accumulator, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0001_a_reference_counted_smart_pointer.js",
+      "language": "javascript",
+      "task": "implements a reference-counted smart pointer",
+      "modifier": "",
+      "prompt": "generate code in JavaScript that implements a reference-counted smart pointer. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0002_longest_common_subsequence_with_backtracking.js",
+      "language": "javascript",
+      "task": "implements longest common subsequence with backtracking",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in JavaScript that implements longest common subsequence with backtracking, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0003_breadth_first_flood_fill_on.js",
+      "language": "javascript",
+      "task": "implements breadth-first flood fill on a bitmap",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in JavaScript that implements breadth-first flood fill on a bitmap, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0004_a_worker_that_batches_items.js",
+      "language": "javascript",
+      "task": "implements a worker that batches items until a size or time threshold",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in JavaScript that implements a worker that batches items until a size or time threshold, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0005_a_simple_tcp_echo_server.js",
+      "language": "javascript",
+      "task": "implements a simple TCP echo server",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in JavaScript that implements a simple TCP echo server, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0006_a_duration_parser_that_accepts.js",
+      "language": "javascript",
+      "task": "implements a duration parser that accepts strings like '1h30m'",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in JavaScript that implements a duration parser that accepts strings like '1h30m', optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0007_a_text_based_inventory_system.js",
+      "language": "javascript",
+      "task": "implements a text-based inventory system with add, remove, and query",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in JavaScript that implements a text-based inventory system with add, remove, and query, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0008_a_conway_s_game_of.js",
+      "language": "javascript",
+      "task": "implements a Conway's Game of Life simulation on a toroidal grid",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in JavaScript that implements a Conway's Game of Life simulation on a toroidal grid, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0009_a_fixed_capacity_circular_buffer.js",
+      "language": "javascript",
+      "task": "implements a fixed-capacity circular buffer",
+      "modifier": "",
+      "prompt": "generate code in JavaScript that implements a fixed-capacity circular buffer. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0010_breadth_first_flood_fill_on.js",
+      "language": "javascript",
+      "task": "implements breadth-first flood fill on a bitmap",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in JavaScript that implements breadth-first flood fill on a bitmap, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0011_a_token_bucket_throttle_with.js",
+      "language": "javascript",
+      "task": "implements a token bucket throttle with refill over time",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in JavaScript that implements a token bucket throttle with refill over time, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0012_a_ring_buffer_based_logger.js",
+      "language": "javascript",
+      "task": "implements a ring-buffer based logger with severity levels",
+      "modifier": ", with documentation comments on every public function",
+      "prompt": "generate code in JavaScript that implements a ring-buffer based logger with severity levels, with documentation comments on every public function. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "javascript/0013_a_regular_expression_matcher_supporting.js",
+      "language": "javascript",
+      "task": "implements a regular expression matcher supporting '.' and '*'",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in JavaScript that implements a regular expression matcher supporting '.' and '*', with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "kotlin/0001_a_fixed_capacity_circular_buffer.kt",
+      "language": "kotlin",
+      "task": "implements a fixed-capacity circular buffer",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in Kotlin that implements a fixed-capacity circular buffer, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "kotlin/0002_a_directory_walker_that_reports.kt",
+      "language": "kotlin",
+      "task": "implements a directory walker that reports file sizes by extension",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in Kotlin that implements a directory walker that reports file sizes by extension, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "kotlin/0003_and_evaluates_infix_arithmetic_expressions.kt",
+      "language": "kotlin",
+      "task": "tokenizes and evaluates infix arithmetic expressions",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in Kotlin that tokenizes and evaluates infix arithmetic expressions, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "makefile/0001_dependencies_and_builds_a_go/Makefile",
+      "language": "makefile",
+      "task": "vendors dependencies and builds a Go binary with version stamping",
+      "modifier": ", with comments explaining each target",
+      "prompt": "generate code in Make (a Makefile) that vendors dependencies and builds a Go binary with version stamping, with comments explaining each target. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "makefile/0002_a_linter_formatter_and_test/Makefile",
+      "language": "makefile",
+      "task": "runs a linter, formatter, and test suite as separate phony targets",
+      "modifier": ", with phony targets declared explicitly",
+      "prompt": "generate code in Make (a Makefile) that runs a linter, formatter, and test suite as separate phony targets, with phony targets declared explicitly. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "makefile/0003_a_shared_library_with_a/Makefile",
+      "language": "makefile",
+      "task": "builds a shared library with a versioned soname and installs headers",
+      "modifier": ", portable across GNU Make on Linux and macOS",
+      "prompt": "generate code in Make (a Makefile) that builds a shared library with a versioned soname and installs headers, portable across GNU Make on Linux and macOS. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "makefile/0004_compiles_a_project_for_several/Makefile",
+      "language": "makefile",
+      "task": "cross-compiles a project for several target architectures",
+      "modifier": ", using pattern rules rather than repeated recipes",
+      "prompt": "generate code in Make (a Makefile) that cross-compiles a project for several target architectures, using pattern rules rather than repeated recipes. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "makefile/0005_documentation_and_packages_the_result/Makefile",
+      "language": "makefile",
+      "task": "generates documentation and packages the result into a tarball",
+      "modifier": "",
+      "prompt": "generate code in Make (a Makefile) that generates documentation and packages the result into a tarball. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "makefile/0006_dependencies_and_builds_a_go/Makefile",
+      "language": "makefile",
+      "task": "vendors dependencies and builds a Go binary with version stamping",
+      "modifier": ", portable across GNU Make on Linux and macOS",
+      "prompt": "generate code in Make (a Makefile) that vendors dependencies and builds a Go binary with version stamping, portable across GNU Make on Linux and macOS. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "makefile/0007_a_shared_library_with_a/Makefile",
+      "language": "makefile",
+      "task": "builds a shared library with a versioned soname and installs headers",
+      "modifier": ", with phony targets declared explicitly",
+      "prompt": "generate code in Make (a Makefile) that builds a shared library with a versioned soname and installs headers, with phony targets declared explicitly. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "makefile/0008_compiles_a_project_for_several/Makefile",
+      "language": "makefile",
+      "task": "cross-compiles a project for several target architectures",
+      "modifier": ", with clear variable definitions for the compiler and flags",
+      "prompt": "generate code in Make (a Makefile) that cross-compiles a project for several target architectures, with clear variable definitions for the compiler and flags. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "makefile/0009_a_shared_library_with_a/Makefile",
+      "language": "makefile",
+      "task": "builds a shared library with a versioned soname and installs headers",
+      "modifier": ", with comments explaining each target",
+      "prompt": "generate code in Make (a Makefile) that builds a shared library with a versioned soname and installs headers, with comments explaining each target. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "makefile/0010_compiles_a_project_for_several/Makefile",
+      "language": "makefile",
+      "task": "cross-compiles a project for several target architectures",
+      "modifier": "",
+      "prompt": "generate code in Make (a Makefile) that cross-compiles a project for several target architectures. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "objective-c/0001_a_pathfinding_on_a_2d.m",
+      "language": "objective-c",
+      "task": "implements A* pathfinding on a 2D grid with obstacles",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in Objective-C that implements A* pathfinding on a 2D grid with obstacles, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "objective-c/0002_a_worker_that_batches_items.m",
+      "language": "objective-c",
+      "task": "implements a worker that batches items until a size or time threshold",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in Objective-C that implements a worker that batches items until a size or time threshold, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "objective-c/0003_a_simple_tcp_echo_server.m",
+      "language": "objective-c",
+      "task": "implements a simple TCP echo server",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in Objective-C that implements a simple TCP echo server, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "objective-c/0004_a_3d_vector_type_with.m",
+      "language": "objective-c",
+      "task": "implements a 3D vector type with dot and cross products",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in Objective-C that implements a 3D vector type with dot and cross products, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "objective-c/0005_dijkstra_s_shortest_path_over.m",
+      "language": "objective-c",
+      "task": "implements Dijkstra's shortest path over an adjacency list",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in Objective-C that implements Dijkstra's shortest path over an adjacency list, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "objective-cpp/0001_a_min_heap_priority_queue.mm",
+      "language": "objective-cpp",
+      "task": "implements a min-heap priority queue",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in Objective-C++ that implements a min-heap priority queue, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "objective-cpp/0002_a_regular_expression_matcher_supporting.mm",
+      "language": "objective-cpp",
+      "task": "implements a regular expression matcher supporting '.' and '*'",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in Objective-C++ that implements a regular expression matcher supporting '.' and '*', handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "objective-cpp/0003_dijkstra_s_shortest_path_over.mm",
+      "language": "objective-cpp",
+      "task": "implements Dijkstra's shortest path over an adjacency list",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in Objective-C++ that implements Dijkstra's shortest path over an adjacency list, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "objective-cpp/0004_base64_encoding_and_decoding_without.mm",
+      "language": "objective-cpp",
+      "task": "implements base64 encoding and decoding without library helpers",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in Objective-C++ that implements base64 encoding and decoding without library helpers, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "objective-cpp/0005_a_memory_allocator_over_a.mm",
+      "language": "objective-cpp",
+      "task": "implements a memory allocator over a fixed byte arena",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in Objective-C++ that implements a memory allocator over a fixed byte arena, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "perl/0001_an_exponential_backoff_retry_helper.pl",
+      "language": "perl",
+      "task": "implements an exponential backoff retry helper with jitter",
+      "modifier": "",
+      "prompt": "generate code in Perl that implements an exponential backoff retry helper with jitter. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "perl/0002_a_memory_allocator_over_a.pl",
+      "language": "perl",
+      "task": "implements a memory allocator over a fixed byte arena",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in Perl that implements a memory allocator over a fixed byte arena, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "perl/0003_atomic_file_writes_via_a.pl",
+      "language": "perl",
+      "task": "implements atomic file writes via a temporary file and rename",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Perl that implements atomic file writes via a temporary file and rename, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "perl/0004_a_simple_xor_based_stream.pl",
+      "language": "perl",
+      "task": "implements a simple XOR-based stream cipher with a rotating key",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Perl that implements a simple XOR-based stream cipher with a rotating key, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0001_an_lru_cache_with_a.py",
+      "language": "python",
+      "task": "implements an LRU cache with a configurable size limit",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in Python that implements an LRU cache with a configurable size limit, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0002_a_sha_256_style_block.py",
+      "language": "python",
+      "task": "implements a SHA-256 style block hashing loop over fixed-size input",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in Python that implements a SHA-256 style block hashing loop over fixed-size input, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0003_a_conway_s_game_of.py",
+      "language": "python",
+      "task": "implements a Conway's Game of Life simulation on a toroidal grid",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in Python that implements a Conway's Game of Life simulation on a toroidal grid, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0004_breadth_first_flood_fill_on.py",
+      "language": "python",
+      "task": "implements breadth-first flood fill on a bitmap",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in Python that implements breadth-first flood fill on a bitmap, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0005_a_spell_checker_using_edit.py",
+      "language": "python",
+      "task": "implements a spell checker using edit distance over a word list",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Python that implements a spell checker using edit distance over a word list, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0006_an_observer_pattern_for_property.py",
+      "language": "python",
+      "task": "implements an observer pattern for property change notifications",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in Python that implements an observer pattern for property change notifications, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0007_a_markdown_to_html_converter.py",
+      "language": "python",
+      "task": "implements a Markdown-to-HTML converter for headings, lists, and emphasis",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in Python that implements a Markdown-to-HTML converter for headings, lists, and emphasis, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0008_and_evaluates_infix_arithmetic_expressions.py",
+      "language": "python",
+      "task": "tokenizes and evaluates infix arithmetic expressions",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in Python that tokenizes and evaluates infix arithmetic expressions, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0009_an_exponential_backoff_retry_helper.py",
+      "language": "python",
+      "task": "implements an exponential backoff retry helper with jitter",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Python that implements an exponential backoff retry helper with jitter, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0010_a_date_parser_and_formatter.py",
+      "language": "python",
+      "task": "implements a date parser and formatter for ISO 8601 timestamps",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in Python that implements a date parser and formatter for ISO 8601 timestamps, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0011_a_moving_average_and_standard.py",
+      "language": "python",
+      "task": "implements a moving average and standard deviation accumulator",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in Python that implements a moving average and standard deviation accumulator, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "python/0012_merge_sort_and_quicksort_with.py",
+      "language": "python",
+      "task": "implements merge sort and quicksort with a shared comparison interface",
+      "modifier": ", handling edge cases like empty and single-element input",
+      "prompt": "generate code in Python that implements merge sort and quicksort with a shared comparison interface, handling edge cases like empty and single-element input. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "shell/0001_dijkstra_s_shortest_path_over.sh",
+      "language": "shell",
+      "task": "implements Dijkstra's shortest path over an adjacency list",
+      "modifier": ", optimized for low memory usage",
+      "prompt": "generate code in POSIX shell that implements Dijkstra's shortest path over an adjacency list, optimized for low memory usage. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "shell/0002_a_skip_list_with_randomized.sh",
+      "language": "shell",
+      "task": "implements a skip list with randomized levels",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in POSIX shell that implements a skip list with randomized levels, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "shell/0003_binary_search_over_a_rotated.sh",
+      "language": "shell",
+      "task": "implements binary search over a rotated sorted array",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in POSIX shell that implements binary search over a rotated sorted array, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "shell/0004_a_udp_heartbeat_sender_and.sh",
+      "language": "shell",
+      "task": "implements a UDP heartbeat sender and receiver pair",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in POSIX shell that implements a UDP heartbeat sender and receiver pair, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "shell/0005_a_simple_xor_based_stream.sh",
+      "language": "shell",
+      "task": "implements a simple XOR-based stream cipher with a rotating key",
+      "modifier": "",
+      "prompt": "generate code in POSIX shell that implements a simple XOR-based stream cipher with a rotating key. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "shell/0006_a_text_based_inventory_system.sh",
+      "language": "shell",
+      "task": "implements a text-based inventory system with add, remove, and query",
+      "modifier": ", using only the standard library",
+      "prompt": "generate code in POSIX shell that implements a text-based inventory system with add, remove, and query, using only the standard library. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "shell/0007_an_exponential_backoff_retry_helper.sh",
+      "language": "shell",
+      "task": "implements an exponential backoff retry helper with jitter",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in POSIX shell that implements an exponential backoff retry helper with jitter, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "zig/0001_a_text_based_inventory_system.zig",
+      "language": "zig",
+      "task": "implements a text-based inventory system with add, remove, and query",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Zig that implements a text-based inventory system with add, remove, and query, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "zig/0002_a_tic_tac_toe_game.zig",
+      "language": "zig",
+      "task": "implements a tic-tac-toe game with a minimax opponent",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in Zig that implements a tic-tac-toe game with a minimax opponent, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "zig/0003_a_simple_xor_based_stream.zig",
+      "language": "zig",
+      "task": "implements a simple XOR-based stream cipher with a rotating key",
+      "modifier": ", with a small demonstration in a main entry point",
+      "prompt": "generate code in Zig that implements a simple XOR-based stream cipher with a rotating key, with a small demonstration in a main entry point. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "zig/0004_a_csv_file_and_reports.zig",
+      "language": "zig",
+      "task": "parses a CSV file and reports per-column summary statistics",
+      "modifier": "",
+      "prompt": "generate code in Zig that parses a CSV file and reports per-column summary statistics. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "zig/0005_a_template_renderer_that_substitutes.zig",
+      "language": "zig",
+      "task": "implements a template renderer that substitutes {{name}} placeholders",
+      "modifier": "",
+      "prompt": "generate code in Zig that implements a template renderer that substitutes {{name}} placeholders. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "zig/0006_a_maze_generator_using_randomized.zig",
+      "language": "zig",
+      "task": "implements a maze generator using randomized depth-first search",
+      "modifier": ", with thorough input validation and error handling",
+      "prompt": "generate code in Zig that implements a maze generator using randomized depth-first search, with thorough input validation and error handling. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "zig/0007_a_url_parser_that_splits.zig",
+      "language": "zig",
+      "task": "implements a URL parser that splits scheme, host, path, and query",
+      "modifier": ", written to be easy to unit test",
+      "prompt": "generate code in Zig that implements a URL parser that splits scheme, host, path, and query, written to be easy to unit test. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "zig/0008_a_tic_tac_toe_game.zig",
+      "language": "zig",
+      "task": "implements a tic-tac-toe game with a minimax opponent",
+      "modifier": ", favoring clarity over cleverness",
+      "prompt": "generate code in Zig that implements a tic-tac-toe game with a minimax opponent, favoring clarity over cleverness. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    },
+    {
+      "path": "zig/0009_a_dependency_injection_container_with.zig",
+      "language": "zig",
+      "task": "implements a dependency injection container with singleton scopes",
+      "modifier": ", with defensive checks against integer overflow",
+      "prompt": "generate code in Zig that implements a dependency injection container with singleton scopes, with defensive checks against integer overflow. only respond with the code and nothing else. do not include markdown code fences, explanations, or commentary.",
+      "status": "generated"
+    }
+  ]
+}
