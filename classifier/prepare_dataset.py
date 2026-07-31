@@ -69,6 +69,7 @@ SPECIAL_FILENAMES = {
 
 # Applied identically to every repository and sample directory.
 EXCLUDED_PARTS = {
+    ".cache",
     ".git",
     ".github",
     ".idea",
@@ -335,7 +336,7 @@ def validate_manifest(manifest: dict[str, Any]) -> None:
         expected_name = "ai" if source["label"] == 1 else "human"
         if source.get("label_name") != expected_name:
             raise ValueError(f"Source {source_id} label_name must be {expected_name!r}")
-        if source.get("kind") not in {"github", "samples"}:
+        if source.get("kind") not in {"git", "github", "samples"}:
             raise ValueError(f"Unsupported source kind for {source_id}: {source.get('kind')!r}")
 
 
@@ -349,7 +350,7 @@ def main() -> None:
     source_counts: dict[str, int] = {}
 
     for source in manifest["sources"]:
-        if source["kind"] == "github":
+        if source["kind"] in {"git", "github"}:
             root = checkout_repository(source, args.cache_dir.resolve(), args.refresh)
         else:
             root = (manifest_path.parent / source["path"]).resolve()
