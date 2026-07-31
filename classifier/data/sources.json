@@ -934,6 +934,60 @@
       "url": "https://github.com/rust-osdev/x86_64",
       "revision": "e5c202c98641793f88658301c4b56defb3775a83",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "serde",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/serde-rs/serde",
+      "revision": "89342af71e06e83b8718d34e44b59d658e841cf3",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "serde-json",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/serde-rs/json",
+      "revision": "ea39063f9c8c7dde4ac43bbd9843287bece59b1a",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "serde-yaml",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/dtolnay/serde-yaml",
+      "revision": "4684ca06ad5092ff337ffc7805d5388c86ed4cf3",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "cargo",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-lang/cargo",
+      "revision": "01d059af9b7165bd77f43ab03ae8321d83d189a9",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "crates-io",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-lang/crates.io",
+      "revision": "41af88446ae3e61e9aece7dff416bd3cd077bff6",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "rust-analyzer",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-lang/rust-analyzer",
+      "revision": "c8c4d736486426ad8a4a161ae6f3c09c153903e4",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
