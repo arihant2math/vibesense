@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "sources": [
+    {
+      "id": "trustos",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/nathan237/TrustOS.git",
+      "revision": "188a87a60c2bbb1c9957d02dd565d21658564daf",
+      "license": "Apache-2.0",
+      "include_paths": [
+        "boot",
+        "jarvis-bench",
+        "kernel",
+        "linux",
+        "scripts",
+        "sdk",
+        "server",
+        "tools",
+        "userland"
+      ],
+      "provenance_note": "AI label supplied by the dataset author; not independently verified."
+    },
+    {
+      "id": "generated-ai-samples",
+      "kind": "samples",
+      "label": 1,
+      "label_name": "ai",
+      "path": "raw/ai/samples",
+      "provenance_note": "Samples generated specifically for this dataset."
+    },
+    {
+      "id": "servo",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/servo/servo.git",
+      "revision": "0c6b6ab0f4f366837189bb429cd9d992d582b832",
+      "license": "MPL-2.0",
+      "include_paths": [
+        "components",
+        "etc",
+        "ffi",
+        "ports",
+        "python",
+        "support"
+      ],
+      "provenance_note": "Human label supplied by the dataset author; individual-file provenance is not independently verified."
+    },
+    {
+      "id": "manual-human-samples",
+      "kind": "samples",
+      "label": 0,
+      "label_name": "human",
+      "path": "raw/human/samples",
+      "provenance_note": "Manually supplied human-authored samples."
+    }
+  ]
+}
