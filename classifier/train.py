@@ -4,7 +4,6 @@ from __future__ import annotations
 
 import argparse
 import json
-import math
 from array import array
 from collections import defaultdict
 from pathlib import Path
@@ -442,13 +441,15 @@ def main() -> None:
         bias="none",
     )
     model = get_peft_model(model, lora_config)
+    if precision == "fp16":
+        # AMP's GradScaler requires trainable parameters and their gradients to
+        # remain FP32. The frozen base can stay FP16 to conserve GPU memory.
+        # PEFT promotes LoRA weights automatically, but not necessarily the
+        # sequence-classification head newly created above.
+        for parameter in model.parameters():
+            if parameter.requires_grad:
+                parameter.data = parameter.data.float()
     model.print_trainable_parameters()
-
-    update_steps_per_epoch = math.ceil(
-        len(train_dataset)
-        / (cli_args.batch_size * cli_args.gradient_accumulation_steps)
-    )
-    warmup_steps = max(1, round(update_steps_per_epoch * cli_args.epochs * 0.1))
 
     training_args = TrainingArguments(
         output_dir=str(cli_args.output_dir),
@@ -457,7 +458,9 @@ def main() -> None:
         per_device_eval_batch_size=cli_args.eval_batch_size,
         gradient_accumulation_steps=cli_args.gradient_accumulation_steps,
         num_train_epochs=cli_args.epochs,
-        warmup_steps=warmup_steps,
+        # A ratio lets Trainer account for the DDP world size when calculating
+        # optimizer steps; a manually calculated step count would not.
+        warmup_ratio=0.1,
         weight_decay=0.01,
         eval_strategy="epoch",
         save_strategy="epoch",
@@ -470,6 +473,7 @@ def main() -> None:
         bf16=precision == "bf16",
         fp16=precision == "fp16",
         gradient_checkpointing=True,
+        ddp_find_unused_parameters=False,
         dataloader_pin_memory=torch.cuda.is_available(),
         remove_unused_columns=False,
         report_to="none",
