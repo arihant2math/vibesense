@@ -853,6 +853,15 @@
       "url": "https://github.com/sharkdp/bat",
       "revision": "42f1ef019a83dc042e7235283e0bde208f821055",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "vibe99-old",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/jgarzik/vibe99-old",
+      "revision": "bcc2a97606291f17454d196aff60c282912dbe12",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
