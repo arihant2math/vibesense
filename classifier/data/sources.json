@@ -799,6 +799,60 @@
       "url": "https://github.com/RustPython/RustPython/",
       "revision": "bee5794b6e2b777ee343c7277954b73d06b5cb7d",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "helix",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/helix-editor/helix",
+      "revision": "79f096963c75d107cd1f415666fb21a9cfd3cbd6",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "zellij",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/zellij-org/zellij",
+      "revision": "71f980a01d9043d9247ce410269fb67afbd9502f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "gitui",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/extrawurst/gitui",
+      "revision": "cc526c297052ce8c009cd385b0d58306c7fc5701",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "atuin",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/atuinsh/atuin",
+      "revision": "0b9dc6696beeb0c0460775d304dc24491b7a0d66",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "bottom",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/ClementTsang/bottom",
+      "revision": "9e81e36ed5736b64d3194d35d5a810342e47865c",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "bat",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/sharkdp/bat",
+      "revision": "42f1ef019a83dc042e7235283e0bde208f821055",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
