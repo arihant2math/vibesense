@@ -69,6 +69,7 @@ class CodeDataset(Dataset):
         tokenizer: Any,
         max_length: int,
         max_samples: int | None = None,
+        language: str | None = None,
     ) -> None:
         if not path.is_file():
             raise FileNotFoundError(
@@ -83,15 +84,30 @@ class CodeDataset(Dataset):
                 record = json.loads(line)
                 text = record.get("text")
                 label = record.get("label")
-                language = record.get("language")
+                record_language = record.get("language")
                 if (
                     not isinstance(text, str)
                     or label not in (0, 1)
-                    or not isinstance(language, str)
-                    or not language
+                    or not isinstance(record_language, str)
+                    or not record_language
                 ):
                     raise ValueError(f"Invalid record in {path}:{line_number}")
-                records.append((text, int(label), language))
+                records.append((text, int(label), record_language))
+
+        available_languages = sorted({record[2] for record in records})
+        if language is not None:
+            requested_language = language.strip().casefold()
+            if not requested_language:
+                raise ValueError("language must not be empty")
+            records = [
+                record for record in records if record[2].casefold() == requested_language
+            ]
+            if not records:
+                available = ", ".join(available_languages) or "none"
+                raise ValueError(
+                    f"Language {language!r} has no records in {path}. "
+                    f"Available languages: {available}"
+                )
 
         if max_samples is not None and max_samples < len(records):
             records = truncate_language_balanced(records, max_samples)
@@ -218,11 +234,23 @@ def choose_precision(requested: str, use_cpu: bool) -> str:
     return "fp32"
 
 
+def language_name(value: str) -> str:
+    language = value.strip().casefold()
+    if not language:
+        raise argparse.ArgumentTypeError("language must not be empty")
+    return language
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--model", default="Qwen/Qwen2.5-Coder-1.5B")
     parser.add_argument("--data-dir", type=Path, default=DEFAULT_DATA_DIR)
     parser.add_argument("--output-dir", type=Path, default=PROJECT_ROOT / "detector")
+    parser.add_argument(
+        "--language",
+        type=language_name,
+        help="Train and evaluate only on this language (for example, python or rust)",
+    )
     parser.add_argument("--max-length", type=int, default=1024)
     parser.add_argument("--epochs", type=float, default=2.0)
     parser.add_argument("--learning-rate", type=float, default=2e-4)
@@ -278,18 +306,21 @@ def main() -> None:
         tokenizer,
         cli_args.max_length,
         cli_args.max_train_samples,
+        language=cli_args.language,
     )
     validation_dataset = CodeDataset(
         cli_args.data_dir / "validation.jsonl",
         tokenizer,
         cli_args.max_length,
         cli_args.max_eval_samples,
+        language=cli_args.language,
     )
     test_dataset = CodeDataset(
         cli_args.data_dir / "test.jsonl",
         tokenizer,
         cli_args.max_length,
         cli_args.max_eval_samples,
+        language=cli_args.language,
     )
 
     dtype = {
@@ -363,7 +394,8 @@ def main() -> None:
 
     print(
         f"Training on {len(train_dataset):,} records; validating on "
-        f"{len(validation_dataset):,}; precision={precision}; max_length={cli_args.max_length}"
+        f"{len(validation_dataset):,}; language={cli_args.language or 'all'}; "
+        f"precision={precision}; max_length={cli_args.max_length}"
     )
     train_result = trainer.train(resume_from_checkpoint=cli_args.resume_from_checkpoint)
     trainer.save_model()
