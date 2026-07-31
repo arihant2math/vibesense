@@ -12,7 +12,13 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlsplit
 
+if __package__:
+    from .github_archive import download_github_archive, github_repository
+else:
+    from github_archive import download_github_archive, github_repository
+
 DEFAULT_MANIFEST = Path(__file__).resolve().parent / "data" / "sources.json"
+DEFAULT_CACHE_DIR = Path(__file__).resolve().parent / "data" / ".cache" / "repos"
 CUTOFF_DATE = "2021-07-01T00:00:00Z"
 # Git's --before comparison includes the named second, so query one second earlier.
 CUTOFF_GIT_BEFORE = "2021-06-30T23:59:59Z"
@@ -38,6 +44,12 @@ def parse_args() -> argparse.Namespace:
         help="Pin a branch, tag, ref, or commit instead of the repository HEAD",
     )
     parser.add_argument("--manifest", type=Path, default=DEFAULT_MANIFEST)
+    parser.add_argument(
+        "--cache-dir",
+        type=Path,
+        default=DEFAULT_CACHE_DIR,
+        help="Directory where GitHub repository archives are extracted",
+    )
     return parser.parse_args()
 
 
@@ -218,7 +230,7 @@ def add_source(
 
     source = {
         "id": source_id,
-        "kind": "git",
+        "kind": "github" if github_repository(git_url) else "git",
         "label": label,
         "label_name": "ai" if label == 1 else "human",
         "url": git_url,
@@ -254,6 +266,9 @@ def main() -> None:
         else:
             revision = resolve_head(args.git_url)
         source = add_source(manifest, args.git_url, args.label, source_id, revision)
+        github = github_repository(args.git_url)
+        if github is not None:
+            download_github_archive(source, args.cache_dir.resolve(), False, *github)
     except (RuntimeError, ValueError) as error:
         raise SystemExit(f"error: {error}") from error
 

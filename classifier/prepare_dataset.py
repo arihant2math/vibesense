@@ -9,6 +9,11 @@ from collections import Counter, defaultdict
 from pathlib import Path
 from typing import Any, Iterable
 
+if __package__:
+    from .github_archive import download_github_archive, github_repository
+else:
+    from github_archive import download_github_archive, github_repository
+
 DATA_DIR = Path(__file__).resolve().parent / "data"
 
 EXTENSION_LANGUAGES = {
@@ -110,7 +115,7 @@ def run_git(*args: str, cwd: Path | None = None) -> None:
     subprocess.run(["git", *args], cwd=cwd, check=True)
 
 
-def checkout_repository(source: dict[str, Any], cache_dir: Path, refresh: bool) -> Path:
+def checkout_git_repository(source: dict[str, Any], cache_dir: Path, refresh: bool) -> Path:
     destination = cache_dir / source["id"]
     git_dir = destination / ".git"
 
@@ -152,6 +157,13 @@ def checkout_repository(source: dict[str, Any], cache_dir: Path, refresh: bool) 
         )
 
     return destination
+
+
+def checkout_repository(source: dict[str, Any], cache_dir: Path, refresh: bool) -> Path:
+    github = github_repository(source["url"])
+    if github is not None:
+        return download_github_archive(source, cache_dir, refresh, *github)
+    return checkout_git_repository(source, cache_dir, refresh)
 
 
 def language_for(path: Path) -> str | None:
