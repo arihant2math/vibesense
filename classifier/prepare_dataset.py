@@ -387,6 +387,7 @@ def main() -> None:
             if not root.is_dir():
                 raise FileNotFoundError(f"Sample directory does not exist: {root}")
 
+        print(f"{source['id']}: start")
         source_records = records_for_source(
             source,
             root,
