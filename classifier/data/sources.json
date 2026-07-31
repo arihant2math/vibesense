@@ -84,6 +84,168 @@
       "label_name": "human",
       "path": "raw/human/samples",
       "provenance_note": "Manually supplied human-authored samples."
+    },
+    {
+      "id": "cpython",
+      "kind": "git",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/python/cpython",
+      "revision": "1b28187a0e3e914ee48de8032cbba0a965dd5563",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "linux",
+      "kind": "git",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/torvalds/linux",
+      "revision": "dbe69e43372212527abf48609aba7fc39a6daa27",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "firefox",
+      "kind": "git",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/mozilla-firefox/firefox/",
+      "revision": "985209fd1e9cd0e7c42e5f864fce18482faf5f46",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "go",
+      "kind": "git",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/golang/go",
+      "revision": "4711bf30e5fec4cf290964785871deba5955c29a",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "jdk",
+      "kind": "git",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/openjdk/jdk",
+      "revision": "85262c71834e9293ee1fe90baf84bf928405cf98",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "valhalla",
+      "kind": "git",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/openjdk/valhalla",
+      "revision": "b62a66e379fda00a5ba4622da7661c89b380ecdf",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "rust",
+      "kind": "git",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-lang/rust",
+      "revision": "e6f450bcfec1928f3ed6adfbc843fd59f635746b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "context",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/indragiek/Context",
+      "revision": "86ae05b2a374157194bb1ddbe1b8ebf613cf773b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "tckr",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/krypdoh/TCKR",
+      "revision": "bc39d5966741871bfd6e6c2aa4f6ad1c0d71651c",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "nano-banana-desktop",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/danielrosehill/Nano-Banana-Desktop",
+      "revision": "e460bb569f4d5233aa35654bfe80f0902050af0a",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "bitchat",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/permissionlesstech/bitchat",
+      "revision": "5780405dce58810f6f33dc98c907f12ab523fbfb",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "aldi-prices",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/jimlawruk/aldi-prices",
+      "revision": "a0ab3e1939aa436bc4759f0fb3d7137b3add19bb",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "nanobananaeditor",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/markfulton/NanoBananaEditor",
+      "revision": "ede326f621c165687048d7fe54020f6f4d56eaf9",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "claude-code-statusline",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/levz0r/claude-code-statusline",
+      "revision": "02b6d6c002da62600ab1601f830b59024f090115",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "html-to-markdown-mcp",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/levz0r/html-to-markdown-mcp",
+      "revision": "0e0224e60f0f38df93c34da612d471465e6ed1f8",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "pixel-pokemon",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/0xClouds/pixel_pokemon",
+      "revision": "e0a5eca60b23d1c3ec504cb2e82e48c02b4736d6",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "tower-of-time-game",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/maciej-trebacz/tower-of-time-game",
+      "revision": "a2497fb8aaf497c25a9caa306ed7ac7129d2400b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "markdown-printer",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/levz0r/markdown-printer",
+      "revision": "efdc612428ad31a5bd14251bf529e943207d4f5f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
