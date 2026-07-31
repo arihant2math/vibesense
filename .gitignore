@@ -1,2 +1,9 @@
-.idea
+.idea/
+.venv/
 uv.lock
+__pycache__/
+*.py[cod]
+
+detector/
+classifier/data/.cache/
+classifier/data/processed/
