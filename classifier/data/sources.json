@@ -87,7 +87,7 @@
     },
     {
       "id": "cpython",
-      "kind": "git",
+      "kind": "github",
       "label": 0,
       "label_name": "human",
       "url": "https://github.com/python/cpython",
@@ -96,7 +96,7 @@
     },
     {
       "id": "linux",
-      "kind": "git",
+      "kind": "github",
       "label": 0,
       "label_name": "human",
       "url": "https://github.com/torvalds/linux",
@@ -105,7 +105,7 @@
     },
     {
       "id": "firefox",
-      "kind": "git",
+      "kind": "github",
       "label": 0,
       "label_name": "human",
       "url": "https://github.com/mozilla-firefox/firefox/",
@@ -114,7 +114,7 @@
     },
     {
       "id": "go",
-      "kind": "git",
+      "kind": "github",
       "label": 0,
       "label_name": "human",
       "url": "https://github.com/golang/go",
@@ -123,7 +123,7 @@
     },
     {
       "id": "jdk",
-      "kind": "git",
+      "kind": "github",
       "label": 0,
       "label_name": "human",
       "url": "https://github.com/openjdk/jdk",
@@ -132,7 +132,7 @@
     },
     {
       "id": "valhalla",
-      "kind": "git",
+      "kind": "github",
       "label": 0,
       "label_name": "human",
       "url": "https://github.com/openjdk/valhalla",
@@ -141,7 +141,7 @@
     },
     {
       "id": "rust",
-      "kind": "git",
+      "kind": "github",
       "label": 0,
       "label_name": "human",
       "url": "https://github.com/rust-lang/rust",
@@ -150,7 +150,7 @@
     },
     {
       "id": "context",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/indragiek/Context",
@@ -159,7 +159,7 @@
     },
     {
       "id": "nano-banana-desktop",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/danielrosehill/Nano-Banana-Desktop",
@@ -168,7 +168,7 @@
     },
     {
       "id": "bitchat",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/permissionlesstech/bitchat",
@@ -177,7 +177,7 @@
     },
     {
       "id": "aldi-prices",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/jimlawruk/aldi-prices",
@@ -186,7 +186,7 @@
     },
     {
       "id": "nanobananaeditor",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/markfulton/NanoBananaEditor",
@@ -195,7 +195,7 @@
     },
     {
       "id": "claude-code-statusline",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/levz0r/claude-code-statusline",
@@ -204,7 +204,7 @@
     },
     {
       "id": "html-to-markdown-mcp",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/levz0r/html-to-markdown-mcp",
@@ -213,7 +213,7 @@
     },
     {
       "id": "pixel-pokemon",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/0xClouds/pixel_pokemon",
@@ -222,7 +222,7 @@
     },
     {
       "id": "tower-of-time-game",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/maciej-trebacz/tower-of-time-game",
@@ -231,7 +231,7 @@
     },
     {
       "id": "markdown-printer",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/levz0r/markdown-printer",
@@ -240,7 +240,7 @@
     },
     {
       "id": "bun",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/oven-sh/bun",
@@ -249,7 +249,7 @@
     },
     {
       "id": "slopos",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/SlopLabs/slopos",
@@ -258,7 +258,7 @@
     },
     {
       "id": "intersect",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/tucktuckg00se/INTERSECT",
@@ -267,7 +267,7 @@
     },
     {
       "id": "flightlesssomething",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/erkexzcx/flightlesssomething",
@@ -276,7 +276,7 @@
     },
     {
       "id": "nts-mcp-fs",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/Nefrols/NTS_MCP_FS",
@@ -285,7 +285,7 @@
     },
     {
       "id": "ghidra-copilot",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/knifeyspoony/ghidra-copilot",
@@ -294,7 +294,7 @@
     },
     {
       "id": "open2jam-modern",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/ar-nim/open2jam-modern",
@@ -303,7 +303,7 @@
     },
     {
       "id": "ai-codebase",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/blackberryhazard-org/ai-codebase",
@@ -312,7 +312,7 @@
     },
     {
       "id": "task-manager-java",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/brbousnguar/task-manager-java",
@@ -321,7 +321,7 @@
     },
     {
       "id": "library-management-javafx",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/brbousnguar/library-management-javafx",
@@ -330,7 +330,7 @@
     },
     {
       "id": "super-jules-ai-computing-machine",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/oswwwaldotc/super-jules-ai-computing-machine",
@@ -339,7 +339,7 @@
     },
     {
       "id": "vibeos",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/kaansenol5/VibeOS",
@@ -348,7 +348,7 @@
     },
     {
       "id": "liberated-mjpeg",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/0xD8C4A475/liberated-mjpeg",
@@ -357,7 +357,7 @@
     },
     {
       "id": "audiov",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/aisken-prg/audiov",
@@ -366,7 +366,7 @@
     },
     {
       "id": "snaike",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/alexandreroman/snaike",
@@ -375,7 +375,7 @@
     },
     {
       "id": "ootmos",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/Vap0r404/ootmOS",
@@ -384,7 +384,7 @@
     },
     {
       "id": "nanolang",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/jordanhubbard/nanolang",
@@ -393,7 +393,7 @@
     },
     {
       "id": "c-hess",
-      "kind": "git",
+      "kind": "github",
       "label": 1,
       "label_name": "ai",
       "url": "https://github.com/Zero-AI-Hub/C-hess",
@@ -402,7 +402,7 @@
     },
     {
       "id": "mathematics",
-      "kind": "git",
+      "kind": "github",
       "label": 0,
       "label_name": "human",
       "url": "https://github.com/arihant2math/mathematics/",
@@ -411,7 +411,7 @@
     },
     {
       "id": "prontus",
-      "kind": "git",
+      "kind": "github",
       "label": 0,
       "label_name": "human",
       "url": "https://github.com/arihant2math/prontus",
