@@ -511,6 +511,105 @@
       "url": "https://github.com/vuejs/core",
       "revision": "1ffd48a2f5fd3eead3ea29dae668b7ed1c6f6130",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "typescript",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/microsoft/typescript",
+      "revision": "e402c1d464fd66e55c43c6438eea2304bf9c5ac9",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "terminal",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/microsoft/terminal",
+      "revision": "f3e30d07faf5683ffe2771bae4a4fd43e3f0b5b1",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "powertoys",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/microsoft/PowerToys",
+      "revision": "9c248cdcd22f2632de40a7cac0239d4ec1aa442d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "svelte",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/sveltejs/svelte",
+      "revision": "8d91cbc56ac31de559e40a838f3f38a388a3baa2",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "vscode",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/microsoft/vscode",
+      "revision": "772f41ff6602887bf6da9eca1e82e7ada7333cd8",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "angular",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/angular/angular",
+      "revision": "0f23f7343ec9bdcd2d40f6f474d2a4f5e38e2627",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "storybook",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/storybookjs/storybook",
+      "revision": "c74836d51362519e6519f24beba0ec7087b71e8e",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "nest",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/nestjs/nest",
+      "revision": "80c538b8a33f244d1923c4e818b639a2b7175bdd",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "typeorm",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/typeorm/typeorm",
+      "revision": "98c13cf710de83783bc5b5576a64327b26d26262",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "rxjs",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/ReactiveX/rxjs",
+      "revision": "6fafcf53dc9e557439b25debaeadfd224b245a66",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "blueprint",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/palantir/blueprint",
+      "revision": "5c05ce6bb12a9810b9ff35310a1554a65af6b65d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
