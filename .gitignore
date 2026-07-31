@@ -4,6 +4,6 @@ uv.lock
 __pycache__/
 *.py[cod]
 
-detector/
+detector*/
 classifier/data/.cache/
 classifier/data/processed/
