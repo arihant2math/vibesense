@@ -14,8 +14,10 @@ from transformers import AutoTokenizer, DataCollatorWithPadding
 
 try:
     from .prepare_dataset import iter_code_files, normalize_code
+    from .token_windows import token_chunks
 except ImportError:  # Support `python classifier/run.py`.
     from prepare_dataset import iter_code_files, normalize_code
+    from token_windows import token_chunks
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_MODEL_DIR = PROJECT_ROOT / "detector"
@@ -119,49 +121,25 @@ def resolve_precision(requested: str, device: torch.device) -> str:
     return requested
 
 
-def training_max_length(model_dir: Path) -> int:
+def training_window_settings(model_dir: Path) -> tuple[int, int]:
+    max_length = 1024
+    stride: int | None = None
     config_path = model_dir / "run_config.json"
-    if not config_path.is_file():
-        return 1024
-    try:
-        config = json.loads(config_path.read_text(encoding="utf-8"))
-        value = int(config.get("max_length", 1024))
-    except (OSError, ValueError, TypeError, json.JSONDecodeError):
-        return 1024
-    return value if value >= 2 else 1024
+    if config_path.is_file():
+        try:
+            config = json.loads(config_path.read_text(encoding="utf-8"))
+            max_length = int(config.get("max_length", max_length))
+            configured_stride = config.get("stride")
+            stride = int(configured_stride) if configured_stride is not None else None
+        except (OSError, ValueError, TypeError, json.JSONDecodeError):
+            max_length = 1024
+            stride = None
 
-
-def token_chunks(
-    tokenizer: Any,
-    text: str,
-    max_length: int,
-    stride: int,
-) -> list[dict[str, list[int]]]:
-    if stride >= max_length:
-        raise ValueError("--stride must be smaller than --max-length")
-
-    encoded = tokenizer(
-        text,
-        truncation=True,
-        max_length=max_length,
-        stride=stride,
-        return_overflowing_tokens=True,
-        padding=False,
-    )
-    input_ids = encoded["input_ids"]
-    if input_ids and isinstance(input_ids[0], int):
-        input_ids = [input_ids]
-
-    chunks: list[dict[str, list[int]]] = []
-    for index, ids in enumerate(input_ids):
-        feature = {"input_ids": ids}
-        attention_masks = encoded.get("attention_mask")
-        if attention_masks:
-            if attention_masks and isinstance(attention_masks[0], int):
-                attention_masks = [attention_masks]
-            feature["attention_mask"] = attention_masks[index]
-        chunks.append(feature)
-    return chunks
+    if max_length < 2:
+        max_length = 1024
+    if stride is None or stride < 0:
+        stride = min(128, max_length // 4)
+    return max_length, stride
 
 
 def classify_text(
@@ -297,8 +275,11 @@ def main() -> None:
         "fp16": torch.float16,
         "fp32": torch.float32,
     }[precision]
-    max_length = args.max_length or training_max_length(model_dir)
-    stride = args.stride if args.stride is not None else min(128, max_length // 4)
+    training_max_length, training_stride = training_window_settings(model_dir)
+    max_length = args.max_length or training_max_length
+    stride = args.stride if args.stride is not None else training_stride
+    if args.max_length is not None and args.stride is None:
+        stride = min(128, max_length // 4)
     if stride >= max_length:
         raise ValueError("--stride must be smaller than --max-length")
     inputs = collect_inputs(args)

@@ -71,4 +71,7 @@ For machine-readable output:
 uv run python classifier/run.py path/to/source.py --json
 ```
 
-Long files are classified in overlapping token chunks and use their mean AI probability. Use `--aggregation max` to flag a file when any chunk scores highly, or `--include-chunks` to display each score. The default decision threshold is `0.5` and can be changed with `--threshold`.
+Long files are classified with the same overlapping token windows used during
+training and use their mean AI probability. Use `--aggregation max` to flag a
+file when any chunk scores highly, or `--include-chunks` to display each score.
+The default decision threshold is `0.5` and can be changed with `--threshold`.

@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import json
 import math
+from array import array
 from collections import defaultdict
 from pathlib import Path
 from typing import Any
@@ -22,6 +23,11 @@ from transformers import (
     TrainingArguments,
     set_seed,
 )
+
+try:
+    from .token_windows import token_chunks
+except ImportError:  # Support `python classifier/train.py`.
+    from token_windows import token_chunks
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_DATA_DIR = Path(__file__).resolve().parent / "data" / "processed"
@@ -68,6 +74,7 @@ class CodeDataset(Dataset):
         path: Path,
         tokenizer: Any,
         max_length: int,
+        stride: int,
         max_samples: int | None = None,
         language: str | None = None,
     ) -> None:
@@ -113,24 +120,44 @@ class CodeDataset(Dataset):
             records = truncate_language_balanced(records, max_samples)
         if not records:
             raise ValueError(f"Dataset split is empty: {path}")
-        self.examples = [(text, label) for text, label, _ in records]
 
-        self.tokenizer = tokenizer
-        self.max_length = max_length
+        # Keep token IDs in one packed uint32 array rather than Python lists.
+        # The prepared records are often several thousand tokens long, so a
+        # list-of-lists representation can consume gigabytes for the full set.
+        self.token_ids = array("I")
+        self.examples: list[tuple[int, int, int]] = []
+        self.window_record_indices: list[int] = []
+        self.record_labels = [label for _, label, _ in records]
+        self.record_window_counts: list[int] = []
+        for record_index, (text, label, _) in enumerate(records):
+            window_count = 0
+            for feature in token_chunks(tokenizer, text, max_length, stride):
+                start = len(self.token_ids)
+                self.token_ids.extend(feature["input_ids"])
+                self.examples.append((start, len(self.token_ids), label))
+                self.window_record_indices.append(record_index)
+                window_count += 1
+            self.record_window_counts.append(window_count)
+
+        if not self.examples:
+            raise ValueError(f"Dataset split contains no tokens: {path}")
+        self.record_count = len(records)
+        self.average_windows_per_record = len(self.examples) / self.record_count
 
     def __len__(self) -> int:
         return len(self.examples)
 
     def __getitem__(self, index: int) -> dict[str, Any]:
-        text, label = self.examples[index]
-        encoded = self.tokenizer(
-            text,
-            max_length=self.max_length,
-            truncation=True,
-            padding=False,
-        )
-        encoded["labels"] = label
-        return encoded
+        start, end, label = self.examples[index]
+        record_index = self.window_record_indices[index]
+        # Weight each record equally even though long records produce more
+        # windows. DataCollatorWithPadding derives attention_mask while padding.
+        return {
+            "input_ids": list(self.token_ids[start:end]),
+            "labels": label,
+            "sample_weight": self.average_windows_per_record
+            / self.record_window_counts[record_index],
+        }
 
 
 def binary_auroc(labels: np.ndarray, scores: np.ndarray) -> float:
@@ -179,17 +206,7 @@ def average_precision(labels: np.ndarray, scores: np.ndarray) -> float:
     return float(np.sum(recall_increase * precision))
 
 
-def compute_metrics(prediction: EvalPrediction) -> dict[str, float]:
-    raw_predictions = prediction.predictions
-    if isinstance(raw_predictions, tuple):
-        raw_predictions = raw_predictions[0]
-    logits = np.asarray(raw_predictions)
-    labels = np.asarray(prediction.label_ids, dtype=np.int64)
-
-    shifted = logits - logits.max(axis=1, keepdims=True)
-    probabilities = np.exp(shifted)
-    probabilities /= probabilities.sum(axis=1, keepdims=True)
-    ai_scores = probabilities[:, 1]
+def classification_metrics(labels: np.ndarray, ai_scores: np.ndarray) -> dict[str, float]:
     predicted = (ai_scores >= 0.5).astype(np.int64)
 
     true_positive = int(np.sum((predicted == 1) & (labels == 1)))
@@ -210,6 +227,67 @@ def compute_metrics(prediction: EvalPrediction) -> dict[str, float]:
         "auroc": binary_auroc(labels, ai_scores),
         "average_precision": average_precision(labels, ai_scores),
     }
+
+
+def prediction_ai_scores(prediction: EvalPrediction) -> np.ndarray:
+    raw_predictions = prediction.predictions
+    if isinstance(raw_predictions, tuple):
+        raw_predictions = raw_predictions[0]
+    logits = np.asarray(raw_predictions)
+    shifted = logits - logits.max(axis=1, keepdims=True)
+    probabilities = np.exp(shifted)
+    probabilities /= probabilities.sum(axis=1, keepdims=True)
+    return probabilities[:, 1]
+
+
+def compute_metrics(prediction: EvalPrediction) -> dict[str, float]:
+    labels = np.asarray(prediction.label_ids, dtype=np.int64)
+    return classification_metrics(labels, prediction_ai_scores(prediction))
+
+
+def record_compute_metrics(dataset: CodeDataset):
+    """Build metrics that mean-aggregate windows like inference does."""
+
+    def aggregate(prediction: EvalPrediction) -> dict[str, float]:
+        window_scores = prediction_ai_scores(prediction)
+        if len(window_scores) != len(dataset.window_record_indices):
+            raise ValueError("Prediction count does not match the evaluation dataset")
+
+        score_sums = np.zeros(dataset.record_count, dtype=np.float64)
+        window_counts = np.zeros(dataset.record_count, dtype=np.int64)
+        np.add.at(score_sums, dataset.window_record_indices, window_scores)
+        np.add.at(window_counts, dataset.window_record_indices, 1)
+        record_scores = score_sums / window_counts
+        labels = np.asarray(dataset.record_labels, dtype=np.int64)
+        return classification_metrics(labels, record_scores)
+
+    return aggregate
+
+
+class RecordWeightedTrainer(Trainer):
+    """Give every prepared record equal loss weight regardless of its length."""
+
+    def __init__(self, *args: Any, **kwargs: Any) -> None:
+        super().__init__(*args, **kwargs)
+        # compute_loss returns a batch mean and does not consume
+        # num_items_in_batch; let Trainer apply gradient-accumulation scaling.
+        self.model_accepts_loss_kwargs = False
+
+    def compute_loss(
+        self,
+        model: Any,
+        inputs: dict[str, Any],
+        return_outputs: bool = False,
+        num_items_in_batch: Any = None,
+    ) -> Any:
+        sample_weights = inputs.pop("sample_weight")
+        labels = inputs.pop("labels")
+        outputs = model(**inputs)
+        losses = torch.nn.functional.cross_entropy(
+            outputs.logits.float(), labels, reduction="none"
+        )
+        loss = (losses * sample_weights).mean()
+        return (loss, outputs) if return_outputs else loss
 
 
 def mps_supports_bf16() -> bool:
@@ -252,6 +330,11 @@ def parse_args() -> argparse.Namespace:
         help="Train and evaluate only on this language (for example, python or rust)",
     )
     parser.add_argument("--max-length", type=int, default=1024)
+    parser.add_argument(
+        "--stride",
+        type=int,
+        help="Overlapping tokens between training windows (default: min(128, max_length / 4))",
+    )
     parser.add_argument("--epochs", type=float, default=2.0)
     parser.add_argument("--learning-rate", type=float, default=2e-4)
     parser.add_argument("--batch-size", type=int, default=1)
@@ -285,6 +368,15 @@ def parse_args() -> argparse.Namespace:
 
 def main() -> None:
     cli_args = parse_args()
+    if cli_args.max_length < 2:
+        raise ValueError("--max-length must be at least 2")
+    if cli_args.stride is not None and cli_args.stride < 0:
+        raise ValueError("--stride cannot be negative")
+    cli_args.stride = (
+        cli_args.stride
+        if cli_args.stride is not None
+        else min(128, cli_args.max_length // 4)
+    )
     set_seed(cli_args.seed)
 
     precision = choose_precision(cli_args.precision, cli_args.cpu)
@@ -305,6 +397,7 @@ def main() -> None:
         cli_args.data_dir / "train.jsonl",
         tokenizer,
         cli_args.max_length,
+        cli_args.stride,
         cli_args.max_train_samples,
         language=cli_args.language,
     )
@@ -312,6 +405,7 @@ def main() -> None:
         cli_args.data_dir / "validation.jsonl",
         tokenizer,
         cli_args.max_length,
+        cli_args.stride,
         cli_args.max_eval_samples,
         language=cli_args.language,
     )
@@ -319,6 +413,7 @@ def main() -> None:
         cli_args.data_dir / "test.jsonl",
         tokenizer,
         cli_args.max_length,
+        cli_args.stride,
         cli_args.max_eval_samples,
         language=cli_args.language,
     )
@@ -376,26 +471,30 @@ def main() -> None:
         fp16=precision == "fp16",
         gradient_checkpointing=True,
         dataloader_pin_memory=torch.cuda.is_available(),
+        remove_unused_columns=False,
         report_to="none",
         seed=cli_args.seed,
         data_seed=cli_args.seed,
         use_cpu=cli_args.cpu,
     )
 
-    trainer = Trainer(
+    trainer = RecordWeightedTrainer(
         model=model,
         args=training_args,
         train_dataset=train_dataset,
         eval_dataset=validation_dataset,
         data_collator=DataCollatorWithPadding(tokenizer, pad_to_multiple_of=8),
         processing_class=tokenizer,
-        compute_metrics=compute_metrics,
+        compute_metrics=record_compute_metrics(validation_dataset),
     )
 
     print(
-        f"Training on {len(train_dataset):,} records; validating on "
-        f"{len(validation_dataset):,}; language={cli_args.language or 'all'}; "
-        f"precision={precision}; max_length={cli_args.max_length}"
+        f"Training on {train_dataset.record_count:,} records / "
+        f"{len(train_dataset):,} token windows; validating on "
+        f"{validation_dataset.record_count:,} records / "
+        f"{len(validation_dataset):,} token windows; "
+        f"language={cli_args.language or 'all'}; precision={precision}; "
+        f"max_length={cli_args.max_length}; stride={cli_args.stride}"
     )
     train_result = trainer.train(resume_from_checkpoint=cli_args.resume_from_checkpoint)
     trainer.save_model()
@@ -404,6 +503,7 @@ def main() -> None:
     trainer.save_metrics("train", train_result.metrics)
     trainer.save_state()
 
+    trainer.compute_metrics = record_compute_metrics(test_dataset)
     test_metrics = trainer.evaluate(test_dataset, metric_key_prefix="test")
     trainer.log_metrics("test", test_metrics)
     trainer.save_metrics("test", test_metrics)
@@ -413,9 +513,12 @@ def main() -> None:
         "data_dir": str(cli_args.data_dir),
         "output_dir": str(cli_args.output_dir),
         "resolved_precision": precision,
-        "train_records": len(train_dataset),
-        "validation_records": len(validation_dataset),
-        "test_records": len(test_dataset),
+        "train_records": train_dataset.record_count,
+        "validation_records": validation_dataset.record_count,
+        "test_records": test_dataset.record_count,
+        "train_windows": len(train_dataset),
+        "validation_windows": len(validation_dataset),
+        "test_windows": len(test_dataset),
     }
     cli_args.output_dir.mkdir(parents=True, exist_ok=True)
     (cli_args.output_dir / "run_config.json").write_text(
