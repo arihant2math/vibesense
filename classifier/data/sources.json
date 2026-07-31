@@ -399,6 +399,24 @@
       "url": "https://github.com/Zero-AI-Hub/C-hess",
       "revision": "ca932c62443ebaa840bdae35ca81f87e27870eb8",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mathematics",
+      "kind": "git",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/arihant2math/mathematics/",
+      "revision": "0bb1bbc923c7d8663e5813e78c9f15e2f344dac2",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "prontus",
+      "kind": "git",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/arihant2math/prontus",
+      "revision": "d9d40a1f2becae02f383ea175509902a6d184df1",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
