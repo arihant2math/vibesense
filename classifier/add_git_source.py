@@ -1,4 +1,8 @@
-"""Add a pinned Git repository to the classifier source manifest."""
+"""Add a pinned Git repository to the classifier source manifest.
+
+When the manifest is prepared, snippets are balanced between AI and human labels
+independently for every programming language.
+"""
 
 from __future__ import annotations
 

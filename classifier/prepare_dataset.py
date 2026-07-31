@@ -107,7 +107,11 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--min-chars", type=int, default=40)
     parser.add_argument("--seed", default="vibesense-dataset-v1")
     parser.add_argument("--refresh", action="store_true", help="Fetch pinned revisions again")
-    parser.add_argument("--no-balance", action="store_true", help="Do not balance each split by label")
+    parser.add_argument(
+        "--no-balance",
+        action="store_true",
+        help="Do not balance AI/human snippets within each language in each split",
+    )
     return parser.parse_args()
 
 
@@ -313,19 +317,33 @@ def split_name(record: dict[str, Any], seed: str) -> str:
 
 
 def balance_records(records: list[dict[str, Any]], seed: str) -> list[dict[str, Any]]:
-    by_label: dict[int, list[dict[str, Any]]] = defaultdict(list)
+    labels = {record["label"] for record in records}
+    if labels != {0, 1}:
+        raise RuntimeError(
+            f"Cannot balance split; expected labels [0, 1], found {sorted(labels)}"
+        )
+
+    by_language: dict[str, dict[int, list[dict[str, Any]]]] = defaultdict(
+        lambda: defaultdict(list)
+    )
     for record in records:
-        by_label[record["label"]].append(record)
+        by_language[record["language"]][record["label"]].append(record)
 
-    if set(by_label) != {0, 1}:
-        labels = sorted(by_label)
-        raise RuntimeError(f"Cannot balance split; expected labels [0, 1], found {labels}")
-
-    target_size = min(len(by_label[0]), len(by_label[1]))
     selected: list[dict[str, Any]] = []
-    for label, label_records in by_label.items():
-        label_records.sort(key=lambda record: stable_digest(seed, record["id"]))
-        selected.extend(label_records[:target_size])
+    for language, by_label in sorted(by_language.items()):
+        # A language represented by only one label cannot contribute to a
+        # language-balanced dataset: its balanced sample size is zero.
+        if set(by_label) != {0, 1}:
+            continue
+
+        target_size = min(len(by_label[0]), len(by_label[1]))
+        for label in (0, 1):
+            label_records = by_label[label]
+            label_records.sort(
+                key=lambda record: stable_digest(seed, language, record["id"])
+            )
+            selected.extend(label_records[:target_size])
+
     selected.sort(key=lambda record: stable_digest(seed, "output", record["id"]))
     return selected
 
