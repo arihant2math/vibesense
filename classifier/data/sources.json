@@ -273,6 +273,132 @@
       "url": "https://github.com/erkexzcx/flightlesssomething",
       "revision": "ab582e57e7baf0dcbba80f9f13b758ec0da2dd18",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "nts-mcp-fs",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Nefrols/NTS_MCP_FS",
+      "revision": "7b8175b88ef052c24a769da04d43aac6657749bd",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "ghidra-copilot",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/knifeyspoony/ghidra-copilot",
+      "revision": "2cab2a2b364688cedf15baab9187ba063fcffe52",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "open2jam-modern",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/ar-nim/open2jam-modern",
+      "revision": "bb797c6e7efb77df4850934aecfc25388e5fe856",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "ai-codebase",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/blackberryhazard-org/ai-codebase",
+      "revision": "d7735cb0a0a90cf7609f8368f46d2731558fc3d2",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "task-manager-java",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/brbousnguar/task-manager-java",
+      "revision": "8ef14c79fa841b2a7e1a67e1c9e10a85cfb96555",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "library-management-javafx",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/brbousnguar/library-management-javafx",
+      "revision": "2e014fb3bf1adbd94bd2680b0fbd3c6b22c5817e",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "super-jules-ai-computing-machine",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/oswwwaldotc/super-jules-ai-computing-machine",
+      "revision": "579661c531bcb972e65f6e5291b15bbaed911302",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "vibeos",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/kaansenol5/VibeOS",
+      "revision": "866bfb9b7fc554b5b8e0939b4626bcf0416b8b19",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "liberated-mjpeg",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/0xD8C4A475/liberated-mjpeg",
+      "revision": "efd1458f1a4049d15d487541a70204cc4f96a184",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "audiov",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/aisken-prg/audiov",
+      "revision": "d332e377814fe839745937358dd3ef7376472e19",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "snaike",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/alexandreroman/snaike",
+      "revision": "0df14211cdd637d505671dcc4e058ead067981d0",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "ootmos",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Vap0r404/ootmOS",
+      "revision": "4f65bde68e616dc66c60c357630998f522a9c172",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "nanolang",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/jordanhubbard/nanolang",
+      "revision": "aa458c71bbb581fd32b69a272d1c09ddbc29352c",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "c-hess",
+      "kind": "git",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Zero-AI-Hub/C-hess",
+      "revision": "ca932c62443ebaa840bdae35ca81f87e27870eb8",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
