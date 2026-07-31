@@ -448,6 +448,15 @@
       "url": "https://github.com/arihant2math/language-converter",
       "revision": "cfab63c736eb0bab115ba5e0bd876d2cc414ac76",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "primer-solid",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/arihant2math/primer-solid",
+      "revision": "8313dc01c0321585e49dae1b0a490d4af3867db7",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
