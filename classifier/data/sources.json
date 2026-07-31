@@ -862,6 +862,15 @@
       "url": "https://github.com/jgarzik/vibe99-old",
       "revision": "bcc2a97606291f17454d196aff60c282912dbe12",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "pokemon-showdown-rs",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/vjeux/pokemon-showdown-rs",
+      "revision": "605247d012383c896edf7c2a83c55f5aaa2bccef",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
