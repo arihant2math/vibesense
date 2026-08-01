@@ -20,7 +20,11 @@ if __name__ == "__main__":
         if classification['ai_probability'] > classification['threshold']:
             prob_ai.append(classification)
 
-    print(f"{len(ai)} out of {len(result.key_files)} key files are certainly AI generated, {len(prob_ai)} are probably AI generated or assisted in some way")
+    print(f"{len(ai)} out of {len(result.key_files)} key files are certainly AI generated", end="")
+    if len(ai) - len(prob_ai) > 0:
+        print(", another {len(ai) - len(prob_ai)} are probably AI generated or assisted in some way")
+    else:
+        print()
     print("Worst offenders")
     for file in sorted(ai, key=lambda result: result["ai_probability"]):
         print(f"- {file["input"]}: {file["ai_probability"]}")
