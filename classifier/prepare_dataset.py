@@ -8,9 +8,10 @@ import re
 import subprocess
 import unicodedata
 from collections import Counter, defaultdict
+from collections.abc import Iterable
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Any, Iterable
+from typing import Any
 
 if __package__:
     from .github_archive import download_github_archive, github_repository
@@ -192,21 +193,19 @@ def language_for(path: Path) -> str | None:
 
 def iter_code_files(root: Path) -> Iterable[Path]:
     paths: list[Path] = []
+    directories = [root]
 
-    def visit(directory: Path) -> None:
-        with os.scandir(directory) as entries:
-            for entry in entries:
-                if entry.is_symlink():
-                    continue
-                if entry.is_dir(follow_symlinks=False):
-                    if entry.name.casefold() not in EXCLUDED_PARTS:
-                        visit(Path(entry.path))
-                elif entry.is_file(follow_symlinks=False):
-                    path = Path(entry.path)
-                    if language_for(path) is not None:
-                        paths.append(path)
+    while directories:
+        directory = directories.pop()
+        for path in directory.glob("*"):
+            if path.is_symlink():
+                continue
+            if path.is_dir():
+                if path.name.casefold() not in EXCLUDED_PARTS:
+                    directories.append(path)
+            elif path.is_file() and language_for(path) is not None:
+                paths.append(path)
 
-    visit(root)
     yield from sorted(paths)
 
 
