@@ -1,0 +1,19 @@
+[package]
+name = "vibesense-server"
+version = "0.1.0"
+description = "JSON HTTP API for Vibesense code-authorship detection"
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+access = { path = "../access" }
+axum.workspace = true
+pipeline = { path = "../pipeline" }
+serde.workspace = true
+tokio = { workspace = true, features = ["macros", "net", "rt-multi-thread", "signal"] }
+vibesense-classifier = { path = "../classifier" }
+
+[dev-dependencies]
+serde_json.workspace = true
+tower = { version = "0.5.2", features = ["util"] }

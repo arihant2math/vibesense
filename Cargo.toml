@@ -1,5 +1,11 @@
 [workspace]
-members = ["crates/access", "crates/classifier", "crates/judge", "crates/pipeline"]
+members = [
+    "crates/access",
+    "crates/classifier",
+    "crates/judge",
+    "crates/pipeline",
+    "crates/server",
+]
 resolver = "2"
 
 [workspace.package]
@@ -9,6 +15,7 @@ rust-version = "1.88"
 
 [workspace.dependencies]
 async-trait = "0.1.89"
+axum = "0.8.4"
 genai = "=0.7.0-beta.15"
 ort = { version = "=2.0.0-rc.13", default-features = false, features = ["std", "download-binaries", "copy-dylibs", "tls-native", "api-27"] }
 serde = { version = "1.0.228", features = ["derive"] }
