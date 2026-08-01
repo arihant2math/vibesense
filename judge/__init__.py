@@ -1,4 +1,5 @@
-from typing import Optional
+import json
+from typing import Any, Optional
 
 from litellm import completion
 from pydantic import BaseModel
@@ -20,7 +21,7 @@ class JudgeOutput(BaseModel):
     comments: str
 
 
-def check_repo(accessor: Accessor):
+def check_repo(accessor: Accessor) -> JudgeOutput:
     def tool_read_file(
         relative_path: str,
         offset: Optional[int] = None,
@@ -29,7 +30,19 @@ def check_repo(accessor: Accessor):
         return accessor.read_file(relative_path, offset, limit)
 
     def tool_list_directory(relative_path: str):
-        return accessor.list_dir(relative_path)
+        return [
+            {
+                "name": entry.name,
+                "entry_type": entry.entry_type.value,
+                "size": entry.size,
+            }
+            for entry in accessor.list_dir(relative_path)
+        ]
+
+    tool_functions = {
+        "tool_read_file": tool_read_file,
+        "tool_list_directory": tool_list_directory,
+    }
 
     tools = [
         {
@@ -81,15 +94,64 @@ def check_repo(accessor: Accessor):
         },
     ]
 
-    response = completion(
-        model="gemini/gemini-3.1-pro-preview",
-        messages=[
-            {"role": "system", "content": SYSTEM_PROMPT},
-            {"role": "user", "content": "Hello, how are you?"},
-        ],
-        response_format=JudgeOutput,
-        tools=tools,
-    )
-    print(response)
+    messages: list[dict[str, Any]] = [
+        {"role": "system", "content": SYSTEM_PROMPT},
+        {
+            "role": "user",
+            "content": (
+                "Inspect the repository using the available tools and determine "
+                "whether its code is AI generated."
+            ),
+        },
+    ]
 
-check_repo(DirectoryAccessor("../winbond_flash_driver"))
+    while True:
+        response = completion(
+            model="gemini/gemini-3.1-pro-preview",
+            messages=messages,
+            response_format=JudgeOutput,
+            tools=tools,
+        )
+        message = response.choices[0].message
+        tool_calls = message.tool_calls or []
+
+        if not tool_calls:
+            if not message.content:
+                raise RuntimeError("Judge returned neither tool calls nor an answer")
+            return JudgeOutput.model_validate_json(message.content)
+
+        messages.append(message.to_dict(mode="json", exclude_none=True))
+        for tool_call in tool_calls:
+            function_name = tool_call.function.name
+            try:
+                arguments = json.loads(tool_call.function.arguments)
+                if not isinstance(arguments, dict):
+                    raise TypeError("tool arguments must be a JSON object")
+
+                tool_function = tool_functions.get(function_name)
+                if tool_function is None:
+                    raise ValueError(f"Unknown tool: {function_name}")
+                result = tool_function(**arguments)
+                content = (
+                    result
+                    if isinstance(result, str)
+                    else json.dumps(result, ensure_ascii=False)
+                )
+            except Exception as error:
+                content = json.dumps(
+                    {"error": f"{type(error).__name__}: {error}"},
+                    ensure_ascii=False,
+                )
+
+            messages.append(
+                {
+                    "role": "tool",
+                    "tool_call_id": tool_call.id,
+                    "content": content,
+                }
+            )
+
+
+if __name__ == "__main__":
+    result = check_repo(DirectoryAccessor("../winbond_flash_driver"))
+    print(result.model_dump_json(indent=2))
