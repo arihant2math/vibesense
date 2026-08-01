@@ -1,32 +1,46 @@
-from pathlib import Path
-
-from access import DirectoryAccessor
+from access import Accessor
 from inference_service import InferenceService
 from judge import check_repo
 
-if __name__ == "__main__":
+
+def run_pipeline(accessor: Accessor) -> None:
+    """Inspect and classify the repository exposed by ``accessor``."""
     service = InferenceService()
-    path = Path("../prontum")
-    accessor = DirectoryAccessor(path)
     result = check_repo(accessor)
     print(result.model_dump_json(indent=2))
-    ai = []
-    prob_ai = []
+
+    certain_ai = []
+    probable_ai = []
     certain_threshold = 0.75
     for file in result.key_files:
         code = accessor.read_file(file)
         classification = service.classify(code, file)
-        if classification['ai_probability'] > certain_threshold:
-            ai.append(classification)
-        if classification['ai_probability'] > classification['threshold']:
-            prob_ai.append(classification)
+        if classification["ai_probability"] > certain_threshold:
+            certain_ai.append(classification)
+        elif classification["ai_probability"] > classification["threshold"]:
+            probable_ai.append(classification)
 
-    print(f"{len(ai)} out of {len(result.key_files)} key files are certainly AI generated", end="")
-    if len(ai) - len(prob_ai) > 0:
-        print(", another {len(ai) - len(prob_ai)} are probably AI generated or assisted in some way")
+    print(
+        f"{len(certain_ai)} out of {len(result.key_files)} key files are "
+        "certainly AI generated",
+        end="",
+    )
+    if probable_ai:
+        print(
+            f", another {len(probable_ai)} are probably AI generated or assisted "
+            "in some way"
+        )
     else:
         print()
-    print("Worst offenders")
-    for file in sorted(ai, key=lambda result: result["ai_probability"]):
-        print(f"- {file["input"]}: {file["ai_probability"]}")
 
+    print("Worst offenders")
+    offenders = sorted(
+        certain_ai + probable_ai,
+        key=lambda classification: classification["ai_probability"],
+        reverse=True,
+    )
+    for classification in offenders:
+        print(
+            f"- {classification['input']}: "
+            f"{classification['ai_probability']}"
+        )
