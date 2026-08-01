@@ -2,6 +2,22 @@
   "version": 1,
   "sources": [
     {
+      "id": "generated-ai-samples",
+      "kind": "samples",
+      "label": 1,
+      "label_name": "ai",
+      "path": "raw/ai/samples",
+      "provenance_note": "Samples generated specifically for this dataset."
+    },
+    {
+      "id": "manual-human-samples",
+      "kind": "samples",
+      "label": 0,
+      "label_name": "human",
+      "path": "raw/human/samples",
+      "provenance_note": "Manually supplied human-authored samples."
+    },
+    {
       "id": "trustos",
       "kind": "github",
       "label": 1,
@@ -36,14 +52,6 @@
       "provenance_note": "AI label supplied by the dataset author; not independently verified."
     },
     {
-      "id": "generated-ai-samples",
-      "kind": "samples",
-      "label": 1,
-      "label_name": "ai",
-      "path": "raw/ai/samples",
-      "provenance_note": "Samples generated specifically for this dataset."
-    },
-    {
       "id": "servo",
       "kind": "github",
       "label": 0,
@@ -76,14 +84,6 @@
         "tools"
       ],
       "provenance_note": "Human label supplied by the dataset author; individual-file provenance is not independently verified."
-    },
-    {
-      "id": "manual-human-samples",
-      "kind": "samples",
-      "label": 0,
-      "label_name": "human",
-      "path": "raw/human/samples",
-      "provenance_note": "Manually supplied human-authored samples."
     },
     {
       "id": "cpython",
@@ -1127,6 +1127,33 @@
       "label_name": "human",
       "url": "https://github.com/LoboArkano/Tic-Tac-Toe.git",
       "revision": "f16089d8427a0586f9969706a97aae258a242f4e",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "color-switch-game",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/alperen23230/Color-Switch-Game.git",
+      "revision": "e7e16c530567ae640f5e848414b7a9e07bcce596",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "pencilkit-demo",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/chowdhurynawaf/PencilKit.git",
+      "revision": "a7a8dac296fce1478b37e46cff65d30b521c3e17",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "connect4-swiftui",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/zhijunsheng/connect4-swiftui-ios.git",
+      "revision": "b4fac71ce0a1d77899b0e98acecb475e88f1e98d",
       "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
