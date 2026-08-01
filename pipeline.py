@@ -3,9 +3,10 @@ from inference_service import InferenceService
 from judge import check_repo
 
 
-def run_pipeline(accessor: Accessor) -> None:
+def run_pipeline(accessor: Accessor, service: InferenceService | None = None) -> None:
     """Inspect and classify the repository exposed by ``accessor``."""
-    service = InferenceService()
+    if service is None:
+        service = InferenceService()
     result = check_repo(accessor)
     print(result.model_dump_json(indent=2))
 
@@ -40,7 +41,4 @@ def run_pipeline(accessor: Accessor) -> None:
         reverse=True,
     )
     for classification in offenders:
-        print(
-            f"- {classification['input']}: "
-            f"{classification['ai_probability']}"
-        )
+        print(f"- {classification['input']}: {classification['ai_probability']}")
