@@ -1,0 +1,21 @@
+[package]
+name = "vibesense-classifier"
+version = "0.1.0"
+description = "ONNX inference for the Vibesense code-authorship classifier"
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[features]
+default = []
+cuda = ["ort/cuda"]
+coreml = ["ort/coreml"]
+directml = ["ort/directml"]
+
+[dependencies]
+ort.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
+tokenizers.workspace = true
+unicode-normalization.workspace = true

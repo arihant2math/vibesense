@@ -1,0 +1,16 @@
+[workspace]
+members = ["crates/classifier"]
+resolver = "2"
+
+[workspace.package]
+edition = "2024"
+license = "MIT"
+rust-version = "1.88"
+
+[workspace.dependencies]
+ort = { version = "=2.0.0-rc.13", default-features = false, features = ["std", "download-binaries", "copy-dylibs", "tls-native", "api-27"] }
+serde = { version = "1.0.228", features = ["derive"] }
+serde_json = "1.0.149"
+thiserror = "2.0.17"
+tokenizers = { version = "0.23.1", default-features = false, features = ["onig"] }
+unicode-normalization = "0.1.25"
