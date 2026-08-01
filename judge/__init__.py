@@ -23,7 +23,7 @@ class JudgeOutput(BaseModel):
     comments: str
 
 
-def check_repo(accessor: Accessor) -> JudgeOutput:
+def check_repo(accessor: Accessor, model="gemini/gemini-3.1-pro-preview") -> JudgeOutput:
     def tool_read_file(
         relative_path: str,
         offset: Optional[int] = None,
@@ -109,7 +109,7 @@ def check_repo(accessor: Accessor) -> JudgeOutput:
 
     while True:
         response = completion(
-            model="gemini/gemini-3.1-pro-preview",
+            model=model,
             messages=messages,
             response_format=JudgeOutput,
             tools=tools,
