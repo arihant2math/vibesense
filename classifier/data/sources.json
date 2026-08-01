@@ -1155,6 +1155,15 @@
       "url": "https://github.com/zhijunsheng/connect4-swiftui-ios.git",
       "revision": "b4fac71ce0a1d77899b0e98acecb475e88f1e98d",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "freightfrenzy",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/The-Knights-of-Ni/FreightFrenzy",
+      "revision": "89c4c04d594a450762324f2bda5c21b87c5e5a8f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
