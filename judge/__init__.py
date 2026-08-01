@@ -8,7 +8,9 @@ from access import Accessor, DirectoryAccessor
 
 SYSTEM_PROMPT = """You are part of a pipeline meant to detect AI generated code.
 Return false for both is_ai and is_human if you are not sure.
-Return the files most likely to be AI generated in `suspicious_files`.
+List some key files in `key_files`. This entails files that are part of the core logic of the system
+(i.e. not machine generated, vendored, or config files).
+These will be fed into a classifier which will perform spot testing on these files.
 
 Add any relevant comments in comments.
 """
@@ -17,7 +19,7 @@ Add any relevant comments in comments.
 class JudgeOutput(BaseModel):
     is_ai: bool
     is_human: bool
-    suspicious_files: list[str]
+    key_files: list[str]
     comments: str
 
 
@@ -153,5 +155,5 @@ def check_repo(accessor: Accessor) -> JudgeOutput:
 
 
 if __name__ == "__main__":
-    result = check_repo(DirectoryAccessor("../winbond_flash_driver"))
+    result = check_repo(DirectoryAccessor("../prontum"))
     print(result.model_dump_json(indent=2))
