@@ -58,6 +58,18 @@ curl http://localhost:5000/github \
 
 `repository` accepts `owner/repository` or a GitHub HTTPS, SSH, or scp-style URL. `ref` is optional and may be a branch, tag, or commit SHA. The response is the pipeline's repository statistics, including selection counts, scan counts, confidence interval, and stop reason.
 
+### `POST /github-stream`
+
+Run the same analysis while receiving server-sent events as selection and file scans finish:
+
+```sh
+curl -N http://localhost:5000/github-stream \
+  -H 'content-type: application/json' \
+  -d '{"repository":"owner/repository","ref":"main"}'
+```
+
+The endpoint accepts the same request body as `POST /github`. It emits `progress` events containing `RepoStats`, followed by one `complete` event with the final statistics. If an analysis fails after the stream opens, it emits an `error` event using the normal error-body shape. Keep-alive comments are sent every 15 seconds.
+
 ### `GET /health`
 
 Returns `{"status":"ok"}`. Because the model is loaded before the listener starts, this also acts as a readiness check.

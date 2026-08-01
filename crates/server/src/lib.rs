@@ -1,23 +1,33 @@
 //! JSON HTTP interface for Vibesense.
 //!
 //! The server exposes file-level classification at `POST /code` and sampled
-//! GitHub repository analysis at `POST /github`. A loaded detector is shared
-//! by both endpoints and inference is kept off Tokio executor threads.
+//! GitHub repository analysis at `POST /github`, with live progress at
+//! `POST /github-stream`. A loaded detector is shared by both endpoints and
+//! inference is kept off Tokio executor threads.
 
-use std::sync::{Arc, Mutex, PoisonError};
+use std::{
+    convert::Infallible,
+    sync::{Arc, Mutex, PoisonError},
+    time::Duration,
+};
 
 use access::{Accessor, GitHubAccessor};
 use axum::{
     Json, Router,
     extract::{DefaultBodyLimit, FromRef, State, rejection::JsonRejection},
     http::StatusCode,
-    response::{IntoResponse, Response},
+    response::{
+        IntoResponse, Response,
+        sse::{Event, KeepAlive, Sse},
+    },
     routing::{get, post},
 };
 use pipeline::{
-    Classification, ClassifierError, Config as PipelineConfig, FileClassifier, RepoStats, analyze,
+    Analysis, Classification, ClassifierError, Config as PipelineConfig, FileClassifier, RepoStats,
+    analyze_streaming,
 };
 use serde::{Deserialize, Serialize};
+use tokio_stream::wrappers::ReceiverStream;
 use vibesense_classifier::Classifier;
 
 /// Maximum JSON request size accepted by the API.
@@ -89,6 +99,7 @@ pub fn app_with_config(detector: Arc<dyn CodeDetector>, pipeline_config: Pipelin
         .route("/health", get(health))
         .route("/code", post(classify_code))
         .route("/github", post(classify_github))
+        .route("/github-stream", post(classify_github_stream))
         .fallback(not_found)
         .method_not_allowed_fallback(method_not_allowed)
         .layer(DefaultBodyLimit::max(MAX_REQUEST_BYTES))
@@ -137,6 +148,38 @@ async fn classify_github(
     payload: Result<Json<GitHubRequest>, JsonRejection>,
 ) -> Result<Json<RepoStats>, ApiError> {
     let Json(request) = payload.map_err(ApiError::invalid_json)?;
+    let result = start_github_analysis(state, request)?
+        .wait()
+        .await
+        .map_err(ApiError::pipeline)?;
+    Ok(Json(result))
+}
+
+/// Stream a GitHub analysis as server-sent events.
+///
+/// The stream contains `progress` events after repository selection and each
+/// sampled file, then exactly one `complete` event. Errors discovered after
+/// the HTTP response has started are emitted as an `error` event.
+async fn classify_github_stream(
+    State(state): State<AppState>,
+    payload: Result<Json<GitHubRequest>, JsonRejection>,
+) -> Result<Response, ApiError> {
+    let Json(request) = payload.map_err(ApiError::invalid_json)?;
+    let analysis = start_github_analysis(state, request)?;
+    let (sender, receiver) = tokio::sync::mpsc::channel(16);
+
+    tokio::spawn(forward_analysis_events(analysis, sender));
+
+    Ok(Sse::new(ReceiverStream::new(receiver))
+        .keep_alive(
+            KeepAlive::new()
+                .interval(Duration::from_secs(15))
+                .text("keep-alive"),
+        )
+        .into_response())
+}
+
+fn start_github_analysis(state: AppState, request: GitHubRequest) -> Result<Analysis, ApiError> {
     let mut accessor = GitHubAccessor::new(&request.repository).map_err(ApiError::access)?;
     if let Some(git_ref) = request.git_ref {
         accessor = accessor.with_ref(git_ref).map_err(|error| {
@@ -146,10 +189,62 @@ async fn classify_github(
 
     let accessor: Arc<dyn Accessor> = Arc::new(accessor);
     let classifier = SharedFileClassifier(state.detector);
-    let result = analyze(accessor, classifier, state.pipeline_config)
-        .await
-        .map_err(ApiError::pipeline)?;
-    Ok(Json(result))
+    Ok(analyze_streaming(
+        accessor,
+        classifier,
+        state.pipeline_config,
+    ))
+}
+
+async fn forward_analysis_events(
+    analysis: Analysis,
+    sender: tokio::sync::mpsc::Sender<Result<Event, Infallible>>,
+) {
+    let mut progress = analysis.progress();
+    let result = analysis.wait();
+    tokio::pin!(result);
+
+    loop {
+        tokio::select! {
+            _ = sender.closed() => break,
+            result = &mut result => {
+                let event = match result {
+                    Ok(stats) => stats_event("complete", stats),
+                    Err(error) => error_event(ApiError::pipeline(error)),
+                };
+                let _ = sender.send(Ok(event)).await;
+                break;
+            }
+            changed = progress.changed() => {
+                if changed.is_err() {
+                    break;
+                }
+                let event = stats_event("progress", progress.borrow_and_update().clone());
+                if sender.send(Ok(event)).await.is_err() {
+                    break;
+                }
+            }
+        }
+    }
+}
+
+fn stats_event(name: &'static str, stats: RepoStats) -> Event {
+    Event::default()
+        .event(name)
+        .json_data(stats)
+        .expect("RepoStats is always serializable")
+}
+
+fn error_event(error: ApiError) -> Event {
+    Event::default()
+        .event("error")
+        .json_data(ErrorResponse {
+            error: ErrorDetails {
+                code: error.code,
+                message: error.message,
+            },
+        })
+        .expect("API errors are always serializable")
 }
 
 /// Adapter allowing the pipeline to use any shared HTTP detector.
@@ -364,6 +459,27 @@ mod tests {
         let response = test_app()
             .oneshot(
                 Request::post("/github")
+                    .header(header::CONTENT_TYPE, "application/json")
+                    .body(Body::from(
+                        json!({ "repository": "not-a-repo" }).to_string(),
+                    ))
+                    .unwrap(),
+            )
+            .await
+            .unwrap();
+
+        assert_eq!(response.status(), StatusCode::BAD_REQUEST);
+        assert_eq!(
+            json_body(response).await["error"]["code"],
+            "invalid_repository"
+        );
+    }
+
+    #[tokio::test]
+    async fn github_stream_rejects_invalid_repositories_before_opening_sse() {
+        let response = test_app()
+            .oneshot(
+                Request::post("/github-stream")
                     .header(header::CONTENT_TYPE, "application/json")
                     .body(Body::from(
                         json!({ "repository": "not-a-repo" }).to_string(),
