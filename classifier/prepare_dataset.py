@@ -81,6 +81,11 @@ SPECIAL_FILENAMES = {
     "rakefile": "ruby",
 }
 
+EXCLUDED_FILENAMES = {
+    "cargo.lock",
+    "uv.lock",
+}
+
 # Applied identically to every repository and sample directory.
 EXCLUDED_PARTS = {
     ".cache",
@@ -103,6 +108,7 @@ EXCLUDED_PARTS = {
     "tests",
     "third_party",
     "vendor",
+    "venv"
 }
 
 
@@ -233,7 +239,11 @@ def iter_code_files(root: Path, exclude_paths: Iterable[str] = ()) -> Iterable[P
     while directories:
         directory = directories.pop()
         for path in directory.glob("*"):
-            if path.is_symlink() or is_excluded(path):
+            if (
+                path.is_symlink()
+                or is_excluded(path)
+                or path.name.casefold() in EXCLUDED_FILENAMES
+            ):
                 continue
             if path.is_dir():
                 if path.name.casefold() not in EXCLUDED_PARTS:
