@@ -957,6 +957,186 @@
       "url": "https://github.com/rust-lang/rust-analyzer",
       "revision": "c8c4d736486426ad8a4a161ae6f3c09c153903e4",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "various-scripts",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/vashpan/various-scripts.git",
+      "revision": "283235e6b77dac15300cda1e24754bd9fc109d66",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "et312-mqtt",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/Carumbad/et312_mqtt.git",
+      "revision": "bcd2927404065480624102f41942c2c53c4c3b73",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "spider-jumia",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/wilsonLwx/Spider_Jumia.git",
+      "revision": "54dac4245f421f883bd3a4b8659b0838c5ff2ecc",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "daily-star-crawler",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/manashmandal/DailyStarCrawler.git",
+      "revision": "8e658e558ee3bd24f8200247bbf702364045f7cd",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "noobcoin",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/kimwnasptd/NoobCoin.git",
+      "revision": "888d24072d3ee75f9819ca50845a7b831e117036",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "block-menter",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/watatakahashi/block-menter.git",
+      "revision": "837a11ed51f78d762f134193e9747aedd6f54364",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "confidenceiskey-tic-tac-toe",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/Confidenceiskey/tic-tac-toe.git",
+      "revision": "14ea052b92e54e57ebe2ceae8e8351f0b7ea5fef",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "blockbuster2",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/Hilby35/BlockBuster2.git",
+      "revision": "f41214ec1c87726be5c1508ca1c8efa6d0109222",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "nwhacks2019",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/jonathanwangg/nwHacks2019.git",
+      "revision": "4488927d806d35850d6b4c25c68e217b09efd3ec",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "magic-square",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/Gizmoscope/magic-square.git",
+      "revision": "0240f92a5e8538382e6ee3bdc2f28946ca9982ff",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mountain-os",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/zHooP/Mountain-OS.git",
+      "revision": "8e679d04c8d485d853e030ee1b4665549de72526",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "terminalchat",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/danielgilroy/TerminalChat.git",
+      "revision": "8d4d539a8b2d6b8cb3915b6079057a2d2cf66fc8",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mqtt-epaper",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/eb3nezer/mqtt_epaper.git",
+      "revision": "c8972f0f562e6ae6e294392e8236c53a2ffce6f6",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "panelmc-daemon",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/PanelMc/daemon.git",
+      "revision": "d35a1bf19fb768ccec49e2cdc3e01607f1f37379",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "go-tictactoe",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/elie-g/go-tictactoe.git",
+      "revision": "48e53a6775ea729c19c18edba06ad4f837209357",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "quithub",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/AndrewYinLi/QuitHub.git",
+      "revision": "cfa711c7e394f10ca4a48835630178bb7e72624e",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "doom-fire-fx",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/notryanb/doom_fire_fx.git",
+      "revision": "5283881aaf4bd06e1bb7cc2181ec06e21576977f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "yorool-gui",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/milyin/yorool_gui.git",
+      "revision": "f59bfae4d3d2c78cef5fac2250fae9222a94602e",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "ninomiya",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/deifactor/ninomiya.git",
+      "revision": "c33b1ae427bee81a7cca0e7586d6aaa99754b2c6",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "loboarkano-tic-tac-toe",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/LoboArkano/Tic-Tac-Toe.git",
+      "revision": "f16089d8427a0586f9969706a97aae258a242f4e",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
