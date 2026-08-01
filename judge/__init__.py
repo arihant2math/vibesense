@@ -1,3 +1,5 @@
+from typing import Optional
+
 from litellm import completion
 from pydantic import BaseModel
 
@@ -19,6 +21,12 @@ class JudgeOutput(BaseModel):
 
 
 def check_repo(accessor: Accessor):
+    def tool_read_file(relative_path: str, offset: Optional[int], limit: Optional[int]):
+        return accessor.read_file(relative_path, offset, limit)
+
+    def tool_list_directory(relative_path: str):
+        return accessor.list_dir(relative_path)
+
     response = completion(
         model="gemini/gemini-3.1-pro-preview",
         messages=[
