@@ -270,6 +270,947 @@
       "url": "https://github.com/Dicklesworthstone/guide_to_openai_response_api_and_agents_sdk",
       "revision": "25b99a1b74ee4b88e8a035befba11b59e47a45ab",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "parity-substrate",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/paritytech/substrate",
+      "revision": "83808aa815a9fbc528b76cd25ae1dec57e269771",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "solana",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/solana-labs/solana",
+      "revision": "52290dbd3570cc9eaa80b2ec14f68f7590a2a550",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "nearcore",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/near/nearcore",
+      "revision": "4e79467f35086b2ee58a1d4b41ceac09b7563409",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "tikv",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/tikv/tikv",
+      "revision": "49051a39c82ae7f9c34799cedb4a94d68c8a6028",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "diem",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/diem/diem",
+      "revision": "0dc551796dfd161f873bad9a2af9dfb3a7293f08",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "materialize",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/MaterializeInc/materialize",
+      "revision": "803b18994744e307708631b9d5fd07496ff5e230",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "wasmtime",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/bytecodealliance/wasmtime",
+      "revision": "a603fc5bd56519cc099f77f6b04467a24a680795",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "tauri",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/tauri-apps/tauri",
+      "revision": "189c129f4f6e3edf657953c6df21d71454ff3bc6",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "polkadot",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/paritytech/polkadot",
+      "revision": "16f646dcd072cbcb75ef0128e22d4eada0dd507c",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "openethereum",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/openethereum/openethereum",
+      "revision": "fdaee51ca07710081d27722449478b20dfbf72c9",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "nushell",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/nushell/nushell",
+      "revision": "c36d356f4eabc85e771dda65d60350ca308e69f5",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "meilisearch",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/meilisearch/meilisearch",
+      "revision": "5c9401ad9441822eddef1cf29d8a46157dc97410",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "rustdesk",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rustdesk/rustdesk",
+      "revision": "e8b8a260fd03ccebfd02d3e5fadae5107f68f313",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "starship",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/starship/starship",
+      "revision": "a123df24dcd4b360c71b92a661b8c405dcbcbd62",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "wgpu",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/gfx-rs/wgpu",
+      "revision": "6dfcde442953eb872b1c103dae757d4a6a3f94a6",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "rust-clippy",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-lang/rust-clippy",
+      "revision": "cadb93b6de1b5ba5aca53c5c4c7987f3c09962a8",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "shadowsocks-rust",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/shadowsocks/shadowsocks-rust",
+      "revision": "19bc88bcb92ce6f227add410c92d5b40abe5e969",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "rust-gpu",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/EmbarkStudios/rust-gpu",
+      "revision": "b9867d0e84d29d6e60ad62427f453b4829abda56",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "the-algorithms-rust",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/TheAlgorithms/Rust",
+      "revision": "e389826c1ccab8a8926346ecb42af8a01d25e632",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "rustlings",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-lang/rustlings",
+      "revision": "123e6426d11e01aab25454fd6e523b4390636976",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "rust-rosetta",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-rosetta/rust-rosetta",
+      "revision": "a86f82a94d496a469f96714131c111c21631576b",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "tetrust",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/ha-shine/tetrust",
+      "revision": "5e5a174cc95b740478c87a8d5af79ffde06bdd1d",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "subotai",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/PabloMansanet/subotai",
+      "revision": "be8a675e4e3f0d4118de95b1af35ede3ec2cb07d",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "wasmer",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/wasmerio/wasmer",
+      "revision": "d292c24254a918de8c84c012a847ed815e0549dc",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "wezterm",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/wezterm/wezterm",
+      "revision": "ba42367fbf6e8a8a48adb2fc3869dc625b18a8be",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "vector",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/vectordotdev/vector",
+      "revision": "a1543b36c8adff2c7760bf40621e21d827e42145",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "ruffle",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/ruffle-rs/ruffle",
+      "revision": "2d26e7ca5926a15f3cba8b3b8e337d9fc3e73c42",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "tock",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/tock/tock",
+      "revision": "f665edb11f1c443210994862a351f38fbc76d9d3",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "veloren",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/veloren/veloren",
+      "revision": "3cbf6633129356037b4cc90d9791e52f20b9d3d6",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "fyrox",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/FyroxEngine/Fyrox",
+      "revision": "a4a5f994ff97b4f3a34278a26cb2ee538e41e681",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "polars",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/pola-rs/polars",
+      "revision": "68bc85828c2eb67f40918fe0c9f5b1f25dbd9502",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "diesel",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/diesel-rs/diesel",
+      "revision": "72bfb356b8038e993634f095b57e54fdf1cfd8f9",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "sway",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/FuelLabs/sway",
+      "revision": "04d3bbbb002791b84ffc6a1aa2ee32a9c6f8d4ee",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "fuel-core",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/FuelLabs/fuel-core",
+      "revision": "2c7ce0e8f94b314dc3baa1f7f565f0dcaa07471d",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "arrow-rs",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/apache/arrow-rs",
+      "revision": "ef8887609017680d94b2a35f9889aa10cf3b3de8",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "datafusion",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/apache/datafusion",
+      "revision": "fddab22aa562750f67385a961497dc020b18c4b2",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "amethyst",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/amethyst/amethyst",
+      "revision": "bf3c1b7a6d9052c663103334978201acd50a9313",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "kanidm",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/kanidm/kanidm",
+      "revision": "93d5c5434d67ee6231526b9de9f0c6d79f012bb2",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "grpc-rust",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/grpc/grpc-rust",
+      "revision": "b90bb7bbc012207451fe2788a8efd69023312425",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "jpegxl-rs",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/inflation/jpegxl-rs",
+      "revision": "b309bd668ad1172089954f0b9c41a803625c17e6",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "msfs-rs",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/flybywiresim/msfs-rs",
+      "revision": "b55dd8ca84ad80b4e914282bd95a664bafa05fc8",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "opr",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/AudranDoublet/opr",
+      "revision": "429f7fa379c1aaabbb691c765e90ed7f7a2e42f2",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "gg",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/thecasualcoder/gg",
+      "revision": "ad613d99fdfac36c75fd70054f5eba2fb1074c46",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "watson",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/richardanaya/watson",
+      "revision": "8fa613bf54d0126d083bbd9707fe205afcc518d1",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "sliding-features-rs",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/MathisWellmann/sliding_features-rs",
+      "revision": "7787b71c27b2e6c7f53fcb57cfeb6f8a1428435e",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "magenboy",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/alloncm/MagenBoy",
+      "revision": "25205979c8830d3b9aafeb2034b7eb311d7add89",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "ohmyzsh",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/ohmyzsh/ohmyzsh",
+      "revision": "e32d4b1e195f4c7777844beea97af42bd93434eb",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "bash-it",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/Bash-it/bash-it",
+      "revision": "d4ebba174c72fb5646d9227b98143e00665d4b8a",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "pyenv",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/pyenv/pyenv",
+      "revision": "673c73012dc29697998e9606329f2edeccefca49",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "dokku",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/dokku/dokku",
+      "revision": "37a048d2016c41168afe77f15b1c89f252af4d14",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "asdf",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/asdf-vm/asdf",
+      "revision": "e7cade95e925773c672829ae2e553ea449a95189",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "nvm",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/nvm-sh/nvm",
+      "revision": "ec8906b284d000b414da78855be90d7ae8152b77",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "bash-scripts",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/frgomes/bash-scripts",
+      "revision": "7c51b52fd80d409b1738551e358b10628d0aa95a",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "linux-shell-scripting-projects",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/houssoli/linux-shell-scripting-projects",
+      "revision": "9054b881cf774a684ea670b5e384afae48a74ea7",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "redis-in-k8s",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/cqyisbug/redis-in-k8s",
+      "revision": "f2fa4e16ff40427a4a939cc32c17665692df6f62",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "playwright",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/microsoft/playwright",
+      "revision": "63e6e530ca8a845deccff9a3dc776f76cb245296",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "excalidraw",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/excalidraw/excalidraw",
+      "revision": "9cc741ab3a2a56726035c3d8f0a358c8dd91fae1",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "fbi",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/fbi-js/fbi",
+      "revision": "7c421a0ce8817dccd77360813cda84e9462abed4",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "tempe",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/masbagal/tempe",
+      "revision": "43e25fa2f56ccb7123145d6a9dfcae84e0a3443e",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "tenbot",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/tenbot/tenbot",
+      "revision": "39334670ab1ddf6b214d0b54023491c0d2039009",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "pytest",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/pytest-dev/pytest",
+      "revision": "501637547ecefa584db3793f71f1863da5ffc25f",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "flask",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/pallets/flask",
+      "revision": "7023145f797573b2386de90bd81ac67eced93b47",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "pysidesummer",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/EricThomson/PySideSummer",
+      "revision": "d5c9f418eb24178e0ff5fd3d833666e746c64bec",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "lane-detector",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/chuanenlin/lane-detector",
+      "revision": "dfb1b5bb4d071ffc48aabf56375ab539bd311b20",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "caddy",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/caddyserver/caddy",
+      "revision": "191dc86f9e40c12517a133cf2181631c9adec791",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "gin",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/gin-gonic/gin",
+      "revision": "690aa2b1b9de7fe61dc15295210f64583dd3b90e",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "go-api",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/jonnylangefeld/go-api",
+      "revision": "c43e67c7d2d8626f1eaf724bf471272ee25b6dff",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "servidor",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/pratikju/servidor",
+      "revision": "e8b112a4e66f0aadfb82fd56339aee7968e0cf09",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "termux-packages",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/termux/termux-packages",
+      "revision": "6a72ca26e2857a4b1d139b65fbff599b40f78f3a",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "retropie-setup",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/RetroPie/RetroPie-Setup",
+      "revision": "ee74dbdf223f8dd99d5457c4563bd7f92e156ed8",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "rvm",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rvm/rvm",
+      "revision": "4d2e70673acabc5ee5d1bcf55b35074e5246a1be",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "sdkman-cli",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/sdkman/sdkman-cli",
+      "revision": "e47441db6405d33a8f6ca48f0677b8a178d2afed",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "jenv",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/jenv/jenv",
+      "revision": "ed864e49d84ab939bb3e3b3ffe202632de641135",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "bats-core",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/bats-core/bats-core",
+      "revision": "eac1e9d047b2b8137d85307fc94439c90bdc25ae",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "pi-hole",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/pi-hole/pi-hole",
+      "revision": "954b3e784f20fb161b12bd07ede7a91872d831eb",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "acme-sh",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/acmesh-official/acme.sh",
+      "revision": "a76dcd4ba1c6045794968bad38538afd1c9236ad",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "official-images",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/docker-library/official-images",
+      "revision": "1478e3994f8acc3448f3caf1c02c3e6a8e76af1a",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "ionic-framework",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/ionic-team/ionic-framework",
+      "revision": "bdb95b7b6dd798cbc6d1786ae54fa95ac1dfd096",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "modular-admin-react-pro",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/modularcode/modular-admin-react-pro",
+      "revision": "80104bdc06a5114a392f9cdd6ef5250f95ef50a3",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "vscode-nested-tags",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/blakedietz/vscode-nested-tags",
+      "revision": "1ba6ff74351553972a16195b2e59ec20d6ea883c",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "angular-infinite-list",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/drawcall/angular-infinite-list",
+      "revision": "95ffd0cb5c71bd3be3ed05bd651fb63943a9957a",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "chi",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/go-chi/chi",
+      "revision": "188a1675b7071f85360770e66daab3a51a977eeb",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "cobra",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/spf13/cobra",
+      "revision": "3c8a19ecd384dc4229545bb174310a50c493f4ae",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "cli",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/urfave/cli",
+      "revision": "b5d4a04c7fb1c7de98d491ee5af9130006fe06c6",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "requests",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/psf/requests",
+      "revision": "1466ad713cf84738cd28f1224a7ab4a19e50e361",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "poetry",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/python-poetry/poetry",
+      "revision": "22c3aaddc20ad74d3633738093f685fd6dbb998a",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "rich",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/Textualize/rich",
+      "revision": "03b2c71193bc62a6e25bfff48fe7ea218c2cb57c",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "csvreader",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/Sjord/CsvReader",
+      "revision": "10e9ea067f895ecf4247b2f32d811696875fd802",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "presence-chat",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/knewter/presence_chat",
+      "revision": "7da6d9419a75f6a0323e8c15d4e02077df7c86f9",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "functionally-swift",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/plumhead/functionally-swift",
+      "revision": "261ae22b47456786b20608aa63a8d57b73ff23a8",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "lua-if",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/randrews/lua-if",
+      "revision": "fe463639adfff166ea9b88bc176e931d42eae9e7",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "k-shortest-paths",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/bsmock/k-shortest-paths",
+      "revision": "b0af3f4a66ab5e4e741a5c9faffeb88def752882",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "sweet",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/joaomdmoura/sweet",
+      "revision": "c4a6a66bcd3de7d2671fd22afbc8e6a4a07e4799",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "psconfluence",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/lipkau/PsConfluence",
+      "revision": "b6d30533e106c9d11463935d4d97eeec3359ea60",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "kotlinalgotrading",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/profitviews/kotlinalgotrading",
+      "revision": "4eb589cb116221478f383de1b5dd0acaeaa56c2d",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "fetchkit",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/Agarunov/FetchKit",
+      "revision": "06ffe85f25e3a48b98f8509423e4ed645a50c30b",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "cloud-hypervisor",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/cloud-hypervisor/cloud-hypervisor",
+      "revision": "43f1a32859cd75418c2505b66b44aaa3c0061891",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "firecracker",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/firecracker-microvm/firecracker",
+      "revision": "d95d7ef83c7e23063d8cd6bd32b57693521a9e6f",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "rocket",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rwf2/Rocket",
+      "revision": "be933ce3983b45a85840c63adfc145a0b2c78a16",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "actix-web",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/actix/actix-web",
+      "revision": "2504c2ecb0906d261688cd61d93444d4f0537cde",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "hyper",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/hyperium/hyper",
+      "revision": "13594c377d4fce2b5bff4749eefebf0370af1268",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "futures-rs",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-lang/futures-rs",
+      "revision": "d360e665938f09d076caf36f19a0190091cc4f4c",
+      "provenance_note": "Revision predates July 1, 2021; established project selected for high-quality human code."
+    },
+    {
+      "id": "medly-components-subset",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/medly/medly-components",
+      "revision": "78ff615fe2774fa2d31bccf330ecd3b779363e12",
+      "include_paths": [
+        "packages/theme",
+        "packages/utils",
+        "packages/layout"
+      ],
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
+    },
+    {
+      "id": "currentcenterpositionmap",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/leandroBorgesFerreira/CurrentCenterPositionMap",
+      "revision": "3b3850995dbd753fe988f85920db295393222e5d",
+      "provenance_note": "Revision predates July 1, 2021; low-popularity project selected for lower-quality non-AI code."
     }
   ]
 }

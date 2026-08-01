@@ -9,13 +9,13 @@ uv sync
 uv run python classifier/prepare_dataset.py
 ```
 
-Show the number of human and AI chunks for each language:
+Show the number of human and AI chunks for each language across all prepared splits:
 
 ```bash
 uv run python classifier/chunk_breakdown.py
 ```
 
-Pass a prepared split to inspect it instead of the default `all.jsonl`:
+Pass one or more prepared splits to inspect only those files:
 
 ```bash
 uv run python classifier/chunk_breakdown.py classifier/data/processed/train.jsonl

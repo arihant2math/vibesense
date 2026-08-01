@@ -565,8 +565,6 @@ def main() -> None:
     all_records, duplicate_count, conflict_count = deduplicate(all_records)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
-    write_jsonl(args.output_dir / "all.jsonl", all_records)
-
     split_counts: dict[str, dict[str, int]] = {}
     for name in SPLIT_MANIFESTS:
         split_records = [record for record in all_records if record["split"] == name]

@@ -10,16 +10,24 @@ from pathlib import Path
 from typing import TextIO
 
 DATA_DIR = Path(__file__).resolve().parent / "data" / "processed"
+DEFAULT_DATASETS = [
+    DATA_DIR / "train.jsonl",
+    DATA_DIR / "validation.jsonl",
+    DATA_DIR / "test.jsonl",
+]
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
-        "dataset",
-        nargs="?",
+        "datasets",
+        nargs="*",
         type=Path,
-        default=DATA_DIR / "all.jsonl",
-        help="JSONL dataset to inspect (default: classifier/data/processed/all.jsonl)",
+        default=DEFAULT_DATASETS,
+        help=(
+            "JSONL dataset(s) to inspect "
+            "(default: train.jsonl, validation.jsonl, and test.jsonl)"
+        ),
     )
     return parser.parse_args()
 
@@ -48,6 +56,17 @@ def count_chunks(dataset: Path) -> dict[str, dict[int, int]]:
                 raise ValueError(f"Invalid label at {dataset}:{line_number}: {label!r}")
             counts[language][label] += 1
 
+    return dict(counts)
+
+
+def combine_counts(
+    datasets: list[Path],
+) -> dict[str, dict[int, int]]:
+    counts: dict[str, dict[int, int]] = defaultdict(lambda: {0: 0, 1: 0})
+    for dataset in datasets:
+        for language, by_label in count_chunks(dataset).items():
+            counts[language][0] += by_label[0]
+            counts[language][1] += by_label[1]
     return dict(counts)
 
 
@@ -85,7 +104,7 @@ def print_breakdown(counts: dict[str, dict[int, int]], output: TextIO) -> None:
 
 def main() -> None:
     args = parse_args()
-    print_breakdown(count_chunks(args.dataset), output=sys.stdout)
+    print_breakdown(combine_counts(args.datasets), output=sys.stdout)
 
 
 if __name__ == "__main__":
