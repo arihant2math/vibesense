@@ -122,15 +122,6 @@
       "provenance_note": "Label supplied when this source was added; not independently verified."
     },
     {
-      "id": "valhalla",
-      "kind": "github",
-      "label": 0,
-      "label_name": "human",
-      "url": "https://github.com/openjdk/valhalla",
-      "revision": "b62a66e379fda00a5ba4622da7661c89b380ecdf",
-      "provenance_note": "Label supplied when this source was added; not independently verified."
-    },
-    {
       "id": "rust",
       "kind": "github",
       "label": 0,
