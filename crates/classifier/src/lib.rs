@@ -1,18 +1,3 @@
-//! ONNX inference for the Vibesense code-authorship classifier.
-//!
-//! Load an artifact produced by `export_onnx.py`, then call [`Classifier::classify`]:
-//!
-//! ```no_run
-//! use vibesense_classifier::Classifier;
-//!
-//! # fn main() -> Result<(), vibesense_classifier::Error> {
-//! let mut classifier = Classifier::from_dir("detector-onnx")?;
-//! let result = classifier.classify("fn main() { println!(\"hello\"); }")?;
-//! println!("{}: {:.2}% AI", result.prediction, result.ai_probability * 100.0);
-//! # Ok(())
-//! }
-//! ```
-
 use std::{
     fs,
     path::{Path, PathBuf},
