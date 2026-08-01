@@ -7,7 +7,8 @@ from judge import check_repo
 if __name__ == "__main__":
     service = InferenceService()
     path = Path("../prontum")
-    result = check_repo(DirectoryAccessor(path))
+    accessor = DirectoryAccessor(path)
+    result = check_repo(accessor)
     print(result.model_dump_json(indent=2))
     ai = []
     prob_ai = []
