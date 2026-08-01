@@ -1,4 +1,275 @@
 {
   "version": 1,
-  "sources": []
+  "sources": [
+    {
+      "id": "frankenmermaid",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankenmermaid",
+      "revision": "c1983f8ad938c0604a1204937442711116e2e195",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "agentic-coding-flywheel-setup",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/agentic_coding_flywheel_setup",
+      "revision": "6f863858706e503bdce83bc6f52c954d1c048b82",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "frankenredis",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankenredis",
+      "revision": "be34cc829fbe19928a320c977d276ff974b3595d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "frankenpandas",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankenpandas",
+      "revision": "cced327193dd5844507d7b92c3dd7b304e3fe45d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "coding-agent-session-search",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/coding_agent_session_search",
+      "revision": "2e7d262f15adab6308d33572cf59cdeb02fe3839",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "frankensearch",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankensearch",
+      "revision": "3843864cf40dc5135d52828ab52e0e68e51f4571",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "frankengraphdb",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankengraphdb",
+      "revision": "81d3cae2bc0f650e0770fad97bacbf7264438e39",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "frankensqlite",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankensqlite",
+      "revision": "da306bb8d6bf6e47a1f4040f445fe7092cd8f0c8",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "franken-lean",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/franken_lean",
+      "revision": "08cbab9ebafcb0d85d46d970d35a2850d1bf1e5f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "franken-engine",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/franken_engine",
+      "revision": "e0eba0fe445a8864d1c69f638f39389d9b53b7ac",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "destructive-command-guard",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/destructive_command_guard",
+      "revision": "44d8ba5cdebd00c61cee8d0b772030b08980786b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "lemelsonbot",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/lemelsonbot",
+      "revision": "6a1f1239e6df5622fe4d2f7b2c7cbb651141338c",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "exacl",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/exacl",
+      "revision": "fa36df1745a41e50ab0730546c04d86a8503e46b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "frankensim",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankensim",
+      "revision": "35904306e46f19d479b0769dda471ece14b876a4",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "franken-ocr",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/franken_ocr",
+      "revision": "8335dbba9ca8356f7bae35b3ba636cb0c809d610",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "asupersync",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/asupersync",
+      "revision": "d8720be681d0874c1c668a3cc051b2699819fde6",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "sqlmodel-rust",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/sqlmodel_rust",
+      "revision": "00fb20f23aed608d2a7240b32147b22d0d49a3a4",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "beads-viewer",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/beads_viewer",
+      "revision": "4dfaeee705ffb7d46e385a17856411e838ffcd5b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "markdown-web-browser",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/markdown_web_browser",
+      "revision": "01b01feac6da4330626645804b22bbc1202a8ce0",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "homebrew-tap",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/homebrew-tap",
+      "revision": "e76db3c9d58f9940b5779b0f2e15b49248ede63d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "system-resource-protection-script",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/system_resource_protection_script",
+      "revision": "cb66c0bb70d0482939ed228054a581af07733f46",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "meta-skill",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/meta_skill",
+      "revision": "21f717f7cbe4d9b74be1e77914ab21117e593557",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "visual-astar-python",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/visual_astar_python",
+      "revision": "d98258699fb0d9e6f3a5c12b33d4d5d4fd6d3776",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "bulk-transcribe-youtube-videos-from-playlist",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/bulk_transcribe_youtube_videos_from_playlist",
+      "revision": "ae3fb76e6f839a0aebe31177a829255f69783eef",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "ultimate-bug-scanner",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/ultimate_bug_scanner",
+      "revision": "f7177572d7b681bf1ff664a5499c7e1bbbc2a912",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "claude-code-agent-farm",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/claude_code_agent_farm",
+      "revision": "c95b77c194dd3afd4125118cebb65d9bbfa7ee1d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "remote-compilation-helper",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/remote_compilation_helper",
+      "revision": "08b2fcf9f27b545625d3cf5f1213517c98c7d311",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "brenner-bot",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/brenner_bot",
+      "revision": "6e4403eff65e796406284985f4d41fc79a7dd9fa",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "rust-block",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/rust-block",
+      "revision": "b39ae859d1ee8e8cb5eef6a516471f1578d26b96",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "guide-to-openai-response-api-and-agents-sdk",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/guide_to_openai_response_api_and_agents_sdk",
+      "revision": "25b99a1b74ee4b88e8a035befba11b59e47a45ab",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    }
+  ]
 }

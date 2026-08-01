@@ -99,6 +99,276 @@
       "url": "https://github.com/python/the-knights-who-say-ni",
       "revision": "0071bc36160b3f82a1898ebe35341d005db9010b",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "franken-numpy",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/franken_numpy",
+      "revision": "f49d86b639b41db7028070649b2d31a8c3ce75b0",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "frankenscipy",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankenscipy",
+      "revision": "08736ae1ee8a2d53042f6f0be1b8dcb5a48f76fb",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "franken-manim",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/franken_manim",
+      "revision": "f477b87490d577f525cafb3b5e187816b5289412",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "llm-aided-ocr",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/llm_aided_ocr",
+      "revision": "9d5d28d4b418b16af607c3ffb2c3891a73231ada",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "frankenlibc",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankenlibc",
+      "revision": "72dd7296663c20de47c74698de2f5c59abe7258e",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "eidetic-engine-cli",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/eidetic_engine_cli",
+      "revision": "a69a3a461f2d708e84e06f42cdd6340cfa182615",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "franken-networkx",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/franken_networkx",
+      "revision": "e275620a1c568aafaebf5aba8b3e75b32ee221e6",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "franken-nlp",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/franken_nlp",
+      "revision": "d11289d413b307ecad538122d8c819efb6e95aba",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "franken-node",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/franken_node",
+      "revision": "5c1a377abcbe0b5a3f54f68ed6463f995c90b3e9",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "dicklesworthstone",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/Dicklesworthstone",
+      "revision": "328b5b4b03f6296e9cb32e1726588201e8b8b8c1",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "misc-coding-agent-tips-and-scripts",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/misc_coding_agent_tips_and_scripts",
+      "revision": "a5a3a6fcc2c030acb8c0e41dc65a9fddaacfa16d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "rich-rust",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/rich_rust",
+      "revision": "b0b298fca7ea29d20cac4014dd6665b234685037",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "beads-rust",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/beads_rust",
+      "revision": "f6244aacb48d4738ca1bb8d0a08c587a68642c32",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "franken-whisper",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/franken_whisper",
+      "revision": "3e4bcf0627c50df6b065318f0ec7bbd586981a48",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "frankenterm",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankenterm",
+      "revision": "f3897701ec31d614d7d0ae887dd1c76647ea1b1e",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "frankenfs",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/frankenfs",
+      "revision": "7473d535ceb414f700f9a93c292b60ca2e38f882",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "vibe-cockpit",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/vibe_cockpit",
+      "revision": "9d403aedc0e2ea612945889456c26b2ed21adf17",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "jazz-chord-progression-editor-html",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/jazz_chord_progression_editor_html",
+      "revision": "64217ea825abcde23a851f82b43f1ae3834d13f6",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mcp-agent-mail",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/mcp_agent_mail",
+      "revision": "5e481834ff1c373acda804d28c21d0349a116419",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "scoop-bucket",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/scoop-bucket",
+      "revision": "c1fa709205a4ddff56a0a711fd904357f44e7f93",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "fast-vector-similarity",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/fast_vector_similarity",
+      "revision": "fbe0e7387128f927994e3345da3f34691ef7a9af",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mcp-agent-mail-rust",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/mcp_agent_mail_rust",
+      "revision": "5efdb8b42819a45fbdd45fcc01099f7f3f39eaea",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "phage-explorer",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/phage_explorer",
+      "revision": "789328ca52f2bfda07f9d09fe6161ee98e50fe46",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "introduction-to-temporal-logic",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/introduction_to_temporal_logic",
+      "revision": "e208a8bd4b467ef549434d5c3e2ffa29d3b87bd8",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "llm-tournament",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/llm-tournament",
+      "revision": "a3bc569d0be3cb43495aa3f9608d56f0032abf02",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "fastmcp-rust",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/fastmcp_rust",
+      "revision": "09a4acf44555fad7df1ca798de6c661f5e2b6187",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "chat-shared-conversation-to-file",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/chat_shared_conversation_to_file",
+      "revision": "a955f92ed201e2901082b7f0cbf39c613d7d71f1",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mindmap-generator",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/mindmap-generator",
+      "revision": "4b835da675c17cf19f286591a975385d690c8460",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "ultrasearch",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/ultrasearch",
+      "revision": "2bbdde627aea3788f44e31fbe2ddbf62a5f91438",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "cass-memory-system",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/cass_memory_system",
+      "revision": "41107010786afbd5dbb22f9ceecf781479baff3b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
