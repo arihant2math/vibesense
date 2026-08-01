@@ -14,7 +14,7 @@ if __name__ == "__main__":
     prob_ai = []
     certain_threshold = 0.75
     for file in result.key_files:
-        code = open(path / file).read()
+        code = accessor.read_file(file)
         classification = service.classify(code, file)
         if classification['ai_probability'] > certain_threshold:
             ai.append(classification)
