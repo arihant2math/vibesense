@@ -1,6 +1,6 @@
 use std::path::PathBuf;
 
-use ureq::http::StatusCode;
+use reqwest::StatusCode;
 
 /// Errors produced while accessing a repository.
 #[derive(Debug, thiserror::Error)]
@@ -26,7 +26,7 @@ pub enum Error {
     },
 
     #[error("could not contact GitHub: {0}")]
-    Http(#[from] ureq::Error),
+    Http(#[from] reqwest::Error),
 
     #[error("GitHub denied access to {repository}: {message}")]
     PermissionDenied { repository: String, message: String },

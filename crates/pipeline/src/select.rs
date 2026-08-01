@@ -113,7 +113,7 @@ pub struct SelectionStats {
 ///
 /// Only a failure to list the repository root is fatal; unreadable
 /// subdirectories are counted and skipped.
-pub(crate) fn select_files<A>(
+pub(crate) async fn select_files<A>(
     accessor: &A,
     config: &SelectionConfig,
 ) -> Result<(Vec<Candidate>, SelectionStats), Error>
@@ -125,7 +125,7 @@ where
     let mut pending = vec![String::from(".")];
 
     while let Some(directory) = pending.pop() {
-        let entries = match accessor.list_dir(&directory) {
+        let entries = match accessor.list_dir(&directory).await {
             Ok(entries) => entries,
             Err(error) if directory == "." => return Err(error.into()),
             Err(_) => {
@@ -227,8 +227,8 @@ mod tests {
         }
     }
 
-    #[test]
-    fn walk_selects_code_and_skips_vendored_generated_and_large_files() {
+    #[tokio::test]
+    async fn walk_selects_code_and_skips_vendored_generated_and_large_files() {
         let accessor = MapAccessor::new([
             ("src/main.rs", "fn main() {}\n"),
             ("src/lib.rs", "pub fn add() {}\n"),
@@ -242,7 +242,7 @@ mod tests {
             ("data/huge.py", &"x = 1\n".repeat(100)),
         ]);
 
-        let (candidates, stats) = select_files(&accessor, &config()).unwrap();
+        let (candidates, stats) = select_files(&accessor, &config()).await.unwrap();
         let mut paths: Vec<&str> = candidates
             .iter()
             .map(|candidate| candidate.path.as_str())
@@ -259,8 +259,8 @@ mod tests {
         assert!(!stats.truncated);
     }
 
-    #[test]
-    fn walk_stops_at_the_candidate_cap() {
+    #[tokio::test]
+    async fn walk_stops_at_the_candidate_cap() {
         let accessor = MapAccessor::new([
             ("a.rs", "fn a() {}\n"),
             ("b.rs", "fn b() {}\n"),
@@ -271,7 +271,7 @@ mod tests {
             ..SelectionConfig::default()
         };
 
-        let (candidates, stats) = select_files(&accessor, &config).unwrap();
+        let (candidates, stats) = select_files(&accessor, &config).await.unwrap();
         assert_eq!(candidates.len(), 2);
         assert!(stats.truncated);
     }

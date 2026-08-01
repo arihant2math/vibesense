@@ -107,12 +107,11 @@ pub async fn check_repo_with_client(
         // Preserve the complete assistant turn, including provider-specific
         // thought signatures required when continuing Gemini tool calls.
         request = request.append_message(ChatMessage::assistant(response.content));
-        let responses = tool_calls
-            .iter()
-            .map(|tool_call| {
-                ToolResponse::from_tool_call(tool_call, execute_tool(accessor, tool_call))
-            })
-            .collect::<Vec<_>>();
+        let mut responses = Vec::with_capacity(tool_calls.len());
+        for tool_call in &tool_calls {
+            let output = execute_tool(accessor, tool_call).await;
+            responses.push(ToolResponse::from_tool_call(tool_call, output));
+        }
         request = request.append_message(responses);
     }
 }
@@ -195,30 +194,30 @@ struct ListDirectoryArguments {
     relative_path: String,
 }
 
-fn execute_tool(accessor: &(impl Accessor + ?Sized), tool_call: &ToolCall) -> String {
+async fn execute_tool(accessor: &(impl Accessor + ?Sized), tool_call: &ToolCall) -> String {
     let result = match tool_call.fn_name.as_str() {
         "tool_read_file" => {
-            serde_json::from_value::<ReadFileArguments>(tool_call.fn_arguments.clone())
-                .map_err(|error| format!("invalid tool arguments: {error}"))
-                .and_then(|arguments| {
-                    accessor
-                        .read_file(&arguments.relative_path, arguments.offset, arguments.limit)
-                        .map_err(|error| error.to_string())
-                })
+            match serde_json::from_value::<ReadFileArguments>(tool_call.fn_arguments.clone()) {
+                Ok(arguments) => accessor
+                    .read_file(&arguments.relative_path, arguments.offset, arguments.limit)
+                    .await
+                    .map_err(|error| error.to_string()),
+                Err(error) => Err(format!("invalid tool arguments: {error}")),
+            }
         }
         "tool_list_directory" => {
-            serde_json::from_value::<ListDirectoryArguments>(tool_call.fn_arguments.clone())
-                .map_err(|error| format!("invalid tool arguments: {error}"))
-                .and_then(|arguments| {
-                    accessor
-                        .list_dir(&arguments.relative_path)
-                        .map_err(|error| error.to_string())
-                        .and_then(|entries| {
-                            serde_json::to_string(&entries).map_err(|error| {
-                                format!("could not serialize directory listing: {error}")
-                            })
+            match serde_json::from_value::<ListDirectoryArguments>(tool_call.fn_arguments.clone()) {
+                Ok(arguments) => accessor
+                    .list_dir(&arguments.relative_path)
+                    .await
+                    .map_err(|error| error.to_string())
+                    .and_then(|entries| {
+                        serde_json::to_string(&entries).map_err(|error| {
+                            format!("could not serialize directory listing: {error}")
                         })
-                })
+                    }),
+                Err(error) => Err(format!("invalid tool arguments: {error}")),
+            }
         }
         name => Err(format!("unknown tool: {name}")),
     };
@@ -232,12 +231,13 @@ fn execute_tool(accessor: &(impl Accessor + ?Sized), tool_call: &ToolCall) -> St
 #[cfg(test)]
 mod tests {
     use super::*;
-    use access::{DirEntry, Error as AccessError, Result as AccessResult};
+    use access::{DirEntry, Error as AccessError, Result as AccessResult, async_trait};
 
     struct TestAccessor;
 
+    #[async_trait]
     impl Accessor for TestAccessor {
-        fn list_dir(&self, relative_path: &str) -> AccessResult<Vec<DirEntry>> {
+        async fn list_dir(&self, relative_path: &str) -> AccessResult<Vec<DirEntry>> {
             if relative_path == "." {
                 Ok(vec![DirEntry::file("lib.rs", Some(12))])
             } else {
@@ -245,7 +245,7 @@ mod tests {
             }
         }
 
-        fn read_file(
+        async fn read_file(
             &self,
             relative_path: &str,
             offset: Option<usize>,
@@ -272,32 +272,34 @@ mod tests {
         }
     }
 
-    #[test]
-    fn executes_read_and_list_tools() {
+    #[tokio::test]
+    async fn executes_read_and_list_tools() {
         let read = tool_call(
             "tool_read_file",
             json!({ "relative_path": "lib.rs", "offset": 1, "limit": 3 }),
         );
-        assert_eq!(execute_tool(&TestAccessor, &read), "bcd");
+        assert_eq!(execute_tool(&TestAccessor, &read).await, "bcd");
 
         let list = tool_call("tool_list_directory", json!({ "relative_path": "." }));
         assert_eq!(
-            execute_tool(&TestAccessor, &list),
+            execute_tool(&TestAccessor, &list).await,
             r#"[{"name":"lib.rs","entry_type":"file","size":12}]"#
         );
     }
 
-    #[test]
-    fn tool_failures_are_returned_to_the_model_as_json() {
+    #[tokio::test]
+    async fn tool_failures_are_returned_to_the_model_as_json() {
         let unknown = tool_call("delete_repository", json!({}));
-        let value: Value = serde_json::from_str(&execute_tool(&TestAccessor, &unknown)).unwrap();
+        let value: Value =
+            serde_json::from_str(&execute_tool(&TestAccessor, &unknown).await).unwrap();
         assert_eq!(value["error"], "unknown tool: delete_repository");
 
         let bad_offset = tool_call(
             "tool_read_file",
             json!({ "relative_path": "lib.rs", "offset": -1 }),
         );
-        let value: Value = serde_json::from_str(&execute_tool(&TestAccessor, &bad_offset)).unwrap();
+        let value: Value =
+            serde_json::from_str(&execute_tool(&TestAccessor, &bad_offset).await).unwrap();
         assert!(
             value["error"]
                 .as_str()

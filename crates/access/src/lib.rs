@@ -9,6 +9,8 @@ pub use directory::DirectoryAccessor;
 pub use error::{Error, Result};
 pub use github::GitHubAccessor;
 
+/// Re-exported so implementors of [`Accessor`] use the same macro version.
+pub use async_trait::async_trait;
 use serde::{Deserialize, Serialize};
 
 /// Whether a directory entry is a regular file or a directory.
@@ -51,13 +53,14 @@ impl DirEntry {
 ///
 /// Paths are UTF-8, relative to the repository root, and use `/` as their
 /// separator. Implementations must not allow a path to escape that root.
+#[async_trait]
 pub trait Accessor: Send + Sync {
     /// List one directory, sorted by entry name.
-    fn list_dir(&self, relative_path: &str) -> Result<Vec<DirEntry>>;
+    async fn list_dir(&self, relative_path: &str) -> Result<Vec<DirEntry>>;
 
     /// Read a UTF-8 file, optionally selecting a range measured in Unicode
     /// scalar values (the same semantics as Python text-file offsets).
-    fn read_file(
+    async fn read_file(
         &self,
         relative_path: &str,
         offset: Option<usize>,

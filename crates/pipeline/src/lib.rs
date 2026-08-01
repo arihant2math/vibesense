@@ -14,7 +14,7 @@
 //! [`analyze`] awaits the final [`RepoStats`]; [`analyze_streaming`] also
 //! exposes a [`tokio::sync::watch`] channel whose value is updated after every
 //! sampled file, for live progress in a webservice. [`analyze_blocking`] runs
-//! the same scan without a Tokio runtime.
+//! the same scan synchronously on a private single-thread runtime.
 
 mod run;
 mod select;
@@ -120,6 +120,9 @@ pub enum Error {
 
     #[error("the analysis task failed: {0}")]
     Worker(#[from] tokio::task::JoinError),
+
+    #[error("could not start the analysis runtime: {0}")]
+    Runtime(#[from] std::io::Error),
 }
 
 /// Anything that can score one source file.
@@ -192,12 +195,20 @@ where
     C: FileClassifier + 'static,
 {
     let (sender, receiver) = watch::channel(RepoStats::default());
+    // The scan stays on the blocking pool so classification never stalls an
+    // executor thread; accessor I/O is driven back on the runtime.
+    let runtime = tokio::runtime::Handle::current();
     let handle = tokio::task::spawn_blocking(move || {
         let mut classifier = classifier;
-        let result = run::run(accessor.as_ref(), &mut classifier, &config, |current| {
-            sender.send_replace(current.clone());
-            !sender.is_closed()
-        });
+        let result = runtime.block_on(run::run(
+            accessor.as_ref(),
+            &mut classifier,
+            &config,
+            |current| {
+                sender.send_replace(current.clone());
+                !sender.is_closed()
+            },
+        ));
         if let Ok(final_stats) = &result {
             sender.send_replace(final_stats.clone());
         }
@@ -209,7 +220,9 @@ where
     }
 }
 
-/// Scan a repository synchronously, without a Tokio runtime.
+/// Scan a repository synchronously on a private single-thread runtime.
+///
+/// Must not be called from within a Tokio runtime; use [`analyze`] there.
 pub fn analyze_blocking<A, C>(
     accessor: &A,
     classifier: &mut C,
@@ -219,14 +232,17 @@ where
     A: Accessor + ?Sized,
     C: FileClassifier + ?Sized,
 {
-    run::run(accessor, classifier, config, |_| true)
+    let runtime = tokio::runtime::Builder::new_current_thread()
+        .enable_all()
+        .build()?;
+    runtime.block_on(run::run(accessor, classifier, config, |_| true))
 }
 
 #[cfg(test)]
 pub(crate) mod testing {
     use std::collections::{BTreeMap, BTreeSet};
 
-    use access::{Accessor, DirEntry, Error as AccessError, Result as AccessResult};
+    use access::{Accessor, DirEntry, Error as AccessError, Result as AccessResult, async_trait};
     use vibesense_classifier::{Aggregation, Classification, Prediction};
 
     use crate::{ClassifierError, FileClassifier};
@@ -251,8 +267,9 @@ pub(crate) mod testing {
         }
     }
 
+    #[async_trait]
     impl Accessor for MapAccessor {
-        fn list_dir(&self, relative_path: &str) -> AccessResult<Vec<DirEntry>> {
+        async fn list_dir(&self, relative_path: &str) -> AccessResult<Vec<DirEntry>> {
             let prefix = if relative_path == "." {
                 String::new()
             } else {
@@ -279,7 +296,7 @@ pub(crate) mod testing {
             Ok(entries)
         }
 
-        fn read_file(
+        async fn read_file(
             &self,
             relative_path: &str,
             offset: Option<usize>,

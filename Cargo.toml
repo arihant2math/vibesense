@@ -8,13 +8,14 @@ license = "MIT"
 rust-version = "1.88"
 
 [workspace.dependencies]
+async-trait = "0.1.89"
 genai = "=0.7.0-beta.15"
 ort = { version = "=2.0.0-rc.13", default-features = false, features = ["std", "download-binaries", "copy-dylibs", "tls-native", "api-27"] }
 serde = { version = "1.0.228", features = ["derive"] }
 serde_json = "1.0.149"
 thiserror = "2.0.17"
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls"] }
 tokio = { version = "1.47", default-features = false, features = ["rt", "sync"] }
-ureq = { version = "3.3.0", default-features = false, features = ["rustls"] }
 url = "2.5.8"
 tokenizers = { version = "0.23.1", default-features = false, features = ["onig"] }
 unicode-normalization = "0.1.25"

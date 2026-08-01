@@ -1,10 +1,10 @@
 use std::{env, io, time::Duration};
 
+use reqwest::{Client, StatusCode};
 use serde_json::Value;
-use ureq::{Agent, http::StatusCode};
 use url::Url;
 
-use crate::{Accessor, DirEntry, Error, Result, text::slice_text};
+use crate::{Accessor, DirEntry, Error, Result, async_trait, text::slice_text};
 
 /// Access a GitHub repository without cloning it.
 ///
@@ -17,15 +17,14 @@ pub struct GitHubAccessor {
     git_ref: Option<String>,
     token: Option<String>,
     api_url: Url,
-    client: Agent,
+    client: Client,
 }
 
-fn github_client(timeout: Duration) -> Agent {
-    Agent::config_builder()
-        .timeout_global(Some(timeout))
-        .http_status_as_error(false)
+fn github_client(timeout: Duration) -> Result<Client> {
+    Client::builder()
+        .timeout(timeout)
         .build()
-        .into()
+        .map_err(Error::Http)
 }
 
 impl GitHubAccessor {
@@ -54,7 +53,7 @@ impl GitHubAccessor {
                 .ok()
                 .or_else(|| env::var("GH_TOKEN").ok()),
             api_url: Url::parse("https://api.github.com").expect("constant GitHub URL is valid"),
-            client: github_client(timeout),
+            client: github_client(timeout)?,
         })
     }
 
@@ -105,7 +104,7 @@ impl GitHubAccessor {
                 message: "timeout must be positive".into(),
             });
         }
-        self.client = github_client(timeout);
+        self.client = github_client(timeout)?;
         Ok(self)
     }
 
@@ -136,11 +135,11 @@ impl GitHubAccessor {
         Ok(url)
     }
 
-    fn request(&self, path: &str, accept: &'static str) -> Result<Vec<u8>> {
+    async fn request(&self, path: &str, accept: &'static str) -> Result<Vec<u8>> {
         let url = self.contents_url(path)?;
         let mut request = self
             .client
-            .get(url.as_str())
+            .get(url)
             .header("accept", accept)
             .header("user-agent", "vibesense")
             .header("x-github-api-version", "2022-11-28");
@@ -148,18 +147,12 @@ impl GitHubAccessor {
             request = request.header("authorization", format!("Bearer {token}"));
         }
         if let Some(git_ref) = &self.git_ref {
-            request = request.query("ref", git_ref);
+            request = request.query(&[("ref", git_ref)]);
         }
 
-        let mut response = request.call()?;
+        let response = request.send().await?;
         let status = response.status();
-        // The GitHub API permits source files larger than ureq's conservative
-        // default body limit, so explicitly read without that default cap.
-        let bytes = response
-            .body_mut()
-            .with_config()
-            .limit(u64::MAX)
-            .read_to_vec()?;
+        let bytes = response.bytes().await?.to_vec();
         if status.is_success() {
             return Ok(bytes);
         }
@@ -188,8 +181,8 @@ impl GitHubAccessor {
         Err(Error::GitHub { status, message })
     }
 
-    fn metadata(&self, path: &str) -> Result<Value> {
-        let bytes = self.request(path, "application/vnd.github+json")?;
+    async fn metadata(&self, path: &str) -> Result<Value> {
+        let bytes = self.request(path, "application/vnd.github+json").await?;
         let value: Value = serde_json::from_slice(&bytes)?;
         if !value.is_array() && !value.is_object() {
             return Err(Error::Metadata(serde_json::Error::io(io::Error::new(
@@ -201,10 +194,11 @@ impl GitHubAccessor {
     }
 }
 
+#[async_trait]
 impl Accessor for GitHubAccessor {
-    fn list_dir(&self, relative_path: &str) -> Result<Vec<DirEntry>> {
+    async fn list_dir(&self, relative_path: &str) -> Result<Vec<DirEntry>> {
         let path = normalize_path(relative_path)?;
-        let metadata = self.metadata(&path)?;
+        let metadata = self.metadata(&path).await?;
         let Some(items) = metadata.as_array() else {
             let kind = metadata.get("type").and_then(Value::as_str);
             let message = if matches!(kind, Some("file" | "symlink" | "submodule")) {
@@ -238,14 +232,14 @@ impl Accessor for GitHubAccessor {
         Ok(result)
     }
 
-    fn read_file(
+    async fn read_file(
         &self,
         relative_path: &str,
         offset: Option<usize>,
         limit: Option<usize>,
     ) -> Result<String> {
         let path = normalize_path(relative_path)?;
-        let metadata = self.metadata(&path)?;
+        let metadata = self.metadata(&path).await?;
         if metadata.is_array() || metadata.get("type").and_then(Value::as_str) == Some("dir") {
             return Err(Error::InvalidPath {
                 path: display_path(&path).into(),
@@ -262,7 +256,9 @@ impl Accessor for GitHubAccessor {
             });
         }
 
-        let bytes = self.request(&path, "application/vnd.github.raw+json")?;
+        let bytes = self
+            .request(&path, "application/vnd.github.raw+json")
+            .await?;
         let text = String::from_utf8(bytes).map_err(|source| Error::Utf8 {
             path: display_path(&path).into(),
             source,
