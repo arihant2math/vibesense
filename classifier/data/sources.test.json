@@ -1,4 +1,104 @@
 {
   "version": 1,
-  "sources": []
+  "sources": [
+    {
+      "id": "libffi-rs",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/libffi-rs/libffi-rs",
+      "revision": "4f99525c5e3c630325eadd84fa84c2ca34f69231",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mt19937",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/RustPython/mt19937",
+      "revision": "eaf2f594ee7f9576c8aabaed992c5416cb2dfe57",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "rustpython-github-io",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/RustPython/rustpython.github.io",
+      "revision": "f39a3bd859dfe2ae2a4b7ccfe8a1bdecd3e8552a",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "rust-timsort",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/RustPython/rust-timsort",
+      "revision": "7e687226d1eeee36f2f819ad7f009183f35971dc",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mdbook",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-lang/mdBook",
+      "revision": "4d2dc6f482305cde274e05b4675757c0f86114ca",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "thanks",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/rust-lang/thanks",
+      "revision": "c732b507f6fa863e24dc4eaddd24e66472d8536f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "winapi-util",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/BurntSushi/winapi-util",
+      "revision": "8f291c9da272b24699f31e22c521404255462642",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "coffeescript",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/jashkenas/coffeescript",
+      "revision": "07f644c39223e016aceedd2cd71b5941579b5659",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "mypy",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/python/mypy",
+      "revision": "198592832b2223122090e00f6bcac9e1e24d6018",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "typeshed",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/python/typeshed",
+      "revision": "c6b78354e6b9f979bb5b83044060b67e9c55a0ae",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "the-knights-who-say-ni",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/python/the-knights-who-say-ni",
+      "revision": "0071bc36160b3f82a1898ebe35341d005db9010b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    }
+  ]
 }
