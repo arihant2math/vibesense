@@ -369,6 +369,231 @@
       "url": "https://github.com/Dicklesworthstone/cass_memory_system",
       "revision": "41107010786afbd5dbb22f9ceecf781479baff3b",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "gitsigns-nvim",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/lewis6991/gitsigns.nvim",
+      "revision": "ee454e1846854659d1fb6fa8eda9225e1e3888cc",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "fzf",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/junegunn/fzf",
+      "revision": "7191ebb615f5d6ebbf51d598d8ec853a65e2274d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "jq",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/jqlang/jq",
+      "revision": "d18b2d078c2383d9472d0a0a226e07009025574f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "fd",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/sharkdp/fd",
+      "revision": "ac4ded5b2700890c75f9cf474c1838aa4368807a",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "delta",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/dandavison/delta",
+      "revision": "04c3ffd8eaa76b1cd9d27b437cc6bf10a96d2f50",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "lazygit",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/jesseduffield/lazygit",
+      "revision": "83834a2c2e50922d58b052b116d50a9fc3903e84",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "go-sqlite3",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/mattn/go-sqlite3",
+      "revision": "1157a4212dcb650962563f67cd405794e9115b45",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "php-parser",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/nikic/PHP-Parser",
+      "revision": "c35cc4b2cb82fd543444d6afeb42f858b5e375e3",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "sinatra",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/sinatra/sinatra",
+      "revision": "0a50b5608d3ff4fda563cc3d3a600d581c57d8e0",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "console",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/symfony/console",
+      "revision": "ede27ca9b0bd9711a3ab49dfdeb0de61f6505ac7",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "fish-shell",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/fish-shell/fish-shell",
+      "revision": "9f54c8d88b4e02f8b6b3f74c18dd57060ef035c4",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "libgit2",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/libgit2/libgit2",
+      "revision": "e16747660f0d21928d2abaa49ac0657c6664f157",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "afnetworking",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/AFNetworking/AFNetworking",
+      "revision": "4eaec5b586ddd897ebeda896e332a62a9fdab818",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "alamofire",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/Alamofire/Alamofire",
+      "revision": "a9dd90a920be97e898d4f1837a1c540de52f64bb",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "junit4",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/junit-team/junit4",
+      "revision": "01d4604a2f7ae17ac5bd9a39f4310bbcc2ca098f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "exposed",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/JetBrains/Exposed",
+      "revision": "b33e26501e0218279417bfd27e0e5b160db2c9aa",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "cake",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/cake-build/cake",
+      "revision": "b5eea50b2a77a77ce2b9bf82f3efe3351480b162",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "raylib",
+      "kind": "github",
+      "label": 0,
+      "label_name": "human",
+      "url": "https://github.com/raysan5/raylib",
+      "revision": "1fe137db449cf26902cb21b0dee6ad3884076ff9",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "asupersync-ansi-c",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/asupersync_ansi_c",
+      "revision": "20d2385e15634d8f7cc0c97824b54c2d1a322071",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "agent-mailbox-viewer-example",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/agent-mailbox-viewer-example",
+      "revision": "3caf6a3800ca10421a208f187bc86df9a821231b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "coding-agent-account-manager",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/coding_agent_account_manager",
+      "revision": "f8e42b1fc9e7130bb42df27c7e03869bde8a6ce1",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "cloud-benchmarker",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/cloud_benchmarker",
+      "revision": "e2f08fb94a764dd1902b8a2274edcc885f931ab5",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "fastapi-rust",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/fastapi_rust",
+      "revision": "e502149a444b2cad86f7dceab352591931fca08b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "source-to-prompt-tui",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/source_to_prompt_tui",
+      "revision": "e7485628e41c9e8fcf723e6cb44573e82a5d805c",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "homebrew-sbh",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/Dicklesworthstone/homebrew-sbh",
+      "revision": "44396bd990adbf04e3752585b8f7d5f9c6d2e237",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
     }
   ]
 }
