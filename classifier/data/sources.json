@@ -95,37 +95,6 @@
       "provenance_note": "Label supplied when this source was added; not independently verified."
     },
     {
-      "id": "linux",
-      "kind": "github",
-      "label": 0,
-      "label_name": "human",
-      "url": "https://github.com/torvalds/linux",
-      "revision": "dbe69e43372212527abf48609aba7fc39a6daa27",
-      "include_paths": [
-        "arch",
-        "block",
-        "certs",
-        "crypto",
-        "drivers",
-        "fs",
-        "include",
-        "init",
-        "ipc",
-        "kernel",
-        "lib",
-        "mm",
-        "net",
-        "samples",
-        "scripts",
-        "security",
-        "sound",
-        "tools",
-        "usr",
-        "virt"
-      ],
-      "provenance_note": "Label supplied when this source was added; not independently verified."
-    },
-    {
       "id": "firefox",
       "kind": "github",
       "label": 0,
