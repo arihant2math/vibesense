@@ -14,11 +14,12 @@ if __name__ == "__main__":
     certain_threshold = 0.75
     for file in result.key_files:
         code = open(path / file).read()
-        result = service.classify(code, file)
-        if result['ai_probability'] > certain_threshold:
-            ai.append(result)
-        if result['ai_probability'] > result['threshold']:
-            prob_ai.append(result)
+        classification = service.classify(code, file)
+        if classification['ai_probability'] > certain_threshold:
+            ai.append(classification)
+        if classification['ai_probability'] > classification['threshold']:
+            prob_ai.append(classification)
+
     print(f"{len(ai)} out of {len(result.key_files)} key files are certainly AI generated, {len(prob_ai)} are probably AI generated or assisted in some way")
     print("Worst offenders")
     for file in sorted(ai, key=lambda result: result["ai_probability"]):
