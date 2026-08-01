@@ -1164,6 +1164,227 @@
       "url": "https://github.com/The-Knights-of-Ni/FreightFrenzy",
       "revision": "89c4c04d594a450762324f2bda5c21b87c5e5a8f",
       "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "srinivas-hotel-management",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/srinivas3290/hotel-management.git",
+      "revision": "264ebaf96890b68016ea1145a069f2e378f9cefd",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "srinivas-inventory-management",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/srinivas3290/inventory-management.git",
+      "revision": "3b299247687ba44dfe8e09503b98766950e9d56f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "srinivas-hr-management",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/srinivas3290/hr-management.git",
+      "revision": "75a9b964e02876ba4a81de16ba87e13153ea4dce",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "srinivas-task-management",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/srinivas3290/task-management.git",
+      "revision": "6ca6ade4af9fa94999194a3d6d17df0225f16cba",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "srinivas-library-management",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/srinivas3290/library-management.git",
+      "revision": "accffed73e8a544d818b470e8291c69788b97344",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "bubua12-rbac",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/bubua12/rbac.git",
+      "revision": "3aed38ef9d41d5db599e8079b254a00df07b2821",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "demo-java-flappy-bird",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/maycuatroi1/demo-java-flappy-bird.git",
+      "revision": "a4f18670d3098e79523eb7a7c9f313f2ac747c17",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "ai-generated-apps",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/piomin/ai-generated-apps.git",
+      "revision": "ee5391b009ff73b0971ee751df30a390d29cfd4f",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "packit",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/NolanBrad/Packit.git",
+      "revision": "32a5f16ed5f9a69a8ebb82752a6159c651c75a6d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "praytimeslibrary",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/mohachi/PrayTimesLibrary.git",
+      "revision": "b2798cd04b6f5bdd7542a36db345335e25b97c8d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "karyo",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/eversinc33/Karyo.git",
+      "revision": "614b6605f35426fc4407bf8542dabb72d28d35bd",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "codexmp3",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/segin/codexmp3.git",
+      "revision": "c5c29e3298f81e916033327592fcc4b50cb850bb",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "gemchess",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/hi911/Gemchess.git",
+      "revision": "ec8ee4c44a3678fc1efb4cd59b1ea42ea146a7df",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "esp32ble2httpbridge",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/daBigR--/ESP32BLE2HTTPBridge.git",
+      "revision": "f8b9ff4e460d9a0238ddbdeeb7f2e26a11fc3568",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "audioswitcher",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/bolknexon/AudioSwitcher.git",
+      "revision": "ee0cf734c3ffaf1b365d2a23ee8b40bf65ccda0d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "codeprism",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/rustic-ai/codeprism.git",
+      "revision": "8115b77568c16d1eb0710396da39232b33663fc0",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "postgrust-sql",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/fr3ddy-fryd3/postgrust-sql.git",
+      "revision": "79b8933e09621a095a1135b30ccb6f2d685f207d",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "tyrchen-todo",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/tyrchen/todo.git",
+      "revision": "da84d46208ab2f9657f5b739a2c99f7fa0183729",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "tyrchen-md-editor",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/tyrchen/md-editor.git",
+      "revision": "a01f3c8d7ad89431d958acfc1adc3d13b0989be6",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "sunnywar-cody",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/SunnyWar/Cody.git",
+      "revision": "fb9dfaba1350dc1fd3cd246e449e3f25df7e3f27",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "anatsui",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/codewreaker/anatsui.git",
+      "revision": "e3de3663d6703139cd8851e039db7f89dde65102",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "post-quantum-cryptography",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/az9713/post-quantum-cryptography.git",
+      "revision": "f691577980db771099abe2428b71752f06f2122b",
+      "provenance_note": "Label supplied when this source was added; not independently verified."
+    },
+    {
+      "id": "substrate",
+      "kind": "github",
+      "label": 1,
+      "label_name": "ai",
+      "url": "https://github.com/segin/substrate.git",
+      "revision": "9575f9aa07d82233da9686685b6b8af6f19e2099",
+      "provenance_note": "Label supplied when this source was added; not independently verified.",
+      "include_paths": [
+        "bin",
+        "contrib",
+        "include",
+        "lib",
+        "linux",
+        "sbin",
+        "scripts",
+        "sys",
+        "tools",
+        "usr.bin",
+        "usr.lib",
+        "usr.sbin"
+      ]
     }
   ]
 }
