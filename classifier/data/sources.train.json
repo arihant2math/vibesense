@@ -227,7 +227,17 @@
       "label_name": "ai",
       "url": "https://github.com/oven-sh/bun",
       "revision": "468dac3cfd66c6b1d3de397ac37ffcbf98c94021",
-      "provenance_note": "Label supplied when this source was added; not independently verified."
+      "exclude_paths": [
+        "packages/bun-usockets",
+        "packages/bun-uws",
+        "packages/h3blast",
+        "patches",
+        "src/jsc",
+        "src/runtime/webview",
+        "src/uws",
+        "src/uws_sys"
+      ],
+      "provenance_note": "Excludes vendored networking code and JavaScriptCore/WebKit-derived sources, which are human-authored despite Bun's source-level AI label."
     },
     {
       "id": "slopos",
