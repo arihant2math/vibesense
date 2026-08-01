@@ -4,7 +4,7 @@ from typing import Any, Optional
 from litellm import completion
 from pydantic import BaseModel
 
-from access import Accessor, DirectoryAccessor
+from access import Accessor
 
 SYSTEM_PROMPT = """You are part of a pipeline meant to detect AI generated code.
 Return false for both is_ai and is_human if you are not sure.
@@ -152,8 +152,3 @@ def check_repo(accessor: Accessor, model="gemini/gemini-3.1-pro-preview") -> Jud
                     "content": content,
                 }
             )
-
-
-if __name__ == "__main__":
-    result = check_repo(DirectoryAccessor("../prontum"))
-    print(result.model_dump_json(indent=2))
