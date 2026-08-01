@@ -19,6 +19,11 @@ else:
     from github_archive import download_github_archive, github_repository
 
 DATA_DIR = Path(__file__).resolve().parent / "data"
+SPLIT_MANIFESTS = {
+    "train": DATA_DIR / "sources.train.json",
+    "validation": DATA_DIR / "sources.validation.json",
+    "test": DATA_DIR / "sources.test.json",
+}
 
 EXTENSION_LANGUAGES = {
     ".asm": "assembly",
@@ -103,7 +108,28 @@ EXCLUDED_PARTS = {
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--manifest", type=Path, default=DATA_DIR / "sources.json")
+    parser.add_argument(
+        "--train-manifest",
+        "--manifest",
+        dest="train_manifest",
+        type=Path,
+        default=SPLIT_MANIFESTS["train"],
+        help="Sources assigned to the training split",
+    )
+    parser.add_argument(
+        "--validation-manifest",
+        "--val-manifest",
+        dest="validation_manifest",
+        type=Path,
+        default=SPLIT_MANIFESTS["validation"],
+        help="Sources assigned to the validation split",
+    )
+    parser.add_argument(
+        "--test-manifest",
+        type=Path,
+        default=SPLIT_MANIFESTS["test"],
+        help="Sources assigned to the test split",
+    )
     parser.add_argument("--cache-dir", type=Path, default=DATA_DIR / ".cache" / "repos")
     parser.add_argument("--output-dir", type=Path, default=DATA_DIR / "processed")
     parser.add_argument("--max-file-bytes", type=int, default=256_000)
@@ -191,14 +217,23 @@ def language_for(path: Path) -> str | None:
     return EXTENSION_LANGUAGES.get(path.suffix.casefold())
 
 
-def iter_code_files(root: Path) -> Iterable[Path]:
+def iter_code_files(root: Path, exclude_paths: Iterable[str] = ()) -> Iterable[Path]:
+    excluded = {Path(path).as_posix().strip("/") for path in exclude_paths}
+
+    def is_excluded(path: Path) -> bool:
+        relative = path.relative_to(root).as_posix()
+        return any(
+            relative == excluded_path or relative.startswith(f"{excluded_path}/")
+            for excluded_path in excluded
+        )
+
     paths: list[Path] = []
     directories = [root]
 
     while directories:
         directory = directories.pop()
         for path in directory.glob("*"):
-            if path.is_symlink():
+            if path.is_symlink() or is_excluded(path):
                 continue
             if path.is_dir():
                 if path.name.casefold() not in EXCLUDED_PARTS:
@@ -351,7 +386,7 @@ def records_for_source(
         return file_records
 
     records: list[dict[str, Any]] = []
-    paths = iter_code_files(root)
+    paths = iter_code_files(root, source.get("exclude_paths", []))
     if workers <= 1:
         record_groups = map(records_for_file, paths)
         for file_records in record_groups:
@@ -396,17 +431,6 @@ def deduplicate(records: list[dict[str, Any]]) -> tuple[list[dict[str, Any]], in
     return result, duplicate_count, conflict_count
 
 
-def split_name(record: dict[str, Any], seed: str) -> str:
-    # All chunks from one file receive the same split.
-    digest = stable_digest(seed, record["source_id"], record["path"])
-    bucket = int(digest[:8], 16) / 0xFFFFFFFF
-    if bucket < 0.8:
-        return "train"
-    if bucket < 0.9:
-        return "validation"
-    return "test"
-
-
 def balance_records(records: list[dict[str, Any]], seed: str) -> list[dict[str, Any]]:
     labels = {record["label"] for record in records}
     if labels != {0, 1}:
@@ -448,8 +472,11 @@ def write_jsonl(path: Path, records: Iterable[dict[str, Any]]) -> None:
 
 
 def validate_manifest(manifest: dict[str, Any]) -> None:
+    if not isinstance(manifest, dict) or not isinstance(manifest.get("sources"), list):
+        raise TypeError("Manifest must contain a sources list")
+
     source_ids: set[str] = set()
-    for source in manifest.get("sources", []):
+    for source in manifest["sources"]:
         source_id = source.get("id")
         if not source_id or source_id in source_ids:
             raise ValueError(f"Missing or duplicate source id: {source_id!r}")
@@ -465,48 +492,75 @@ def validate_manifest(manifest: dict[str, Any]) -> None:
             )
 
 
+def display_path(path: Path) -> str:
+    try:
+        return path.relative_to(Path.cwd()).as_posix()
+    except ValueError:
+        return path.as_posix()
+
+
 def main() -> None:
     args = parse_args()
-    manifest_path = args.manifest.resolve()
-    manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
-    validate_manifest(manifest)
+    manifest_paths = {
+        "train": args.train_manifest.resolve(),
+        "validation": args.validation_manifest.resolve(),
+        "test": args.test_manifest.resolve(),
+    }
+    manifests: dict[str, dict[str, Any]] = {}
+    source_splits: dict[str, str] = {}
+    for split, manifest_path in manifest_paths.items():
+        manifest = json.loads(manifest_path.read_text(encoding="utf-8"))
+        validate_manifest(manifest)
+        manifests[split] = manifest
+        for source in manifest["sources"]:
+            source_id = source["id"]
+            previous_split = source_splits.get(source_id)
+            if previous_split is not None:
+                raise ValueError(
+                    f"Source {source_id!r} is in both {previous_split} and {split} manifests"
+                )
+            source_splits[source_id] = split
 
     all_records: list[dict[str, Any]] = []
     source_counts: dict[str, int] = {}
 
-    for source in manifest["sources"]:
-        print(f"{source['id']}: start")
-        if source["kind"] in {"git", "github"}:
-            root = checkout_repository(source, args.cache_dir.resolve(), args.refresh)
-        else:
-            root = (manifest_path.parent / source["path"]).resolve()
-            if not root.is_dir():
-                raise FileNotFoundError(f"Sample directory does not exist: {root}")
+    for split, manifest in manifests.items():
+        manifest_path = manifest_paths[split]
+        for source in manifest["sources"]:
+            print(f"{source['id']}: start ({split})")
+            if source["kind"] in {"git", "github"}:
+                root = checkout_repository(
+                    source, args.cache_dir.resolve(), args.refresh
+                )
+            else:
+                root = (manifest_path.parent / source["path"]).resolve()
+                if not root.is_dir():
+                    raise FileNotFoundError(f"Sample directory does not exist: {root}")
 
-        source_records = records_for_source(
-            source,
-            root,
-            args.max_file_bytes,
-            args.max_chars,
-            args.min_chars,
-            args.workers,
-        )
-        source_counts[source["id"]] = len(source_records)
-        all_records.extend(source_records)
-        print(f"{source['id']}: {len(source_records):,} normalized chunks")
+            source_records = records_for_source(
+                source,
+                root,
+                args.max_file_bytes,
+                args.max_chars,
+                args.min_chars,
+                args.workers,
+            )
+            for record in source_records:
+                record["split"] = split
+            source_counts[source["id"]] = len(source_records)
+            all_records.extend(source_records)
+            print(f"{source['id']}: {len(source_records):,} normalized chunks")
 
     all_records, duplicate_count, conflict_count = deduplicate(all_records)
-    for record in all_records:
-        record["split"] = split_name(record, args.seed)
 
     args.output_dir.mkdir(parents=True, exist_ok=True)
     write_jsonl(args.output_dir / "all.jsonl", all_records)
 
     split_counts: dict[str, dict[str, int]] = {}
-    for name in ("train", "validation", "test"):
+    for name in SPLIT_MANIFESTS:
         split_records = [record for record in all_records if record["split"] == name]
         before_balance = Counter(record["label_name"] for record in split_records)
-        if not args.no_balance:
+        if split_records and not args.no_balance:
             split_records = balance_records(split_records, f"{args.seed}-{name}")
         write_jsonl(args.output_dir / f"{name}.jsonl", split_records)
         split_counts[name] = dict(
@@ -516,13 +570,10 @@ def main() -> None:
             f"{name}: {len(split_records):,} chunks {split_counts[name]} (before balance: {dict(before_balance)})"
         )
 
-    try:
-        summary_manifest = manifest_path.relative_to(Path.cwd()).as_posix()
-    except ValueError:
-        summary_manifest = manifest_path.as_posix()
-
     summary = {
-        "manifest": summary_manifest,
+        "manifests": {
+            split: display_path(path) for split, path in manifest_paths.items()
+        },
         "seed": args.seed,
         "normalization": "NFC, UTF-8, LF line endings, trailing whitespace removed",
         "source_counts_before_deduplication": source_counts,

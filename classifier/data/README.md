@@ -1,4 +1,13 @@
 # Dataset sources
+
+Sources are assigned to a dataset split by manifest:
+
+- `sources.train.json`
+- `sources.validation.json`
+- `sources.test.json`
+
+A repository must appear in exactly one manifest.
+
 `0` = `human`
 `1` = `ai`
 

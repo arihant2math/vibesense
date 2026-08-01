@@ -39,15 +39,22 @@ def github_repository(git_url: str) -> tuple[str, str] | None:
 
 
 def archive_member_is_included(
-    member: tarfile.TarInfo, include_paths: list[str]
+    member: tarfile.TarInfo,
+    include_paths: list[str],
+    exclude_paths: list[str] | None = None,
 ) -> bool:
-    if not include_paths:
-        return True
-
     parts = PurePosixPath(member.name).parts
     if len(parts) <= 1:
         return True
     relative = PurePosixPath(*parts[1:])
+
+    for exclude_path in exclude_paths or []:
+        excluded = PurePosixPath(exclude_path.strip("/"))
+        if relative == excluded or relative.is_relative_to(excluded):
+            return False
+
+    if not include_paths:
+        return True
     for include_path in include_paths:
         included = PurePosixPath(include_path.strip("/"))
         if relative == included or relative.is_relative_to(included):
@@ -112,7 +119,9 @@ def download_github_archive(
                     member
                     for member in members
                     if archive_member_is_included(
-                        member, source.get("include_paths", [])
+                        member,
+                        source.get("include_paths", []),
+                        source.get("exclude_paths", []),
                     )
                 ]
                 archive.extractall(

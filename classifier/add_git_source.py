@@ -21,7 +21,7 @@ if __package__:
 else:
     from github_archive import download_github_archive, github_repository
 
-DEFAULT_MANIFEST = Path(__file__).resolve().parent / "data" / "sources.json"
+DEFAULT_MANIFEST = Path(__file__).resolve().parent / "data" / "sources.train.json"
 DEFAULT_CACHE_DIR = Path(__file__).resolve().parent / "data" / ".cache" / "repos"
 CUTOFF_DATE = "2021-07-01T00:00:00Z"
 # Git's --before comparison includes the named second, so query one second earlier.
