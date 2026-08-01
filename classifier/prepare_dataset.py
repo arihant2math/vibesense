@@ -84,6 +84,7 @@ SPECIAL_FILENAMES = {
 EXCLUDED_FILENAMES = {
     "cargo.lock",
     "uv.lock",
+    "package-lock.json"
 }
 
 # Applied identically to every repository and sample directory.
