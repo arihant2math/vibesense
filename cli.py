@@ -4,6 +4,7 @@ import argparse
 import json
 import sys
 from collections.abc import Sequence
+from pathlib import Path
 
 import requests
 
@@ -33,6 +34,11 @@ def build_parser() -> argparse.ArgumentParser:
         metavar="URL",
         help="URL of a UTF-8 source file to classify",
     )
+    source.add_argument(
+        "--file",
+        metavar="PATH",
+        help="path to a UTF-8 source file to classify",
+    )
     parser.add_argument(
         "--ref",
         help="Git branch, tag, or commit to inspect (only valid with --github)",
@@ -60,6 +66,10 @@ def main(argv: Sequence[str] | None = None) -> None:
                 parser.error(f"could not download {args.url!r}: {error}")
             code = response.text
             name = args.url
+        elif args.file is not None:
+            path = Path(args.file).expanduser()
+            code = path.read_text(encoding="utf-8")
+            name = str(path)
         else:
             code = sys.stdin.read()
             name = "<stdin>"
