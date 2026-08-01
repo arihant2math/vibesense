@@ -1,0 +1,14 @@
+[package]
+name = "judge"
+version = "0.1.0"
+description = "LLM repository inspection for Vibesense"
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+access = { path = "../access" }
+genai.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+thiserror.workspace = true
