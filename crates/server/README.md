@@ -15,7 +15,7 @@ Configuration is supplied through environment variables:
 - `VIBESENSE_MODEL_DIR` — exported classifier directory (default: `detector-onnx`)
 - `VIBESENSE_BIND` — complete socket address, such as `127.0.0.1:8080`
 - `VIBESENSE_HOST` / `VIBESENSE_PORT` — used when `VIBESENSE_BIND` is absent
-- `GITHUB_TOKEN` or `GH_TOKEN` — optional GitHub token, needed for private repositories and useful for higher rate limits
+- `GITHUB_TOKEN` or `GH_TOKEN` — optional GitHub token, needed for private repositories and strongly recommended for repository scans; GitHub's anonymous 60-request/hour limit is too small for many repositories
 
 `VIBESENSE_BIND` takes precedence over the host and port variables. The model path is relative to the process working directory.
 
